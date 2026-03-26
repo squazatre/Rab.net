@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rab — Qu'est-ce qu'on mange avec les restes ?</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Gauche -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <div class="logo-icon">🥕</div>
+                <h1 class="logo-text">Rab</h1>
+            </div>
+
+            <nav class="sidebar-nav">
+                <!-- Ingrédients -->
+                <div class="sidebar-section">
+                    <button class="section-toggle" id="ingredients-toggle">
+                        <span class="icon">🧅</span> Mes Ingrédients
+                        <span class="arrow">▼</span>
+                    </button>
+                    <div id="ingredients-content" class="collapsible-content">
+                        <div class="search-bar" style="margin-bottom: 8px; margin-top: 16px; position: relative;">
+                            <input type="text" id="ingredient-input" placeholder="Ajouter un reste..." autocomplete="off">
+                            <div id="autocomplete-list" class="autocomplete-suggestions"></div>
+                        </div>
+                        <div id="ingredients-list" class="chip-container">
+                            <!-- Chips injectés par JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ustensiles -->
+                <div class="sidebar-section" style="margin-top: 32px;">
+                    <button class="section-toggle" id="ustensiles-toggle">
+                        <span class="icon">🍳</span> Mes Ustensiles
+                        <span class="arrow">▼</span>
+                    </button>
+                    <div id="ustensiles-content" class="collapsible-content">
+                        <div class="ustensiles-grid" style="margin-top: 16px;">
+                            <label class="check-container">
+                                <input type="checkbox" checked value="four"> Four
+                            </label>
+                            <label class="check-container">
+                                <input type="checkbox" checked value="poêle"> Poêle
+                            </label>
+                            <label class="check-container">
+                                <input type="checkbox" checked value="casserole"> Casserole
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mode Toggle -->
+                <div class="sidebar-section" style="margin-top: 32px;">
+                    <h2 class="section-title">⚙️ Mode de recherche</h2>
+                    <div class="toggle-container">
+                        <label class="switch">
+                            <input type="checkbox" id="mode-strict">
+                            <span class="slider round"></span>
+                        </label>
+                        <span id="mode-label">Mode Flexible</span>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="button button-primary" id="clear-frigo" style="width: 100%;">Vider mon frigo</button>
+            </div>
+        </aside>
+
+        <!-- Zone Principale -->
+        <main class="main-content">
+            <header class="header">
+                <div class="search-bar">
+                    <input type="text" id="recipe-search" placeholder="Rechercher une recette classique...">
+                </div>
+                <div class="user-stats">
+                    <span id="recipe-count">0 recettes</span>
+                </div>
+            </header>
+
+            <section class="filters">
+                <div class="filter-chips">
+                    <button class="filter-chip active">Tout</button>
+                    <button class="filter-chip">Végétarien</button>
+                    <button class="filter-chip">Rapide</button>
+                    <button class="filter-chip">Budget</button>
+                    <button class="filter-chip">Sucré</button>
+                </div>
+            </section>
+
+            <div id="recipe-container" class="recipe-grid">
+                <!-- Cartes recettes injectées par JS -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal Détail Recette (Caché par défaut) -->
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/matching.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
