@@ -34,7 +34,8 @@ body {
 /* Layout */
 .app-container {
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
 }
 
 /* Sidebar */
@@ -43,9 +44,8 @@ body {
     background-color: var(--white);
     padding: 40px 24px;
     border-right: 2px solid var(--border);
-    position: sticky;
-    top: 0;
     height: 100vh;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -80,6 +80,8 @@ body {
 /* Main Content */
 .main-content {
     flex: 1;
+    height: 100vh;
+    overflow-y: auto;
     padding: 40px 60px;
     background: radial-gradient(circle at top right, #FFF2E6 0%, transparent 40%);
 }
@@ -117,7 +119,7 @@ body {
 /* Recipe Grid */
 .recipe-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 32px;
 }
 
@@ -133,6 +135,7 @@ body {
     cursor: pointer;
     box-shadow: 0 10px 30px var(--shadow);
     border: 2px solid transparent;
+    overflow: hidden;
 }
 
 .recipe-card:hover {
@@ -143,14 +146,25 @@ body {
 
 .recipe-image {
     width: 100%;
-    height: 180px;
+    height: 200px;
     background-color: var(--bg);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 80px;
+    font-size: 48px;
     transition: transform 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    color: var(--text-light);
+}
+
+.recipe-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    display: block;
 }
 
 .recipe-card:hover .recipe-image {
@@ -311,6 +325,67 @@ body {
 .chip-remove:hover {
     opacity: 1;
     color: var(--primary);
+}
+
+/* Ustensiles Grid & Custom Checkboxes */
+.ustensiles-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.check-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    border: 2px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+    position: relative;
+    font-weight: 700;
+}
+
+.check-container:hover {
+    border-color: var(--primary);
+    background-color: var(--bg);
+}
+
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    height: 20px;
+    width: 20px;
+    background-color: var(--border);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-container input:checked ~ .checkmark {
+    background-color: #10B981; /* Vert */
+}
+
+.checkmark:after {
+    content: "✓";
+    color: white;
+    display: none;
+    font-size: 14px;
+}
+
+.check-container input:checked ~ .checkmark:after {
+    display: block;
 }
 
 /* UI Elements */

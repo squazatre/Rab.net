@@ -25,7 +25,7 @@ const Storage = {
 
     getUstensiles: () => {
         const data = localStorage.getItem(STORAGE_KEYS.USTENSILES);
-        return data ? JSON.parse(data) : ["four", "poêle", "casserole"];
+        return data ? JSON.parse(data) : ["four", "poêle", "casserole", "air fryer", "friteuse"];
     },
 
     toggleFavori: (recipeId) => {

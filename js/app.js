@@ -32,8 +32,19 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function init() {
         renderIngredients();
+        renderUstensiles();
         renderRecipes();
         setupEventListeners();
+    }
+
+    /**
+     * Synchronise les cases à cocher des ustensiles avec l'état
+     */
+    function renderUstensiles() {
+        const checkboxes = document.querySelectorAll('.ustensiles-grid input[type="checkbox"]');
+        checkboxes.forEach(cb => {
+            cb.checked = state.ustensiles.includes(cb.value);
+        });
     }
 
     /**
@@ -87,20 +98,25 @@ document.addEventListener('DOMContentLoaded', () => {
             else if (recipe.score >= 50) matchClass = 'match-medium';
 
             card.innerHTML = `
-                <div class="recipe-image">${recipe.emoji}</div>
-                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-                    <h3 class="recipe-title">${recipe.titre}</h3>
-                    <span class="fav-heart ${isFav ? 'active' : ''}" data-id="${recipe.id}">${isFav ? '❤️' : '🤍'}</span>
+                <div class="recipe-image">
+                    /* CACHE BUST v2 */
+                    ${(recipe.image && recipe.image.trim() !== "") ? `<img src="${recipe.image}" alt="${recipe.titre}">` : `<span>${recipe.emoji}</span>`}
                 </div>
-                <div class="recipe-meta">
-                    <span>⏱ ${recipe.temps} min</span>
-                    <span class="match-badge ${matchClass}">${recipe.score}% match</span>
-                </div>
-                ${!state.isStrict && recipe.missingIngredients.length > 0 ? `
-                    <div class="missing-ingredients">
-                        Il vous manque : <span class="missing-ingredient">${recipe.missingIngredients.slice(0, 2).join(', ')}${recipe.missingIngredients.length > 2 ? '...' : ''}</span>
+                <div class="recipe-card-content">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <h3 class="recipe-title">${recipe.titre}</h3>
+                        <span class="fav-heart ${isFav ? 'active' : ''}" data-id="${recipe.id}">${isFav ? '❤️' : '🤍'}</span>
                     </div>
-                ` : ''}
+                    <div class="recipe-meta">
+                        <span>⏱ ${recipe.temps} min</span>
+                        <span class="match-badge ${matchClass}">${recipe.score}% match</span>
+                    </div>
+                    ${!state.isStrict && recipe.missingIngredients.length > 0 ? `
+                        <div class="missing-ingredients">
+                            Il vous manque : <span class="missing-ingredient">${recipe.missingIngredients.slice(0, 2).join(', ')}${recipe.missingIngredients.length > 2 ? '...' : ''}</span>
+                        </div>
+                    ` : ''}
+                </div>
             `;
             
             card.addEventListener('click', (e) => {
@@ -121,7 +137,10 @@ document.addEventListener('DOMContentLoaded', () => {
         modalBody.innerHTML = `
             <div style="display: flex; gap: 40px; flex-wrap: wrap;">
                 <div style="flex: 1; min-width: 300px;">
-                    <div class="recipe-image" style="height: 300px; font-size: 150px; margin-bottom: 24px;">${recipe.emoji}</div>
+                    <div class="recipe-image" style="height: 300px; font-size: 80px; margin-bottom: 24px; border-radius: 16px;">
+                        /* CACHE BUST v2 */
+                        ${(recipe.image && recipe.image.trim() !== "") ? `<img src="${recipe.image}" alt="${recipe.titre}">` : `<span>${recipe.emoji}</span>`}
+                    </div>
                     <h2>Ingrédients</h2>
                     <ul style="margin-top: 16px; list-style: none;">
                         ${recipe.ingredients.map(ing => {
@@ -132,10 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         }).join('')}
                     </ul>
                 </div>
-                <div style="flex: 1.5; min-width: 300px;">
-                    <h1 style="font-size: 36px; margin-bottom: 16px;">${recipe.titre}</h1>
-                    <p style="font-size: 18px; color: var(--text-light); margin-bottom: 24px;">${recipe.description}</p>
-                    
+                <div>
                     <div style="display: flex; gap: 20px; margin-bottom: 32px;">
                         <span class="chip">⏱ ${recipe.temps} min</span>
                         <span class="chip">📊 ${recipe.difficulte}</span>
@@ -277,6 +293,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setupSidebarToggle('ingredients-toggle', 'ingredients-content');
         setupSidebarToggle('ustensiles-toggle', 'ustensiles-content');
+
+        // Gestion des ustensiles (checkboxes)
+        const ustensilesGrid = document.querySelector('.ustensiles-grid');
+        if (ustensilesGrid) {
+            ustensilesGrid.addEventListener('change', (e) => {
+                if (e.target.type === 'checkbox') {
+                    const val = e.target.value;
+                    if (e.target.checked) {
+                        if (!state.ustensiles.includes(val)) state.ustensiles.push(val);
+                    } else {
+                        state.ustensiles = state.ustensiles.filter(u => u !== val);
+                    }
+                    Storage.saveUstensiles(state.ustensiles);
+                    renderRecipes();
+                }
+            });
+        }
 
         // Modal close
         closeModal.onclick = () => recipeModal.style.display = 'none';

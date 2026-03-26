@@ -1,1138 +1,492 @@
 var recipes = [
     {
         id: 1,
-        titre: "Omelette aux fines herbes",
-        description: "Une omelette simple et rapide, parfaite pour un déjeuner léger.",
-        temps: 10,
-        difficulte: "Facile",
+        titre: "Boeuf Bourguignon Traditionnel",
+        description: "Un grand classique de la cuisine française, mijoté longuement dans une sauce au vin rouge.",
+        temps: 180,
+        difficulte: "Moyen",
+        emoji: "🥘",
         ingredients: [
-            { nom: "oeufs", obligatoire: true },
-            { nom: "beurre", obligatoire: true },
-            { nom: "sel", obligatoire: true },
-            { nom: "poivre", obligatoire: true },
-            { nom: "persil", obligatoire: false },
-            { nom: "ciboulette", obligatoire: false }
+            { nom: "boeuf", obligatoire: true },
+            { nom: "vin rouge (Bourgogne)", obligatoire: true },
+            { nom: "lardons", obligatoire: true },
+            { nom: "carottes", obligatoire: true },
+            { nom: "oignons", obligatoire: true },
+            { nom: "champignons de Paris", obligatoire: false }
         ],
-        ustensiles: ["poêle", "fourchette"],
-        tags: ["végétarien", "rapide", "budget"],
+        ustensiles: ["cocotte en fonte", "couteau"],
+        tags: ["classique", "mijote", "dimanche"],
         instructions: [
-            "Battez les oeufs avec le sel et le poivre.",
-            "Faites fondre le beurre dans une poêle chaude.",
-            "Versez les oeufs et remuez doucement.",
-            "Ajoutez les herbes et pliez l'omelette."
-        ],
-        emoji: "🍳"
+            "Coupez la viande en gros cubes et faites-les dorer dans la cocotte.",
+            "Ajoutez les oignons et les lardons, faites revenir 5 minutes.",
+            "Versez le vin rouge et complétez avec un peu d'eau si nécessaire.",
+            "Ajoutez les carottes en rondelles et le bouquet garni.",
+            "Laissez mijoter à feu très doux pendant au moins 3 heures.",
+            "Servez idéalement le lendemain."
+        ]
     },
     {
         id: 2,
-        titre: "Pâtes à la carbonara (la vraie !)",
-        description: "La recette authentique italienne, sans crème fraîche.",
-        temps: 15,
-        difficulte: "Facile",
+        titre: "Blanquette de Veau à l'Ancienne",
+        description: "Une viande tendre nappée d'une sauce blanche onctueuse aux petits champignons.",
+        temps: 90,
+        difficulte: "Moyen",
+        emoji: "🍲",
         ingredients: [
-            { nom: "pâtes", obligatoire: true },
-            { nom: "guanciale", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "pecorino", obligatoire: true },
-            { nom: "poivre", obligatoire: true }
+            { nom: "veau", obligatoire: true },
+            { nom: "carottes", obligatoire: true },
+            { nom: "poireau", obligatoire: true },
+            { nom: "champignons", obligatoire: true },
+            { nom: "crème fraîche", obligatoire: true },
+            { nom: "oeufs", obligatoire: true }
         ],
-        ustensiles: ["casserole", "poêle", "bol"],
-        tags: ["classique", "rapide"],
+        ustensiles: ["casserole", "fouet"],
+        tags: ["traditionnel", "réconfort"],
         instructions: [
-            "Faites cuire les pâtes dans l'eau bouillante salée.",
-            "Faites revenir le guanciale dans une poêle sans matière grasse.",
-            "Mélangez les jaunes d'oeufs avec le pecorino et beaucoup de poivre.",
-            "Mélangez tout hors du feu avec un peu d'eau de cuisson."
-        ],
-        emoji: "🍝"
+            "Faites blanchir la viande dans l'eau bouillante pendant 2 minutes.",
+            "Égouttez et remettez dans la casserole avec les carottes et le poireau.",
+            "Couvrez d'eau et laissez mijoter 1h30.",
+            "Préparez la liaison : mélangez la crème et les jaunes d'oeufs.",
+            "Hors du feu, ajoutez la liaison et les champignons déjà poêlés.",
+            "Servez avec du riz blanc."
+        ]
     },
     {
         id: 3,
-        titre: "Pain perdu à la cannelle",
-        description: "Le meilleur moyen d'utiliser du pain rassis.",
-        temps: 15,
+        titre: "Poulet Rôti et Pommes de Terre",
+        description: "Le poulet du dimanche, à la peau bien croustillante et aux pommes de terre fondantes.",
+        temps: 75,
         difficulte: "Facile",
+        emoji: "🍗",
         ingredients: [
-            { nom: "pain dur", obligatoire: true },
-            { nom: "lait", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "sucre", obligatoire: true },
+            { nom: "poulet entier", obligatoire: true },
+            { nom: "pommes de terre", obligatoire: true },
             { nom: "beurre", obligatoire: true },
-            { nom: "cannelle", obligatoire: false }
+            { nom: "ail", obligatoire: true },
+            { nom: "thym", obligatoire: false }
         ],
-        ustensiles: ["poêle", "bol"],
-        tags: ["sucré", "anti-gaspi", "enfantin"],
+        ustensiles: ["plat à four", "four"],
+        tags: ["familial", "rôti"],
         instructions: [
-            "Mélangez le lait, les oeufs, le sucre et la cannelle dans un bol.",
-            "Trempez les tranches de pain dur dans le mélange.",
-            "Faites dorer les tranches dans une poêle avec du beurre.",
-            "Servez chaud avec un peu plus de sucre."
-        ],
-        emoji: "🍞"
+            "Préchauffez le four à 200°C.",
+            "Badigeonnez le poulet de beurre et poudrez d'herbes.",
+            "Disposez les pommes de terre coupées autour du poulet.",
+            "Ajoutez des gousses d'ail non épluchées.",
+            "Enfournez pour environ 1h15 en arrosant régulièrement.",
+            "Laissez reposer 10 min avant de découper."
+        ]
     },
     {
         id: 4,
-        titre: "Salade de pâtes à la sauce soja",
-        description: "Une salade fraîche et originale avec des restes de pâtes.",
-        temps: 10,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "pâtes", obligatoire: true },
-            { nom: "sauce soja", obligatoire: true },
-            { nom: "huile de sésame", obligatoire: false },
-            { nom: "oignon vert", obligatoire: false },
-            { nom: "concombre", obligatoire: false }
-        ],
-        ustensiles: ["saladier"],
-        tags: ["frais", "végétarien", "anti-gaspi"],
-        instructions: [
-            "Mélangez les pâtes cuites froides avec la sauce soja.",
-            "Ajoutez l'huile de sésame et les légumes coupés.",
-            "Laissez reposer 10 minutes avant de servir."
-        ],
-        emoji: "🥗"
-    },
-    {
-        id: 5,
-        titre: "Soupe de pâtes au Kub'Or",
-        description: "Le réconfort absolu quand il ne reste presque rien.",
-        temps: 10,
-        difficulte: "Très facile",
-        ingredients: [
-            { nom: "pâtes", obligatoire: true },
-            { nom: "kub'or", obligatoire: true },
-            { nom: "eau", obligatoire: true },
-            { nom: "beurre", obligatoire: false }
-        ],
-        ustensiles: ["casserole"],
-        tags: ["budget", "rapide", "réconfort"],
-        instructions: [
-            "Faites bouillir de l'eau avec un Kub'Or.",
-            "Ajoutez les petites pâtes (ou pâtes brisées).",
-            "Laissez cuire le temps indiqué sur le paquet.",
-            "Ajoutez une noisette de beurre à la fin."
-        ],
-        emoji: "🥣"
-    },
-    {
-        id: 6,
-        titre: "Riz sauté aux oeufs",
-        description: "Une recette asiatique classique pour utiliser du riz de la veille.",
-        temps: 15,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "riz", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "sauce soja", obligatoire: true },
-            { nom: "huile", obligatoire: true },
-            { nom: "petits pois", obligatoire: false }
-        ],
-        ustensiles: ["poêle", "spatule"],
-        tags: ["anti-gaspi", "rapide", "asiatique"],
-        instructions: [
-            "Faites chauffer l'huile dans une poêle.",
-            "Ajoutez le riz cuit et faites-le sauter 5 minutes.",
-            "Poussez le riz sur le côté et versez les oeufs battus.",
-            "Mélangez le tout et ajoutez la sauce soja."
-        ],
-        emoji: "🍚"
-    },
-    {
-        id: 7,
-        titre: "Gratin de pâtes express",
-        description: "Transformez vos restes de pâtes en un plat gourmand.",
-        temps: 20,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "pâtes", obligatoire: true },
-            { nom: "fromage râpé", obligatoire: true },
-            { nom: "crème fraîche", obligatoire: true },
-            { nom: "jambon", obligatoire: false },
-            { nom: "kub'or", obligatoire: false }
-        ],
-        ustensiles: ["plat à four", "four"],
-        tags: ["gourmand", "enfantin"],
-        instructions: [
-            "Préchauffez votre four à 200°C.",
-            "Mélangez les pâtes avec la crème et le jambon coupé.",
-            "Saupoudrez généreusement de fromage râpé.",
-            "Faites gratiner pendant 15 minutes."
-        ],
-        emoji: "🥘"
-    },
-    {
-        id: 8,
-        titre: "Tartine chèvre miel",
-        description: "Simple, raffiné et délicieux.",
-        temps: 10,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "pain", obligatoire: true },
-            { nom: "fromage de chèvre", obligatoire: true },
-            { nom: "miel", obligatoire: true },
-            { nom: "noix", obligatoire: false },
-            { nom: "salade", obligatoire: false }
-        ],
-        ustensiles: ["four"],
-        tags: ["végétarien", "rapide"],
-        instructions: [
-            "Posez des rondelles de chèvre sur le pain.",
-            "Versez un filet de miel par-dessus.",
-            "Passez sous le gril du four pendant 5 minutes.",
-            "Ajoutez quelques noix si vous en avez."
-        ],
-        emoji: "🥪"
-    },
-    {
-        id: 9,
-        titre: "Croque-monsieur classique",
-        description: "Le sandwich chaud préféré des Français.",
-        temps: 15,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "pain de mie", obligatoire: true },
-            { nom: "jambon", obligatoire: true },
-            { nom: "fromage", obligatoire: true },
-            { nom: "beurre", obligatoire: true }
-        ],
-        ustensiles: ["poêle", "appareil à croque"],
-        tags: ["classique", "enfantin"],
-        instructions: [
-            "Beurrez les faces extérieures du pain.",
-            "Garnissez avec du jambon et du fromage.",
-            "Faites dorer à la poêle 3 minutes par face.",
-            "Servez bien chaud et fondant."
-        ],
-        emoji: "🥪"
-    },
-    {
-        id: 10,
-        titre: "Mousse au chocolat express",
-        description: "Juste deux ingrédients pour un dessert divin.",
-        temps: 15,
-        difficulte: "Moyen",
-        ingredients: [
-            { nom: "chocolat", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "sucre", obligatoire: false }
-        ],
-        ustensiles: ["bol", "fouet électrique", "casserole"],
-        tags: ["sucré", "gourmand"],
-        instructions: [
-            "Faites fondre le chocolat au bain-marie.",
-            "Séparez les blancs des jaunes d'oeufs.",
-            "Ajoutez les jaunes au chocolat fondu.",
-            "Montez les blancs en neige et incorporez-les délicatement."
-        ],
-        emoji: "🍫"
-    },
-    {
-        id: 11,
-        titre: "Pommes de terre sautées",
-        description: "Le plat d'accompagnement par excellence.",
-        temps: 25,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "pommes de terre", obligatoire: true },
-            { nom: "huile", obligatoire: true },
-            { nom: "ail", obligatoire: false },
-            { nom: "persil", obligatoire: false }
-        ],
-        ustensiles: ["poêle", "couteau"],
-        tags: ["végétarien", "budget"],
-        instructions: [
-            "Coupez les pommes de terre en dés.",
-            "Faites-les dorer dans l'huile chaude.",
-            "Laissez cuire à feu moyen pendant 20 minutes.",
-            "Ajoutez l'ail et le persil en fin de cuisson."
-        ],
-        emoji: "🥔"
-    },
-    {
-        id: 12,
-        titre: "Quiche sans pâte",
-        description: "Plus légère et très rapide à faire.",
-        temps: 40,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "oeufs", obligatoire: true },
-            { nom: "lait", obligatoire: true },
-            { nom: "farine", obligatoire: true },
-            { nom: "fromage râpé", obligatoire: true },
-            { nom: "jambon", obligatoire: false },
-            { nom: "kub'or", obligatoire: false }
-        ],
-        ustensiles: ["moule à tarte", "bol", "four"],
-        tags: ["familial", "pratique"],
-        instructions: [
-            "Préchauffez le four à 180°C.",
-            "Mélangez les oeufs, le lait et la farine.",
-            "Ajoutez le fromage et la garniture choisie.",
-            "Versez dans le moule et cuisez 35 minutes."
-        ],
-        emoji: "🥧"
-    },
-    {
-        id: 13,
-        titre: "Croûtons maison au Kub'Or",
-        description: "Pour pimper vos soupes et salades.",
-        temps: 10,
-        difficulte: "Très facile",
-        ingredients: [
-            { nom: "pain dur", obligatoire: true },
-            { nom: "kub'or", obligatoire: true },
-            { nom: "huile", obligatoire: true }
-        ],
-        ustensiles: ["poêle"],
-        tags: ["anti-gaspi", "rapide"],
-        instructions: [
-            "Coupez le pain dur en petits dés.",
-            "Faites chauffer l'huile dans une poêle.",
-            "Émiettez le Kub'Or dans l'huile.",
-            "Faites dorer les dés de pain jusqu'à ce qu'ils soient croustillants."
-        ],
-        emoji: "🥖"
-    },
-    {
-        id: 14,
-        titre: "Crêpes classiques",
-        description: "Le goûter qui met tout le monde d'accord.",
-        temps: 30,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "farine", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "lait", obligatoire: true },
-            { nom: "sucre", obligatoire: false },
-            { nom: "beurre", obligatoire: false }
-        ],
-        ustensiles: ["saladier", "poêle"],
-        tags: ["sucré", "enfantin", "familial"],
-        instructions: [
-            "Mélangez la farine, les oeufs et le sucre.",
-            "Versez le lait progressivement pour éviter les grumeaux.",
-            "Laissez reposer si possible, sinon cuisez directement.",
-            "Faites sauter les crêpes dans une poêle beurrée."
-        ],
-        emoji: "🥞"
-    },
-    {
-        id: 15,
-        titre: "Tian de légumes d'été",
-        description: "Un plat provençal coloré et sain.",
+        titre: "Ratatouille Provençale fondante",
+        description: "Un mélange de légumes d'été confits à l'huile d'olive.",
         temps: 60,
         difficulte: "Facile",
-        ingredients: [
-            { nom: "courgettes", obligatoire: true },
-            { nom: "tomates", obligatoire: true },
-            { nom: "aubergines", obligatoire: true },
-            { nom: "huile d'olive", obligatoire: true },
-            { nom: "herbes de provence", obligatoire: false }
-        ],
-        ustensiles: ["plat à four", "couteau", "four"],
-        tags: ["végétarien", "santé"],
-        instructions: [
-            "Coupez tous les légumes en rondelles fines.",
-            "Rangez-les verticalement dans le plat en alternant.",
-            "Arrosez d'huile d'olive et parsemez d'herbes.",
-            "Enfournez pour 45 minutes à 180°C."
-        ],
-        emoji: "🥗"
-    },
-    {
-        id: 16,
-        titre: "Gâteau au yaourt",
-        description: "Le premier gâteau que l'on apprend aux enfants.",
-        temps: 50,
-        difficulte: "Très facile",
-        ingredients: [
-            { nom: "yaourt", obligatoire: true },
-            { nom: "farine", obligatoire: true },
-            { nom: "sucre", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "huile", obligatoire: true },
-            { nom: "levure", obligatoire: true }
-        ],
-        ustensiles: ["saladier", "moule à gâteau", "four"],
-        tags: ["sucré", "enfantin", "familial"],
-        instructions: [
-            "Videz le yaourt dans un saladier (le pot servira de mesure).",
-            "Ajoutez le sucre, les oeufs et mélangez.",
-            "Ajoutez la farine, la levure et l'huile.",
-            "Faites cuire 35 minutes à 180°C."
-        ],
-        emoji: "🍰"
-    },
-    {
-        id: 17,
-        titre: "Ratatouille fondante",
-        description: "Prend du temps mais qu'est-ce que c'est bon !",
-        temps: 90,
-        difficulte: "Moyen",
+        emoji: "🥘",
         ingredients: [
             { nom: "aubergines", obligatoire: true },
             { nom: "courgettes", obligatoire: true },
             { nom: "poivrons", obligatoire: true },
             { nom: "tomates", obligatoire: true },
             { nom: "oignons", obligatoire: true },
-            { nom: "ail", obligatoire: true }
+            { nom: "huile d'olive", obligatoire: true }
         ],
-        ustensiles: ["cocotte", "couteau"],
-        tags: ["végétarien", "classique"],
+        ustensiles: ["sauteuse", "couteau"],
+        tags: ["végétarien", "estival", "santé"],
         instructions: [
             "Coupez tous les légumes en dés.",
             "Faites-les revenir séparément dans l'huile d'olive.",
             "Réunissez tout dans la cocotte.",
             "Laissez mijoter à feu doux pendant au moins 1 heure."
+        ]
+    },
+    {
+        id: 5,
+        titre: "Gratin Dauphinois Fondant",
+        description: "Des pommes de terre fondantes dans de la crème, sans fromage (la vraie recette !).",
+        temps: 80,
+        difficulte: "Facile",
+        emoji: "🥘",
+        ingredients: [
+            { nom: "pommes de terre", obligatoire: true },
+            { nom: "crème fraîche", obligatoire: true },
+            { nom: "lait", obligatoire: true },
+            { nom: "ail", obligatoire: true },
+            { nom: "noix de muscade", obligatoire: false }
         ],
-        emoji: "🥘"
+        ustensiles: ["plat à gratin", "four", "couteau"],
+        tags: ["classique", "réconfort", "végétarien"],
+        instructions: [
+            "Frottez le plat à gratin avec une gousse d'ail.",
+            "Épluchez et coupez les pommes de terre en fines rondelles.",
+            "Mélangez le lait et la crème, salez, poivrez et ajoutez la muscade.",
+            "Disposez les pommes de terre dans le plat et versez le mélange.",
+            "Enfournez à 150°C pendant au moins 1h15 pour que ce soit bien fondant."
+        ]
+    },
+    {
+        id: 6,
+        titre: "Soupe à l'Oignon Gratinée",
+        description: "Le réconfort ultime des nuits d'hiver.",
+        temps: 45,
+        difficulte: "Facile",
+        emoji: "🥣",
+        ingredients: [
+            { nom: "oignons jaunes", obligatoire: true },
+            { nom: "bouillon de bœuf", obligatoire: true },
+            { nom: "pain baguette", obligatoire: true },
+            { nom: "fromage râpé (gruyère)", obligatoire: true },
+            { nom: "beurre", obligatoire: true }
+        ],
+        ustensiles: ["marmite", "four"],
+        tags: ["hiver", "fête", "classique"],
+        instructions: [
+            "Faites caraméliser les oignons émincés dans le beurre jusqu'à ce qu'ils soient bruns.",
+            "Versez le bouillon de bœuf et laissez mijoter 20 minutes.",
+            "Disposez la soupe dans des bols allant au four.",
+            "Ajoutez une tranche de pain grillé et recouvrez généreusement de fromage.",
+            "Passez sous le grill du four jusqu'à ce que ce soit bien doré."
+        ]
+    },
+    {
+        id: 7,
+        titre: "Salade Niçoise authentique",
+        description: "Fraîche, colorée et pleine des saveurs du sud.",
+        temps: 25,
+        difficulte: "Très facile",
+        emoji: "🥗",
+        ingredients: [
+            { nom: "thon en boîte", obligatoire: true },
+            { nom: "oeufs", obligatoire: true },
+            { nom: "tomates", obligatoire: true },
+            { nom: "haricots verts (cuits)", obligatoire: true },
+            { nom: "olives noires", obligatoire: false },
+            { nom: "anchois", obligatoire: false }
+        ],
+        ustensiles: ["saladier", "couteau"],
+        tags: ["frais", "santé", "été"],
+        instructions: [
+            "Faites cuire les haricots verts à la vapeur et les oeufs (9 min).",
+            "Mélangez la salade avec les tomates, le thon et les haricots.",
+            "Ajoutez les quartiers d'oeufs durs, les olives et les anchois.",
+            "Assaisonnez d'une vinaigrette simple à l'huile d'olive."
+        ]
+    },
+    {
+        id: 8,
+        titre: "Tartare de Boeuf au couteau",
+        description: "La viande préparée avec amour, relevée de condiments.",
+        temps: 20,
+        difficulte: "Moyen",
+        emoji: "🥩",
+        ingredients: [
+            { nom: "viande hachée de qualité", obligatoire: true },
+            { nom: "jaune d'œuf", obligatoire: true },
+            { nom: "câpres", obligatoire: true },
+            { nom: "oignon rouge", obligatoire: true },
+            { nom: "moutarde", obligatoire: true },
+            { nom: "sauce worcestershire", obligatoire: false }
+        ],
+        ustensiles: ["couteau bien aiguisé", "bol"],
+        tags: ["bistrot", "viande"],
+        instructions: [
+            "Taillez la viande en tout petits dés au couteau.",
+            "Mélangez le jaune d'oeuf, la moutarde, les câpres et l'oignon haché.",
+            "Incorporez la viande à la préparation.",
+            "Salez, poivrez et servez immédiatement avec des frites."
+        ]
+    },
+    {
+        id: 9,
+        titre: "Magret de Canard au Miel",
+        description: "Une cuisson rosée et un glaçage sucré-salé irrésistible.",
+        temps: 25,
+        difficulte: "Moyen",
+        emoji: "🦆",
+        ingredients: [
+            { nom: "magret de canard", obligatoire: true },
+            { nom: "miel", obligatoire: true },
+            { nom: "vinaigre balsamique", obligatoire: true },
+            { nom: "sel", obligatoire: true },
+            { nom: "poivre", obligatoire: true }
+        ],
+        ustensiles: ["poêle", "couteau"],
+        tags: ["fête", "gastronomique"],
+        instructions: [
+            "Quadrillez la peau du magret avec un couteau sans toucher la chair.",
+            "Démarrez la cuisson côté peau à feu moyen pendant 8 minutes.",
+            "Retirez l'excédent de gras et faites cuire 3 minutes côté chair.",
+            "Réservez la viande dans du papier alu.",
+            "Déglacez la poêle avec le miel et le vinaigre pour créer la sauce.",
+            "Tranchez le magret et nappez de sauce avant de servir."
+        ]
+    },
+    {
+        id: 10,
+        titre: "Salade César Royale",
+        description: "La légende des salades : poulet croustillant, sauce onctueuse et parmesan.",
+        temps: 30,
+        difficulte: "Facile",
+        emoji: "🥗",
+        ingredients: [
+            { nom: "salade romaine", obligatoire: true },
+            { nom: "filet de poulet", obligatoire: true },
+            { nom: "parmesan", obligatoire: true },
+            { nom: "pain", obligatoire: true },
+            { nom: "sauce césar (en pot ou maison)", obligatoire: true }
+        ],
+        ustensiles: ["poêle", "saladier"],
+        tags: ["salade", "frais", "complet"],
+        instructions: [
+            "Faites dorer le poulet coupé en lanières à la poêle.",
+            "Coupez le pain en dés et faites-en des croûtons à la poêle avec un peu d'huile.",
+            "Mélangez la salade, le poulet et les croûtons dans un saladier.",
+            "Ajoutez des copeaux de parmesan.",
+            "Arrosez généreusement de sauce et mélangez le tout."
+        ]
+    },
+    {
+        id: 11,
+        titre: "Lasagnes à la Bolognaise",
+        description: "Le plat italien gourmand par excellence.",
+        temps: 60,
+        difficulte: "Moyen",
+        emoji: "🍝",
+        ingredients: [
+            { nom: "pâtes (lasagnes)", obligatoire: true },
+            { nom: "viande hachée", obligatoire: true },
+            { nom: "tomates", obligatoire: true },
+            { nom: "fromage râpé", obligatoire: true },
+            { nom: "beurre", obligatoire: true },
+            { nom: "farine", obligatoire: true },
+            { nom: "lait", obligatoire: true }
+        ],
+        ustensiles: ["plat à gratin", "four"],
+        tags: ["italien", "familial"],
+        instructions: [
+            "Préparez une sauce bolognaise avec la viande et la tomate.",
+            "Préparez une béchamel avec le beurre, la farine et le lait.",
+            "Alternez couches de pâtes, bolognaise et béchamel.",
+            "Finissez par une couche de fromage.",
+            "Faites cuire 35 minutes à 180°C."
+        ]
+    },
+    {
+        id: 12,
+        titre: "Risotto aux Champignons",
+        description: "Crémeux, fondant et délicieusement boisé.",
+        temps: 35,
+        difficulte: "Difficile",
+        emoji: "🍚",
+        ingredients: [
+            { nom: "riz", obligatoire: true },
+            { nom: "champignons", obligatoire: true },
+            { nom: "parmesan", obligatoire: true },
+            { nom: "oignons", obligatoire: true },
+            { nom: "bouillon", obligatoire: true }
+        ],
+        ustensiles: ["casserole"],
+        tags: ["végétarien", "gastronomique"],
+        instructions: [
+            "Faites revenir les oignons et les champignons.",
+            "Ajoutez le riz et faites-le nacrer.",
+            "Ajoutez le bouillon louche après louche en remuant sans cesse.",
+            "Ajoutez le parmesan à la fin pour la texture."
+        ]
+    },
+    {
+        id: 13,
+        titre: "Spaghetti Carbonara (Vraie)",
+        description: "Pas de crème ! Juste des œufs, du pecorino et du guanciale (ou pancetta).",
+        temps: 20,
+        difficulte: "Facile",
+        emoji: "🍝",
+        ingredients: [
+            { nom: "pâtes", obligatoire: true },
+            { nom: "pancetta ou lardons", obligatoire: true },
+            { nom: "oeufs", obligatoire: true },
+            { nom: "parmesan ou pecorino", obligatoire: true }
+        ],
+        ustensiles: ["casserole", "poêle"],
+        tags: ["italien", "rapide"],
+        instructions: [
+            "Cuisez les pâtes dans l'eau bouillante.",
+            "Faites dorer la pancetta à la poêle.",
+            "Battez les oeufs avec le fromage.",
+            "Mélangez les pâtes égouttées avec la pancetta.",
+            "Hors du feu, versez le mélange d'oeufs et remuez vite pour créer la sauce crémeuse."
+        ]
+    },
+    {
+        id: 14,
+        titre: "Tartiflette au Reblochon",
+        description: "La reine des pistes ! Pommes de terre, lardons, oignons et reblochon coulant.",
+        temps: 45,
+        difficulte: "Moyen",
+        emoji: "🥘",
+        ingredients: [
+            { nom: "pommes de terre", obligatoire: true },
+            { nom: "reblochon", obligatoire: true },
+            { nom: "lardons", obligatoire: true },
+            { nom: "oignons", obligatoire: true },
+            { nom: "vin blanc", obligatoire: false }
+        ],
+        ustensiles: ["plat à gratin", "four", "poêle"],
+        tags: ["hiver", "montagne", "familial"],
+        instructions: [
+            "Cuisez les pommes de terre à l'eau.",
+            "Faites revenir lardons et oignons à la poêle.",
+            "Coupez les pommes de terre en rondelles et disposez-les dans le plat.",
+            "Ajoutez lardons et oignons, puis un petit fond de vin blanc.",
+            "Coupez le reblochon en deux dans l'épaisseur et posez-le sur le dessus.",
+            "Faites gratiner au four 20 minutes à 200°C."
+        ]
+    },
+    {
+        id: 15,
+        titre: "Hachis Parmentier",
+        description: "Le confort d'une purée maison et d'une viande savoureuse.",
+        temps: 45,
+        difficulte: "Facile",
+        emoji: "🥘",
+        ingredients: [
+            { nom: "pommes de terre", obligatoire: true },
+            { nom: "viande hachée", obligatoire: true },
+            { nom: "beurre", obligatoire: true },
+            { nom: "lait", obligatoire: true },
+            { nom: "oignons", obligatoire: true },
+            { nom: "fromage râpé", obligatoire: false }
+        ],
+        ustensiles: ["plat à gratin", "four", "presse-purée"],
+        tags: ["familial", "budget"],
+        instructions: [
+            "Cuisez les pommes de terre à l'eau et écrasez-les en purée avec beurre et lait.",
+            "Faites revenir la viande avec les oignons émincés.",
+            "Disposez la viande au fond du plat à gratin.",
+            "Recouvrez avec la purée et striez avec une fourchette.",
+            "Ajoutez du fromage si désiré et gratinez 15 minutes au four."
+        ]
+    },
+    {
+        id: 16,
+        titre: "Pot-au-Feu",
+        description: "Le bouillon fumant et les viandes tendres du dimanche.",
+        temps: 180,
+        difficulte: "Moyen",
+        emoji: "🍲",
+        ingredients: [
+            { nom: "boeuf", obligatoire: true },
+            { nom: "plats-de-côtes", obligatoire: true },
+            { nom: "poireau", obligatoire: true },
+            { nom: "carottes", obligatoire: true },
+            { nom: "navets", obligatoire: true },
+            { nom: "os à moelle", obligatoire: false }
+        ],
+        ustensiles: ["marmite"],
+        tags: ["mijote", "hiver"],
+        instructions: [
+            "Mettez la viande dans une grande marmite d'eau froide et portez à ébullition.",
+            "Écumez soigneusement les impuretés en surface.",
+            "Ajoutez les légumes lavés et coupés en gros morceaux.",
+            "Laissez mijoter à petits bouillons pendant 3 heures.",
+            "Servez le bouillon en entrée et la viande/légumes avec du gros sel."
+        ]
+    },
+    {
+        id: 17,
+        titre: "Cassoulet de Castelnaudary",
+        description: "Le plat languedocien par excellence, riche et généreux.",
+        temps: 240,
+        difficulte: "Difficile",
+        emoji: "🍲",
+        ingredients: [
+            { nom: "haricots blancs", obligatoire: true },
+            { nom: "confit de canard", obligatoire: true },
+            { nom: "saucisse de toulouse", obligatoire: true },
+            { nom: "lardons", obligatoire: true },
+            { nom: "couenne de porc", obligatoire: false },
+            { nom: "ail", obligatoire: true }
+        ],
+        ustensiles: ["cassole", "cocotte"],
+        tags: ["traditionnel", "mijote", "fête"],
+        instructions: [
+            "Faites tremper les haricots la veille.",
+            "Cuisez les haricots à l'eau avec la couenne pendant 1h30.",
+            "Dans une cocotte, faites dorer les saucisses et le canard.",
+            "Disposez les haricots et les viandes dans une cassole en terre cuite.",
+            "Ajoutez du bouillon de cuisson des haricots.",
+            "Enfournez à 150°C pendant 2h en 'cassant la croûte' qui se forme 7 fois."
+        ]
     },
     {
         id: 18,
-        titre: "Salade César simplifiée",
-        description: "Fraîche, croquante et rassasiante.",
-        temps: 15,
-        difficulte: "Facile",
+        titre: "Crème Brûlée à la Vanille",
+        description: "L'onctuosité protégée par une fine couche de caramel craquant.",
+        temps: 60,
+        difficulte: "Moyen",
+        emoji: "🍮",
         ingredients: [
-            { nom: "salade", obligatoire: true },
-            { nom: "poulet", obligatoire: true },
-            { nom: "pain dur", obligatoire: true },
-            { nom: "parmesan", obligatoire: true },
-            { nom: "mayonnaise", obligatoire: false }
+            { nom: "jaune d'œuf", obligatoire: true },
+            { nom: "crème fraîche liquide", obligatoire: true },
+            { nom: "sucre", obligatoire: true },
+            { nom: "vanille en poudre", obligatoire: true }
         ],
-        ustensiles: ["saladier", "poêle"],
-        tags: ["frais", "complet"],
+        ustensiles: ["ramequins", "four", "chalumeau"],
+        tags: ["dessert", "classique"],
         instructions: [
-            "Faites dorer le poulet et les croûtons de pain.",
-            "Déchirez la salade dans un grand bol.",
-            "Ajoutez le poulet, les croûtons et le parmesan.",
-            "Assaisonnez avec une sauce à base de mayo et d'un peu d'eau."
-        ],
-        emoji: "🥗"
+            "Préchauffez le four à 100°C.",
+            "Fouettez les jaunes d'oeufs avec le sucre jusqu'à ce que le mélange blanchisse.",
+            "Ajoutez la crème et la vanille, mélangez doucement sans faire mousser.",
+            "Répartissez dans les ramequins et cuisez au bain-marie pendant 50 minutes.",
+            "Laissez refroidir et placez au réfrigérateur au moins 4 heures.",
+            "Saupoudrez de sucre et caramélisez au chalumeau juste avant de servir."
+        ]
     },
     {
         id: 19,
-        titre: "Pâtes au thon express",
-        description: "Le placard sauveur de soirée.",
-        temps: 15,
-        difficulte: "Facile",
+        titre: "Profiteroles au Chocolat",
+        description: "Le dessert gourmand : choux, glace vanille et chocolat chaud.",
+        temps: 45,
+        difficulte: "Difficile",
+        emoji: "🍦",
         ingredients: [
-            { nom: "pâtes", obligatoire: true },
-            { nom: "thon en conserve", obligatoire: true },
-            { nom: "tomates concassées", obligatoire: true },
-            { nom: "oignons", obligatoire: false }
+            { nom: "pâte à choux", obligatoire: true },
+            { nom: "glace vanille", obligatoire: true },
+            { nom: "chocolat noir", obligatoire: true },
+            { nom: "beurre", obligatoire: true }
         ],
-        ustensiles: ["casserole", "poêle"],
-        tags: ["budget", "rapide"],
+        ustensiles: ["casserole", "four", "poche à douille"],
+        tags: ["dessert", "gourmand"],
         instructions: [
-            "Lancez la cuisson des pâtes.",
-            "Faites revenir l'oignon, ajoutez la tomate et le thon.",
-            "Laissez mijoter le temps que les pâtes cuisent.",
-            "Mélangez le tout et servez."
-        ],
-        emoji: "🍝"
+            "Préparez les choux (ou utilisez des prêts à l'emploi).",
+            "Coupez les choux en deux et garnissez-les d'une boule de glace vanille.",
+            "Faites fondre le chocolat avec un peu de beurre et d'eau pour obtenir une sauce lisse.",
+            "Disposez les choux dans une assiette et nappez-les généreusement de sauce chocolat chaude.",
+            "Servez immédiatement pour le contraste chaud-froid."
+        ]
     },
     {
         id: 20,
-        titre: "Bananes flambées",
-        description: "Un dessert spectaculaire en 5 minutes.",
-        temps: 5,
-        difficulte: "Moyen",
-        ingredients: [
-            { nom: "bananes", obligatoire: true },
-            { nom: "beurre", obligatoire: true },
-            { nom: "sucre", obligatoire: true },
-            { nom: "rhum", obligatoire: true }
-        ],
-        ustensiles: ["poêle"],
-        tags: ["sucré", "spectacle"],
-        instructions: [
-            "Coupez les bananes en deux dans le sens de la longueur.",
-            "Faites-les dorer dans la poêle avec beurre et sucre.",
-            "Versez le rhum et faites flamber avec précaution.",
-            "Dégustez immédiatement."
-        ],
-        emoji: "🍌"
-    },
-    {
-        id: 21,
-        titre: "Soupe à l'oignon",
-        description: "Un grand classique rustique et réconfortant.",
-        temps: 45,
-        difficulte: "Moyen",
-        ingredients: [
-            { nom: "oignons", obligatoire: true },
-            { nom: "beurre", obligatoire: true },
-            { nom: "farine", obligatoire: true },
-            { nom: "kub'or", obligatoire: true },
-            { nom: "pain dur", obligatoire: true },
-            { nom: "fromage râpé", obligatoire: true }
-        ],
-        ustensiles: ["marmite", "four"],
-        tags: ["classique", "budget"],
-        instructions: [
-            "Émincez les oignons et faites-les caraméliser dans le beurre.",
-            "Ajoutez la farine, mélangez, puis versez l'eau avec le Kub'Or.",
-            "Laissez mijoter 30 minutes.",
-            "Versez dans des bols, ajoutez le pain et le fromage, puis faites gratiner au four."
-        ],
-        emoji: "🍲"
-    },
-    {
-        id: 22,
-        titre: "Lentilles saucisses",
-        description: "Le plat familial par excellence, complet et équilibré.",
-        temps: 40,
+        titre: "Steak Frites de Bistrot",
+        description: "Le plaisir simple d'une viande de qualité et de frites maison.",
+        temps: 30,
         difficulte: "Facile",
+        emoji: "🥩",
         ingredients: [
-            { nom: "lentilles", obligatoire: true },
-            { nom: "saucisses", obligatoire: true },
-            { nom: "carottes", obligatoire: true },
-            { nom: "oignons", obligatoire: false },
-            { nom: "lardons", obligatoire: false }
-        ],
-        ustensiles: ["cocotte"],
-        tags: ["familial", "complet"],
-        instructions: [
-            "Faites revenir l'oignon et les lardons.",
-            "Ajoutez les carottes en rondelles et les lentilles.",
-            "Couvrez d'eau froide (3 fois le volume des lentilles).",
-            "Ajoutez les saucisses et laissez cuire 30-35 minutes."
-        ],
-        emoji: "🥘"
-    },
-    {
-        id: 23,
-        titre: "Gratin dauphinois",
-        description: "Des pommes de terre, de la crème... la perfection.",
-        temps: 75,
-        difficulte: "Moyen",
-        ingredients: [
+            { nom: "boeuf (steak)", obligatoire: true },
             { nom: "pommes de terre", obligatoire: true },
-            { nom: "crème fraîche", obligatoire: true },
-            { nom: "ail", obligatoire: true },
-            { nom: "beurre", obligatoire: true },
-            { nom: "noix de muscade", obligatoire: false }
+            { nom: "huile", obligatoire: true },
+            { nom: "sel", obligatoire: true }
         ],
-        ustensiles: ["plat à four", "four"],
-        tags: ["classique", "végétarien"],
+        ustensiles: ["friteuse", "poêle", "air fryer"],
+        tags: ["rapide", "bistrot"],
         instructions: [
-            "Épluchez et coupez les pommes de terre en rondelles fines.",
-            "Frottez le plat avec de l'ail et beurrez-le.",
-            "Disposez les pommes de terre, salez, poivrez et versez la crème.",
-            "Faites cuire 1h15 à 150°C."
-        ],
-        emoji: "🥔"
-    },
-    {
-        id: 24,
-        titre: "Salade de tomates mozza",
-        description: "L'été dans votre assiette.",
-        temps: 10,
-        difficulte: "Très facile",
-        ingredients: [
-            { nom: "tomates", obligatoire: true },
-            { nom: "mozzarella", obligatoire: true },
-            { nom: "basilic", obligatoire: false },
-            { nom: "huile d'olive", obligatoire: true }
-        ],
-        ustensiles: ["assiette"],
-        tags: ["frais", "végétarien", "rapide"],
-        instructions: [
-            "Coupez les tomates et la mozza en rondelles.",
-            "Alternez-les dans l'assiette.",
-            "Arrosez d'huile d'olive et ajoutez le basilic."
-        ],
-        emoji: "🥗"
-    },
-    {
-        id: 25,
-        titre: "Hachis parmentier",
-        description: "Le meilleur moyen de recycler un reste de viande.",
-        temps: 45,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "pommes de terre", obligatoire: true },
-            { nom: "viande hachée", obligatoire: true },
-            { nom: "lait", obligatoire: true },
-            { nom: "beurre", obligatoire: true },
-            { nom: "fromage râpé", obligatoire: false }
-        ],
-        ustensiles: ["plat à four", "presse-purée", "four"],
-        tags: ["familial", "anti-gaspi"],
-        instructions: [
-            "Faites une purée avec les pommes de terre, le lait et le beurre.",
-            "Faites revenir la viande hachée.",
-            "Dans un plat, mettez la viande puis la purée par-dessus.",
-            "Saupoudrez de fromage et faites gratiner 15 minutes."
-        ],
-        emoji: "🥧"
-    },
-    {
-        id: 26,
-        titre: "Oeufs à la coque",
-        description: "Simple, efficace et ludique pour les enfants.",
-        temps: 5,
-        difficulte: "Très facile",
-        ingredients: [
-            { nom: "oeufs", obligatoire: true },
-            { nom: "pain", obligatoire: true },
-            { nom: "beurre", obligatoire: true }
-        ],
-        ustensiles: ["casserole"],
-        tags: ["rapide", "enfantin"],
-        instructions: [
-            "Faites bouillir de l'eau.",
-            "Plongez les oeufs délicatement et comptez exactement 3 minutes.",
-            "Pendant ce temps, préparez des 'mouillettes' de pain beurré.",
-            "Servez immédiatement."
-        ],
-        emoji: "🥚"
-    },
-    {
-        id: 27,
-        titre: "Risotto aux champignons",
-        description: "Un plat crémeux et élégant.",
-        temps: 35,
-        difficulte: "Moyen",
-        ingredients: [
-            { nom: "riz", obligatoire: true },
-            { nom: "champignons", obligatoire: true },
-            { nom: "oignons", obligatoire: true },
-            { nom: "kub'or", obligatoire: true },
-            { nom: "parmesan", obligatoire: true }
-        ],
-        ustensiles: ["sautoir"],
-        tags: ["végétarien", "gourmand"],
-        instructions: [
-            "Faites revenir l'oignon et les champignons.",
-            "Ajoutez le riz et faites-le nacrer.",
-            "Ajoutez le bouillon louche après louche en remuant souvent.",
-            "À la fin, ajoutez le parmesan pour la crémosité."
-        ],
-        emoji: "🍄"
-    },
-    {
-        id: 28,
-        titre: "Pommes au four",
-        description: "Le dessert de grand-mère tout simple.",
-        temps: 35,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "pommes", obligatoire: true },
-            { nom: "sucre", obligatoire: true },
-            { nom: "beurre", obligatoire: true },
-            { nom: "cannelle", obligatoire: false }
-        ],
-        ustensiles: ["plat à four", "four"],
-        tags: ["sucré", "santé"],
-        instructions: [
-            "Évidez le centre des pommes sans les percer.",
-            "Mettez une noisette de beurre et un peu de sucre au centre.",
-            "Placez dans un plat avec un fond d'eau.",
-            "Faites cuire 30 minutes à 180°C."
-        ],
-        emoji: "🍎"
-    },
-    {
-        id: 29,
-        titre: "Cordon bleu maison",
-        description: "Bien meilleur que ceux du commerce !",
-        temps: 20,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "poulet", obligatoire: true },
-            { nom: "jambon", obligatoire: true },
-            { nom: "fromage", obligatoire: true },
-            { nom: "farine", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "chapelure", obligatoire: true }
-        ],
-        ustensiles: ["poêle", "assiettes"],
-        tags: ["enfantin", "gourmand"],
-        instructions: [
-            "Aplatissez les filets de poulet.",
-            "Posez une tranche de jambon et de fromage, puis pliez en deux.",
-            "Passez successivement dans la farine, l'oeuf battu puis la chapelure.",
-            "Faites dorer à la poêle 5-6 minutes par face."
-        ],
-        emoji: "🍗"
-    },
-    {
-        id: 30,
-        titre: "Gnocchis à la poêle",
-        description: "Croustillants à l'extérieur, fondants à l'intérieur.",
-        temps: 10,
-        difficulte: "Très facile",
-        ingredients: [
-            { nom: "gnocchis", obligatoire: true },
-            { nom: "beurre", obligatoire: true },
-            { nom: "sauge", obligatoire: false },
-            { nom: "parmesan", obligatoire: false }
-        ],
-        ustensiles: ["poêle"],
-        tags: ["rapide", "végétarien"],
-        instructions: [
-            "Faites chauffer le beurre dans une poêle.",
-            "Ajoutez les gnocchis sans les faire bouillir avant.",
-            "Faites dorer 5-8 minutes en remuant.",
-            "Ajoutez le parmesan au moment de servir."
-        ],
-        emoji: "🥟"
-    },
-    {
-        id: 31,
-        titre: "Velouté de courgettes au Kiri",
-        description: "La soupe que tous les enfants adorent.",
-        temps: 25,
-        difficulte: "Très facile",
-        ingredients: [
-            { nom: "courgettes", obligatoire: true },
-            { nom: "kub'or", obligatoire: true },
-            { nom: "fromage en portions", obligatoire: true }
-        ],
-        ustensiles: ["casserole", "mixeur plongeant"],
-        tags: ["enfantin", "végétarien"],
-        instructions: [
-            "Coupez les courgettes en gros dés.",
-            "Faites-les bouillir dans l'eau avec le Kub'Or pendant 20 minutes.",
-            "Ajoutez les portions de fromage.",
-            "Mixez longuement jusqu'à obtenir un velouté parfait."
-        ],
-        emoji: "🥣"
-    },
-    {
-        id: 32,
-        titre: "Tarte aux pommes",
-        description: "Le classique indémodable du dimanche.",
-        temps: 45,
-        difficulte: "Moyen",
-        ingredients: [
-            { nom: "pâte feuilletée", obligatoire: true },
-            { nom: "pommes", obligatoire: true },
-            { nom: "sucre", obligatoire: true },
-            { nom: "beurre", obligatoire: false }
-        ],
-        ustensiles: ["moule à tarte", "four"],
-        tags: ["sucré", "familial"],
-        instructions: [
-            "Étalez la pâte dans le moule.",
-            "Coupez les pommes en fines lamelles.",
-            "Disposez-les en rosace sur la pâte.",
-            "Saupoudrez de sucre et cuisez 30 minutes à 200°C."
-        ],
-        emoji: "🥧"
-    },
-    {
-        id: 33,
-        titre: "Taboulé express",
-        description: "Frais et sans cuisson !",
-        temps: 15,
-        difficulte: "Très facile",
-        ingredients: [
-            { nom: "semoule", obligatoire: true },
-            { nom: "tomates", obligatoire: true },
-            { nom: "concombre", obligatoire: true },
-            { nom: "citron", obligatoire: true },
-            { nom: "huile d'olive", obligatoire: true },
-            { nom: "menthe", obligatoire: false }
-        ],
-        ustensiles: ["saladier"],
-        tags: ["frais", "végétarien"],
-        instructions: [
-            "Mettez la semoule sèche dans un saladier.",
-            "Ajoutez les légumes coupés en tout petits dés.",
-            "Versez le jus de citron, l'huile et mélangez.",
-            "Laissez reposer au frais le temps que la semoule absorbe le jus."
-        ],
-        emoji: "🥗"
-    },
-    {
-        id: 34,
-        titre: "Boulettes de viande",
-        description: "Gourmandes et faciles à préparer.",
-        temps: 25,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "viande hachée", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "pain hard", obligatoire: false },
-            { nom: "ail", obligatoire: false },
-            { nom: "persil", obligatoire: false }
-        ],
-        ustensiles: ["poêle", "saladier"],
-        tags: ["familial", "gourmand"],
-        instructions: [
-            "Mélangez la viande, l'oeuf et le pain trempé dans du lait.",
-            "Formez des petites boules entre vos mains.",
-            "Faites-les dorer à la poêle pendant 10-12 minutes.",
-            "Servez avec une sauce tomate ou des pâtes."
-        ],
-        emoji: "🧆"
-    },
-    {
-        id: 35,
-        titre: "Frittata aux légumes",
-        description: "L'omelette épaisse à l'italienne.",
-        temps: 20,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "oeufs", obligatoire: true },
-            { nom: "pommes de terre", obligatoire: false },
-            { nom: "courgettes", obligatoire: false },
-            { nom: "oignons", obligatoire: true },
-            { nom: "parmesan", obligatoire: true }
-        ],
-        ustensiles: ["poêle"],
-        tags: ["végétarien", "économique"],
-        instructions: [
-            "Faites revenir les oignons et les légumes coupés fins.",
-            "Battez les oeufs avec le parmesan.",
-            "Versez sur les légumes et laissez cuire à feu doux.",
-            "Retournez la frittata à mi-cuisson si possible."
-        ],
-        emoji: "🍳"
-    },
-    {
-        id: 36,
-        titre: "Gaspacho maison",
-        description: "La soupe froide espagnole pour les chaudes journées.",
-        temps: 15,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "tomates", obligatoire: true },
-            { nom: "poivrons", obligatoire: true },
-            { nom: "concombre", obligatoire: true },
-            { nom: "ail", obligatoire: true },
-            { nom: "huile d'olive", obligatoire: true },
-            { nom: "pain dur", obligatoire: false }
-        ],
-        ustensiles: ["mixeur"],
-        tags: ["frais", "végétarien"],
-        instructions: [
-            "Lavez et coupez grossièrement tous les légumes.",
-            "Mettez tout dans le mixeur avec le pain, l'huile et l'ail.",
-            "Mixez jusqu'à obtenir une texture lisse.",
-            "Servez très frais."
-        ],
-        emoji: "🍅"
-    },
-    {
-        id: 37,
-        titre: "Cake jambon olives",
-        description: "L'indispensable de l'apéro ou du pique-nique.",
-        temps: 60,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "farine", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "lait", obligatoire: true },
-            { nom: "jambon", obligatoire: true },
-            { nom: "olives", obligatoire: true },
-            { nom: "fromage râpé", obligatoire: true }
-        ],
-        ustensiles: ["moule à cake", "bol", "four"],
-        tags: ["pratique", "familial"],
-        instructions: [
-            "Mélangez farine, oeufs, huile et lait.",
-            "Ajoutez le jambon, les olives et le fromage.",
-            "Versez dans le moule.",
-            "Faites cuire 45 minutes à 180°C."
-        ],
-        emoji: "🍞"
-    },
-    {
-        id: 38,
-        titre: "Salade de riz complète",
-        description: "Parfaite pour utiliser un reste de riz.",
-        temps: 10,
-        difficulte: "Très facile",
-        ingredients: [
-            { nom: "riz", obligatoire: true },
-            { nom: "thon en conserve", obligatoire: true },
-            { nom: "tomates", obligatoire: true },
-            { nom: "oeufs", obligatoire: false },
-            { nom: "maïs", obligatoire: false }
-        ],
-        ustensiles: ["saladier"],
-        tags: ["anti-gaspi", "santé"],
-        instructions: [
-            "Mélangez le riz cuit froid avec le thon émietté.",
-            "Ajoutez les tomates en dés et les autres ingrédients dispo.",
-            "Préparez une petite vinaigrette au citron.",
-            "Mélangez tout et servez."
-        ],
-        emoji: "🍚"
-    },
-    {
-        id: 39,
-        titre: "Poêlée de légumes express",
-        description: "Le vide-frigo sain et rapide.",
-        temps: 20,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "carottes", obligatoire: false },
-            { nom: "courgettes", obligatoire: false },
-            { nom: "oignons", obligatoire: true },
-            { nom: "kub'or", obligatoire: true },
-            { nom: "huile", obligatoire: true }
-        ],
-        ustensiles: ["poêle"],
-        tags: ["végétarien", "budget"],
-        instructions: [
-            "Coupez tous les légumes en petits morceaux.",
-            "Faites-les revenir dans l'huile.",
-            "Ajoutez un Kub'Or émietté pour le goût.",
-            "Laissez cuire à feu moyen 15 minutes."
-        ],
-        emoji: "🥘"
-    },
-    {
-        id: 40,
-        titre: "Compote de pommes maison",
-        description: "Le dessert doux et naturel.",
-        temps: 25,
-        difficulte: "Très facile",
-        ingredients: [
-            { nom: "pommes", obligatoire: true },
-            { nom: "sucre", obligatoire: false },
-            { nom: "eau", obligatoire: true },
-            { nom: "cannelle", obligatoire: false }
-        ],
-        ustensiles: ["casserole"],
-        tags: ["sucré", "santé"],
-        instructions: [
-            "Épluchez et coupez les pommes en morceaux.",
-            "Mettez-les dans la casserole avec un fond d'eau.",
-            "Laissez mijoter 20 minutes à feu doux.",
-            "Écrasez à la fourchette ou mixez selon la préférence."
-        ],
-        emoji: "🍎"
-    },
-    {
-        id: 41,
-        titre: "Omelette norvégienne",
-        description: "Un dessert glacé et flambé pour les grandes occasions.",
-        temps: 40,
-        difficulte: "Difficile",
-        ingredients: [
-            { nom: "oeufs", obligatoire: true },
-            { nom: "glace vanille", obligatoire: true },
-            { nom: "génoise", obligatoire: true },
-            { nom: "sucre", obligatoire: true },
-            { nom: "rhum", obligatoire: false }
-        ],
-        ustensiles: ["batteur électrique", "four", "plat"],
-        tags: ["sucré", "fête"],
-        instructions: [
-            "Posez la glace sur la génoise.",
-            "Recouvrez entièrement de meringue (blancs d'oeufs battus avec sucre).",
-            "Passez au four très chaud 5 minutes pour dorer la meringue.",
-            "Flambez au rhum juste avant de servir."
-        ],
-        emoji: "🍦"
-    },
-    {
-        id: 42,
-        titre: "Salade de fruits frais",
-        description: "Le plein de vitamines et de fraîcheur.",
-        temps: 15,
-        difficulte: "Très facile",
-        ingredients: [
-            { nom: "pommes", obligatoire: false },
-            { nom: "bananes", obligatoire: false },
-            { nom: "oranges", obligatoire: false },
-            { nom: "citron", obligatoire: true },
-            { nom: "sucre", obligatoire: false }
-        ],
-        ustensiles: ["saladier", "couteau"],
-        tags: ["sucré", "santé", "frais"],
-        instructions: [
-            "Pelez et coupez tous les fruits en morceaux.",
-            "Mélangez dans un saladier.",
-            "Arrosez de jus de citron pour éviter que les fruits ne noircissent.",
-            "Laissez reposer au frais 1 heure."
-        ],
-        emoji: "🥣"
-    },
-    {
-        id: 43,
-        titre: "Pain de viande",
-        description: "Une recette économique et nourrissante.",
-        temps: 60,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "viande hachée", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "oignons", obligatoire: true },
-            { nom: "pain dur", obligatoire: true },
-            { nom: "lait", obligatoire: true }
-        ],
-        ustensiles: ["moule à cake", "four"],
-        tags: ["familial", "budget"],
-        instructions: [
-            "Faites tremper le pain dur dans le lait.",
-            "Mélangez avec la viande, l'oeuf et l'oignon haché.",
-            "Tassez dans un moule à cake.",
-            "Faites cuire 45 minutes à 180°C."
-        ],
-        emoji: "🍞"
-    },
-    {
-        id: 44,
-        titre: "Tarte à la tomate",
-        description: "Simple, colorée et délicieuse pour le dîner.",
-        temps: 35,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "pâte brisée", obligatoire: true },
-            { nom: "tomates", obligatoire: true },
-            { nom: "moutarde", obligatoire: true },
-            { nom: "fromage râpé", obligatoire: true },
-            { nom: "herbes de provence", obligatoire: false }
-        ],
-        ustensiles: ["moule à tarte", "four"],
-        tags: ["végétarien", "estival"],
-        instructions: [
-            "Étalez la pâte et piquez-la avec une fourchette.",
-            "Badigeonnez le fond de moutarde.",
-            "Disposez les rondelles de tomates.",
-            "Saupoudrez de fromage et d'herbes, puis cuisez 25 minutes à 200°C."
-        ],
-        emoji: "🥧"
-    },
-    {
-        id: 45,
-        titre: "Raviolis grillés",
-        description: "Donnez une seconde vie à vos raviolis en boîte ou frais.",
-        temps: 10,
-        difficulte: "Très facile",
-        ingredients: [
-            { nom: "raviolis", obligatoire: true },
-            { nom: "beurre", obligatoire: true },
-            { nom: "parmesan", obligatoire: false }
-        ],
-        ustensiles: ["poêle"],
-        tags: ["rapide", "anti-gaspi"],
-        instructions: [
-            "Faites chauffer le beurre dans une poêle.",
-            "Déposez les raviolis égouttés.",
-            "Faites griller à feu vif jusqu'à ce qu'ils soient bien dorés.",
-            "Servez avec un peu de parmesan."
-        ],
-        emoji: "🥟"
-    },
-    {
-        id: 46,
-        titre: "Smoothie banane chocolat",
-        description: "Le goûter énergétique parfait.",
-        temps: 5,
-        difficulte: "Très facile",
-        ingredients: [
-            { nom: "bananes", obligatoire: true },
-            { nom: "lait", obligatoire: true },
-            { nom: "chocolat", obligatoire: true },
-            { nom: "sucre", obligatoire: false }
-        ],
-        ustensiles: ["mixeur"],
-        tags: ["sucré", "rapide", "enfantin"],
-        instructions: [
-            "Mettez la banane coupée et le lait dans le mixeur.",
-            "Ajoutez du chocolat en poudre ou fondu.",
-            "Mixez 1 minute jusqu'à ce que ce soit bien mousseux.",
-            "Servez bien frais."
-        ],
-        emoji: "🥤"
-    },
-    {
-        id: 47,
-        titre: "Galettes de pommes de terre",
-        description: " Croustillantes et fondantes.",
-        temps: 25,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "pommes de terre", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "farine", obligatoire: true },
-            { nom: "oignons", obligatoire: true },
-            { nom: "huile", obligatoire: true }
-        ],
-        ustensiles: ["râpe", "poêle"],
-        tags: ["végétarien", "budget"],
-        instructions: [
-            "Râpez les pommes de terre et l'oignon.",
-            "Pressez pour enlever l'eau.",
-            "Mélangez avec l'oeuf et la farine.",
-            "Formez des galettes et faites-les dorer à la poêle."
-        ],
-        emoji: "🥔"
-    },
-    {
-        id: 48,
-        titre: "Champignons farcis",
-        description: "Une entrée savoureuse avec peu d'ingrédients.",
-        temps: 25,
-        difficulte: "Facile",
-        ingredients: [
-            { nom: "champignons", obligatoire: true },
-            { nom: "fromage frais", obligatoire: true },
-            { nom: "ail", obligatoire: false },
-            { nom: "persil", obligatoire: false }
-        ],
-        ustensiles: ["plat à four", "four"],
-        tags: ["végétarien", "entrée"],
-        instructions: [
-            "Enlevez les pieds des champignons.",
-            "Mélangez le fromage frais avec l'ail et le persil.",
-            "Remplissez les têtes de champignons avec ce mélange.",
-            "Faites cuire 15 minutes à 200°C."
-        ],
-        emoji: "🍄"
-    },
-    {
-        id: 49,
-        titre: "Riz au lait de grand-mère",
-        description: "Le dessert doudou par excellence.",
-        temps: 45,
-        difficulte: "Moyen",
-        ingredients: [
-            { nom: "riz", obligatoire: true },
-            { nom: "lait", obligatoire: true },
-            { nom: "sucre", obligatoire: true },
-            { nom: "vanille", obligatoire: false }
-        ],
-        ustensiles: ["casserole"],
-        tags: ["sucré", "classique", "enfantin"],
-        instructions: [
-            "Faites bouillir le lait avec le sucre et la vanille.",
-            "Versez le riz et baissez le feu au minimum.",
-            "Laissez cuire environ 35-40 minutes en remuant de temps en temps.",
-            "Servez tiède ou froid."
-        ],
-        emoji: "🥣"
-    },
-    {
-        id: 50,
-        titre: "Quiche lorraine traditionnelle",
-        description: "La vraie, l'unique.",
-        temps: 50,
-        difficulte: "Moyen",
-        ingredients: [
-            { nom: "pâte brisée", obligatoire: true },
-            { nom: "lardons", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "crème fraîche", obligatoire: true },
-            { nom: "noix de muscade", obligatoire: false }
-        ],
-        ustensiles: ["moule à tarte", "four", "bol"],
-        tags: ["classique", "familial"],
-        instructions: [
-            "Étalez la pâte et faites-la précuire 10 min.",
-            "Faites blanchir les lardons.",
-            "Mélangez oeufs, crème et muscade.",
-            "Versez sur la pâte avec les lardons et cuisez 30 min à 180°C."
-        ],
-        emoji: "🥧"
+            "Épluchez et coupez les pommes de terre en bâtonnets.",
+            "Faites cuire les frites à la friteuse (deux bains) ou à l'Air Fryer (25 min à 200°C).",
+            "Faites saisir le steak à la poêle à feu très vif selon votre goût (bleu, saignant, à point).",
+            "Salez et poivrez la viande après cuisson.",
+            "Servez bien chaud avec une pincée de sel sur les frites."
+        ]
     }
 ];
 
@@ -1421,7 +775,72 @@ var commonIngredients = [
     { nom: "pistache", emoji: "🌰" },
     { nom: "châtaigne", emoji: "🌰" },
 
-    // Ingrédients de base déjà présents
+    // Poissons & Fruits de mer
+    { nom: "saumon frais", emoji: "🐟" },
+    { nom: "saumon fumé", emoji: "🐟" },
+    { nom: "truite", emoji: "🐟" },
+    { nom: "truite fumée", emoji: "🐟" },
+    { nom: "cabillaud", emoji: "🐟" },
+    { nom: "lieu noir", emoji: "🐟" },
+    { nom: "lieu jaune", emoji: "🐟" },
+    { nom: "bar", emoji: "🐟" },
+    { nom: "daurade", emoji: "🐟" },
+    { nom: "sole", emoji: "🐟" },
+    { nom: "turbot", emoji: "🐟" },
+    { nom: "lotte", emoji: "🐟" },
+    { nom: "merlu", emoji: "🐟" },
+    { nom: "raie", emoji: "🐟" },
+    { nom: "rouget", emoji: "🐟" },
+    { nom: "sardine", emoji: "🐟" },
+    { nom: "sardine en boîte", emoji: "🥫" },
+    { nom: "maquereau", emoji: "🐟" },
+    { nom: "maquereau fumé", emoji: "🐟" },
+    { nom: "thon rouge", emoji: "🐟" },
+    { nom: "thon albacore", emoji: "🐟" },
+    { nom: "thon en boîte au naturel", emoji: "🥫" },
+    { nom: "thon à l'huile", emoji: "🥫" },
+    { nom: "anchois à l'huile", emoji: "🐟" },
+    { nom: "anchois au sel", emoji: "🐟" },
+    { nom: "hareng fumé", emoji: "🐟" },
+    { nom: "haddock", emoji: "🐟" },
+    { nom: "morue salée", emoji: "🐟" },
+    { nom: "espadon", emoji: "🐟" },
+    { nom: "flétan", emoji: "🐟" },
+    { nom: "saint-pierre", emoji: "🐟" },
+    { nom: "éperlan", emoji: "🐟" },
+    { nom: "anguille", emoji: "🐟" },
+    { nom: "brochet", emoji: "🐟" },
+    { nom: "sandre", emoji: "🐟" },
+    { nom: "carpe", emoji: "🐟" },
+    { nom: "crevette rose", emoji: "🦐" },
+    { nom: "crevette grise", emoji: "🦐" },
+    { nom: "gambas", emoji: "🦐" },
+    { nom: "langoustine", emoji: "🦞" },
+    { nom: "homard", emoji: "🦞" },
+    { nom: "langouste", emoji: "🦞" },
+    { nom: "crabe", emoji: "🦀" },
+    { nom: "tourteau", emoji: "🦀" },
+    { nom: "araignée de mer", emoji: "🦀" },
+    { nom: "chair de crabe", emoji: "🦀" },
+    { nom: "noix de saint-jacques", emoji: "🐚" },
+    { nom: "pétoncle", emoji: "🐚" },
+    { nom: "moule", emoji: "🐚" },
+    { nom: "huître", emoji: "🐚" },
+    { nom: "coque", emoji: "🐚" },
+    { nom: "palourde", emoji: "🐚" },
+    { nom: "couteau de mer", emoji: "🐚" },
+    { nom: "bulot", emoji: "🐚" },
+    { nom: "bigorneau", emoji: "🐚" },
+    { nom: "calamar", emoji: "🦑" },
+    { nom: "encornet", emoji: "🦑" },
+    { nom: "seiche", emoji: "🦑" },
+    { nom: "poulpe", emoji: "🐙" },
+    { nom: "œufs de lump", emoji: "🐟" },
+    { nom: "caviar", emoji: "🐟" },
+    { nom: "tarama", emoji: "🐟" },
+    { nom: "surimi", emoji: "🦀" },
+
+    // Ingrédients de base & Condiments
     { nom: "pâtes", emoji: "🍝" },
     { nom: "riz", emoji: "🍚" },
     { nom: "oeufs", emoji: "🥚" },
@@ -1432,13 +851,209 @@ var commonIngredients = [
     { nom: "fromage", emoji: "🧀" },
     { nom: "chocolat", emoji: "🍫" },
     { nom: "sauce soja", emoji: "🍶" },
-    { nom: "kub'or", emoji: "🧊" }
+    { nom: "kub'or", emoji: "🧊" },
+    { nom: "sel fin", emoji: "🧂" },
+    { nom: "gros sel", emoji: "🧂" },
+    { nom: "fleur de sel", emoji: "🧂" },
+    { nom: "sel au céleri", emoji: "🧂" },
+    { nom: "poivre noir en grains", emoji: "🧂" },
+    { nom: "poivre blanc", emoji: "🧂" },
+    { nom: "poivre vert", emoji: "🧂" },
+    { nom: "poivre de sichuan", emoji: "🧂" },
+    { nom: "poivre de kampot", emoji: "🧂" },
+    { nom: "baies roses", emoji: "🧂" },
+    { nom: "cannelle en poudre", emoji: "🧂" },
+    { nom: "bâton de cannelle", emoji: "🧂" },
+    { nom: "cumin en poudre", emoji: "🧂" },
+    { nom: "graines de cumin", emoji: "🧂" },
+    { nom: "coriandre en poudre", emoji: "🧂" },
+    { nom: "graines de coriandre", emoji: "🧂" },
+    { nom: "curcuma", emoji: "🧂" },
+    { nom: "curry en poudre", emoji: "🧂" },
+    { nom: "pâte de curry rouge", emoji: "🍶" },
+    { nom: "pâte de curry vert", emoji: "🍶" },
+    { nom: "pâte de curry jaune", emoji: "🍶" },
+    { nom: "garam masala", emoji: "🧂" },
+    { nom: "ras el hanout", emoji: "🧂" },
+    { nom: "colombo", emoji: "🧂" },
+    { nom: "tandoori", emoji: "🧂" },
+    { nom: "paprika doux", emoji: "🧂" },
+    { nom: "paprika fumé", emoji: "🧂" },
+    { nom: "piment d'espelette en poudre", emoji: "🧂" },
+    { nom: "piment de cayenne en poudre", emoji: "🧂" },
+    { nom: "clou de girofle", emoji: "🧂" },
+    { nom: "noix de muscade", emoji: "🧂" },
+    { nom: "macis", emoji: "🧂" },
+    { nom: "cardamome verte", emoji: "🧂" },
+    { nom: "cardamome noire", emoji: "🧂" },
+    { nom: "gingembre en poudre", emoji: "🧂" },
+    { nom: "anis étoilé", emoji: "🧂" },
+    { nom: "badiane", emoji: "🧂" },
+    { nom: "graines de fenouil", emoji: "🧂" },
+    { nom: "aneth séché", emoji: "🌿" },
+    { nom: "basilic séché", emoji: "🌿" },
+    { nom: "origan séché", emoji: "🌿" },
+    { nom: "thym séché", emoji: "🌿" },
+    { nom: "laurier", emoji: "🍃" },
+    { nom: "romarin séché", emoji: "🌿" },
+    { nom: "sauge séchée", emoji: "🌿" },
+    { nom: "estragon séché", emoji: "🌿" },
+    { nom: "sarriette", emoji: "🌿" },
+    { nom: "marjolaine", emoji: "🌿" },
+    { nom: "ciboulette séchée", emoji: "🌿" },
+    { nom: "persil séché", emoji: "🌿" },
+    { nom: "menthe séchée", emoji: "🌿" },
+    { nom: "safran en pistils", emoji: "🧂" },
+    { nom: "safran en poudre", emoji: "🧂" },
+    { nom: "gousse de vanille", emoji: "🍦" },
+    { nom: "extrait de vanille", emoji: "🍶" },
+    { nom: "sésame blanc", emoji: "🧂" },
+    { nom: "sésame noir", emoji: "🧂" },
+    { nom: "graines de pavot", emoji: "🧂" },
+    { nom: "graines de lin", emoji: "🧂" },
+    { nom: "graines de tournesol", emoji: "🧂" },
+    { nom: "graines de courge", emoji: "🧂" },
+    { nom: "graines de chia", emoji: "🧂" },
+    { nom: "graines de moutarde", emoji: "🧂" },
+    { nom: "pignons de pin", emoji: "🧂" },
+    
+    // Huiles & Vinaigres
+    { nom: "huile d'olive extra vierge", emoji: "🍶" },
+    { nom: "huile de tournesol", emoji: "🍶" },
+    { nom: "huile de colza", emoji: "🍶" },
+    { nom: "huile de pépins de raisin", emoji: "🍶" },
+    { nom: "huile de sésame", emoji: "🍶" },
+    { nom: "huile de noix", emoji: "🍶" },
+    { nom: "huile de noisette", emoji: "🍶" },
+    { nom: "huile d'arachide", emoji: "🍶" },
+    { nom: "huile d'avocat", emoji: "🍶" },
+    { nom: "huile d'argan", emoji: "🍶" },
+    { nom: "huile de truffe", emoji: "🍶" },
+    { nom: "vinaigre de vin rouge", emoji: "🍶" },
+    { nom: "vinaigre de vin blanc", emoji: "🍶" },
+    { nom: "vinaigre balsamique", emoji: "🍶" },
+    { nom: "crème de balsamique", emoji: "🍶" },
+    { nom: "vinaigre de cidre", emoji: "🍶" },
+    { nom: "vinaigre d'alcool", emoji: "🍶" },
+    { nom: "vinaigre de xérès", emoji: "🍶" },
+    { nom: "vinaigre de riz", emoji: "🍶" },
+    { nom: "vinaigre de framboise", emoji: "🍶" },
+    
+    // Produits Laitiers & Œufs
+    { nom: "œuf entier", emoji: "🥚" },
+    { nom: "blanc d'œuf", emoji: "🥚" },
+    { nom: "jaune d'œuf", emoji: "🥚" },
+    { nom: "œuf de caille", emoji: "🥚" },
+    { nom: "beurre doux", emoji: "🧈" },
+    { nom: "beurre demi-sel", emoji: "🧈" },
+    { nom: "beurre clarifié", emoji: "🧈" },
+    { nom: "ghee", emoji: "🧈" },
+    { nom: "margarine", emoji: "🧈" },
+    { nom: "crème fraîche épaisse", emoji: "🥛" },
+    { nom: "crème fraîche liquide", emoji: "🥛" },
+    { nom: "crème fleurette", emoji: "🥛" },
+    { nom: "crème de soja", emoji: "🥛" },
+    { nom: "crème de coco", emoji: "🥛" },
+    { nom: "lait entier", emoji: "🥛" },
+    { nom: "lait demi-écrémé", emoji: "🥛" },
+    { nom: "lait écrémé", emoji: "🥛" },
+    { nom: "lait en poudre", emoji: "🥛" },
+    { nom: "lait concentré sucré", emoji: "🥛" },
+    { nom: "lait concentré non sucré", emoji: "🥛" },
+    { nom: "lait d'amande", emoji: "🥛" },
+    { nom: "lait de soja", emoji: "🥛" },
+    { nom: "lait d'avoine", emoji: "🥛" },
+    { nom: "lait de riz", emoji: "🥛" },
+    { nom: "lait de coco", emoji: "🥛" },
+    { nom: "babeurre", emoji: "🥛" },
+    { nom: "yaourt nature", emoji: "🍦" },
+    { nom: "yaourt grec", emoji: "🍦" },
+    { nom: "yaourt de brebis", emoji: "🍦" },
+    { nom: "fromage blanc", emoji: "🍦" },
+    { nom: "faisselle", emoji: "🍦" },
+    { nom: "mascarpone", emoji: "🧀" },
+    { nom: "ricotta", emoji: "🧀" },
+    { nom: "mozzarella di bufala", emoji: "🧀" },
+    { nom: "burrata", emoji: "🧀" },
+    { nom: "stracciatella", emoji: "🧀" },
+    { nom: "pecorino", emoji: "🧀" },
+    { nom: "grana padano", emoji: "🧀" },
+    { nom: "emmental râpé", emoji: "🧀" },
+    { nom: "gruyère", emoji: "🧀" },
+    { nom: "comté", emoji: "🧀" },
+    { nom: "beaufort", emoji: "🧀" },
+    { nom: "cantal", emoji: "🧀" },
+    { nom: "salers", emoji: "🧀" },
+    { nom: "laguiole", emoji: "🧀" },
+    { nom: "cheddar", emoji: "🧀" },
+    { nom: "gouda", emoji: "🧀" },
+    { nom: "mimolette", emoji: "🧀" },
+    { nom: "edam", emoji: "🧀" },
+    { nom: "roquefort", emoji: "🧀" },
+    { nom: "bleu d'auvergne", emoji: "🧀" },
+    { nom: "fourme d'ambert", emoji: "🧀" },
+    { nom: "gorgonzola", emoji: "🧀" },
+    { nom: "stilton", emoji: "🧀" },
+    { nom: "camembert", emoji: "🧀" },
+    { nom: "brie de meaux", emoji: "🧀" },
+    { nom: "brie de melun", emoji: "🧀" },
+    { nom: "coulommiers", emoji: "🧀" },
+    { nom: "pont-l'évêque", emoji: "🧀" },
+    { nom: "livarot", emoji: "🧀" },
+    { nom: "munster", emoji: "🧀" },
+    { nom: "maroilles", emoji: "🧀" },
+    { nom: "époisses", emoji: "🧀" },
+    { nom: "reblochon", emoji: "🧀" },
+    { nom: "morbier", emoji: "🧀" },
+    { nom: "raclette", emoji: "🧀" },
+    { nom: "tartiflette", emoji: "🧀" },
+    { nom: "mont d'or", emoji: "🧀" },
+    { nom: "vacherin", emoji: "🧀" },
+    { nom: "feta", emoji: "🧀" },
+    { nom: "halloumi", emoji: "🧀" },
+    { nom: "paneer", emoji: "🧀" },
+    { nom: "fromage à tartiner", emoji: "🧀" },
+    { nom: "boursin", emoji: "🧀" },
+    { nom: "chèvre frais", emoji: "🧀" },
+    { nom: "bûche de chèvre", emoji: "🧀" },
+    { nom: "crottin de chavignol", emoji: "🧀" },
+    { nom: "rocamadour", emoji: "🧀" },
+    { nom: "picodon", emoji: "🧀" },
+    { nom: "pelardon", emoji: "🧀" },
+    { nom: "valençay", emoji: "🧀" },
+    { nom: "ossau-iraty", emoji: "🧀" },
+    { nom: "tomme de savoie", emoji: "🧀" },
+    { nom: "tomme de brebis", emoji: "🧀" },
+
+    // Légumineuses, Céréales & Graines
+    { nom: "lentilles vertes", emoji: "🫘" },
+    { nom: "lentilles corail", emoji: "🫘" },
+    { nom: "lentilles beluga", emoji: "🫘" },
+    { nom: "pois chiches", emoji: "🫘" },
+    { nom: "haricots rouges", emoji: "🫘" },
+    { nom: "haricots blancs", emoji: "🫘" },
+    { nom: "quinoa", emoji: "🌾" },
+    { nom: "boulgour", emoji: "🌾" },
+    { nom: "semoule de blé", emoji: "🌾" },
+    { nom: "polenta", emoji: "🌽" },
+    { nom: "avoine", emoji: "🌾" },
+    { nom: "sarrasin", emoji: "🌾" },
+    { nom: "orge perlée", emoji: "🌾" },
+    { nom: "graines de tournesol", emoji: "🌻" },
+    { nom: "graines de courge", emoji: "🎃" },
+    { nom: "graines de lin", emoji: "🌾" },
+    { nom: "graines de chia", emoji: "🌾" },
+    { nom: "graines de sésame", emoji: "🧂" },
+    { nom: "pignons de pin", emoji: "🌲" }
 ];
 
-// On exporte pour pouvoir l'utiliser ailleurs
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { recipes, commonIngredients };
-} else {
-    window.recipes = recipes;
-    window.commonIngredients = commonIngredients;
+// Export pour Node.js si nécessaire (tests)
+if (typeof module !== 'undefined') {
+    module.exports = {
+        recipes: recipes,
+        commonIngredients: commonIngredients
+    };
 }
+
+
+
