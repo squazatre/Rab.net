@@ -68,7 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
      * Rendu des cartes recettes
      */
     function renderRecipes() {
-        const filtered = Matching.filterRecipes(recipes, state.ingredients, state.ustensiles, {
+        const allRecipes = (typeof recipes !== 'undefined') ? recipes : [];
+        const filtered = Matching.filterRecipes(allRecipes, state.ingredients, state.ustensiles, {
             query: state.searchQuery,
             tag: state.activeTag,
             isStrict: state.isStrict

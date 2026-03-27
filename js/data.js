@@ -487,6 +487,707 @@ var recipes = [
             "Salez et poivrez la viande après cuisson.",
             "Servez bien chaud avec une pincée de sel sur les frites."
         ]
+    },
+    {
+        id: 21,
+        titre: "Gratin dauphinois traditionnel",
+        description: "Une recette de gratin de pommes de terre à la crème et à l'ail.",
+        temps: 60,
+        difficulte: "Facile",
+        emoji: "🥘",
+        ingredients: [
+            { nom: "pomme de terre", obligatoire: true },
+            { nom: "crème liquide", obligatoire: true },
+            { nom: "ail", obligatoire: true },
+            { nom: "sel", obligatoire: true },
+            { nom: "poivre", obligatoire: true }
+        ],
+        ustensiles: ["plat à gratin", "four"],
+        tags: ["Gratin", "Pommes de terre", "Accompagnement"],
+        instructions: [
+            "Préchauffer le four à 150°C.",
+            "Eplucher et couper les pommes de terres en rondelles.",
+            "Presser l'ail.",
+            "Napper le fond d'un plat à gratin de crème.",
+            "Alterner une couche de pommes de terres, crème, ail, sel, poivre.",
+            "Terminer en nappant de crème.",
+            "Mettre au four pendant au moins une heure."
+        ],
+        image: "https://assets.afcdn.com/recipe/20201217/116564_w648h414c1cx1009cy951.webp"
+    },
+    {
+        id: 22,
+        titre: "Quiche lorraine maison",
+        description: "La quiche traditionnelle à base de lardons, crème et oeufs.",
+        temps: 55,
+        difficulte: "Facile",
+        emoji: "🥧",
+        ingredients: [
+            { nom: "pâte brisée", obligatoire: true },
+            { nom: "lardons", obligatoire: true },
+            { nom: "oeufs", obligatoire: true },
+            { nom: "crème fraîche", obligatoire: true },
+            { nom: "lait", obligatoire: true },
+            { nom: "beurre", obligatoire: true },
+            { nom: "muscade", obligatoire: true }
+        ],
+        ustensiles: ["moule à tarte", "four", "poêle"],
+        tags: ["Quiche", "Plat principal", "Classique"],
+        instructions: [
+            "Préchauffer le four à 180°C.",
+            "Etaler la pâte dans un moule, la piquer à la fourchette.",
+            "Faire rissoler les lardons à la poêle.",
+            "Battre les oeufs, la crème fraîche et le lait. Ajouter les lardons.",
+            "Assaisonner de sel, poivre et muscade.",
+            "Verser sur la pâte et cuire 45 à 50 min."
+        ],
+        image: "https://assets.afcdn.com/recipe/20161128/28118_w648h414c1cx845cy3505.webp"
+    },
+    {
+        id: 23,
+        titre: "Poulet rôti simple",
+        description: "Un poulet rôti juteux et croustillant sans fioritures.",
+        temps: 60,
+        difficulte: "Facile",
+        emoji: "🍗",
+        ingredients: [
+            { nom: "poulet", obligatoire: true },
+            { nom: "huile", obligatoire: true }
+        ],
+        ustensiles: ["plat à four", "four"],
+        tags: ["Poulet", "Plat principal", "Classique"],
+        instructions: [
+            "Préchauffer le four à 190°.",
+            "Masser le poulet avec de l'huile.",
+            "Le poser dans un plat et le mettre au four pendant 1 h 30.",
+            "Ne pas le piquer ni le retourner pendant la cuisson."
+        ],
+        image: "https://assets.afcdn.com/recipe/20130909/63747_w648h414c1cx1872cy2808.webp"
+    },
+    {
+        id: 24,
+        titre: "Salade Niçoise authentique",
+        description: "La véritable salade niçoise avec thon, anchois et légumes frais.",
+        temps: 28,
+        difficulte: "Facile",
+        emoji: "🥗",
+        ingredients: [
+            { nom: "tomates", obligatoire: true },
+            { nom: "poivron vert", obligatoire: true },
+            { nom: "oeufs", obligatoire: true },
+            { nom: "oignons cébettes", obligatoire: true },
+            { nom: "févettes", obligatoire: true },
+            { nom: "thon", obligatoire: true },
+            { nom: "anchois", obligatoire: true },
+            { nom: "olives noires", obligatoire: true },
+            { nom: "basilic", obligatoire: true },
+            { nom: "huile d'olive", obligatoire: true }
+        ],
+        ustensiles: ["saladier", "casserole"],
+        tags: ["Salade", "Entrée", "Nicoise"],
+        instructions: [
+            "Faire durcir les oeufs, puis les faire refroidir.",
+            "Disposer les légumes, le thon et les oeufs dans un plat.",
+            "Ajouter les anchois, les olives et le basilic.",
+            "Arroser d'huile d'olive et de vinaigre."
+        ],
+        image: "https://assets.afcdn.com/recipe/20190704/94687_w648h414c1cx3008cy2008.webp"
+    },
+    {
+        id: 25,
+        titre: "Mousse au chocolat facile",
+        description: "Une mousse au chocolat aérienne préparée avec seulement 3 ingrédients.",
+        temps: 15,
+        difficulte: "Facile",
+        emoji: "🍮",
+        ingredients: [
+            { nom: "chocolat noir", obligatoire: true },
+            { nom: "oeufs", obligatoire: true },
+            { nom: "sucre vanillé", obligatoire: true }
+        ],
+        ustensiles: ["bol", "fouet", "verrines"],
+        tags: ["Dessert", "Chocolat", "Classique"],
+        instructions: [
+            "Séparer les blancs des jaunes d'oeufs.",
+            "Faire fondre le chocolat au bain-marie.",
+            "Incorporer les jaunes et le sucre au chocolat.",
+            "Battre les blancs en neige ferme et les ajouter délicatement."
+        ],
+        image: "https://assets.afcdn.com/recipe/20210311/118509_w648h414c1cx300cy533.webp"
+    },
+    {
+        id: 26,
+        titre: "Pâte à crêpes raffinée",
+        description: "Une pâte à crêpes lisse et parfumée pour des crêpes parfaites.",
+        temps: 17,
+        difficulte: "Facile",
+        emoji: "🥞",
+        ingredients: [
+            { nom: "farine", obligatoire: true },
+            { nom: "oeufs", obligatoire: true },
+            { nom: "lait", obligatoire: true },
+            { nom: "beurre", obligatoire: true },
+            { nom: "sucre", obligatoire: true },
+            { nom: "grand-marnier", obligatoire: false }
+        ],
+        ustensiles: ["saladier", "fouet", "poêle à crêpes"],
+        tags: ["Crêpes", "Dessert", "Gouter"],
+        instructions: [
+            "Mélanger farine, sel et sucre. Faire une fontaine.",
+            "Ajouter les oeufs, puis le beurre fondu.",
+            "Incorporer le lait petit à petit pour éviter les grumeaux.",
+            "Cuire dans une poêle chaude huilée."
+        ],
+        image: "https://assets.afcdn.com/recipe/20260126/165572_w648h414c1cx3210cy2530.webp"
+    },
+    {
+        id: 27,
+        titre: "Lasagnes à la bolognaise",
+        description: "Lasagnes généreuses avec sauce bolognaise maison et béchamel.",
+        temps: 120,
+        difficulte: "Moyen",
+        emoji: "🍝",
+        ingredients: [
+            { nom: "lasagnes", obligatoire: true },
+            { nom: "boeuf haché", obligatoire: true },
+            { nom: "purée de tomate", obligatoire: true },
+            { nom: "lait", obligatoire: true },
+            { nom: "farine", obligatoire: true },
+            { nom: "beurre", obligatoire: true },
+            { nom: "parmesan", obligatoire: true }
+        ],
+        ustensiles: ["plat à gratin", "four", "casserole"],
+        tags: ["Lasagnes", "Plat principal", "Italien"],
+        instructions: [
+            "Préparer la sauce bolognaise et la béchamel.",
+            "Alterner les couches de lasagnes, bolognaise et béchamel.",
+            "Terminer par du fromage et cuire 25 minutes à 200°C."
+        ],
+        image: "https://assets.afcdn.com/recipe/20200408/109520_w648h414c1cx1866cy2800.webp"
+    },
+    {
+        id: 28,
+        titre: "Cake à la banane",
+        description: "Un gâteau moelleux pour utiliser vos bananes trop mûres.",
+        temps: 55,
+        difficulte: "Facile",
+        emoji: "🍞",
+        ingredients: [
+            { nom: "bananes", obligatoire: true },
+            { nom: "farine", obligatoire: true },
+            { nom: "sucre", obligatoire: true },
+            { nom: "beurre", obligatoire: true },
+            { nom: "oeuf", obligatoire: true },
+            { nom: "levure chimique", obligatoire: true }
+        ],
+        ustensiles: ["moule à cake", "four", "bol"],
+        tags: ["Cake", "Banane", "Gouter"],
+        instructions: [
+            "Mélanger les ingrédients secs.",
+            "Mélanger sucre, oeuf, beurre et bananes écrasées.",
+            "Réunir les deux préparations.",
+            "Cuire 45 min à 180°C."
+        ],
+        image: "https://assets.afcdn.com/recipe/20181017/82817_w648h414c1cx1866cy2488.webp"
+    },
+    {
+        id: 29,
+        titre: "Boeuf Bourguignon express",
+        description: "Une version rapide à la cocotte-minute du célèbre plat bourguignon.",
+        temps: 60,
+        difficulte: "Moyen",
+        emoji: "🍲",
+        ingredients: [
+            { nom: "boeuf", obligatoire: true },
+            { nom: "lardons", obligatoire: true },
+            { nom: "vin rouge", obligatoire: true },
+            { nom: "oignons", obligatoire: true },
+            { nom: "champignons de Paris", obligatoire: true },
+            { nom: "farine", obligatoire: true }
+        ],
+        ustensiles: ["cocotte-minute"],
+        tags: ["Boeuf", "Plat principal", "Classique"],
+        instructions: [
+            "Faire roussir la viande et les lardons.",
+            "Ajouter oignons, champignons et farine.",
+            "Mouiller au vin rouge.",
+            "Cuire 60 min sous pression."
+        ],
+        image: "https://assets.afcdn.com/recipe/20131009/56293_w648h414c1cx1872cy2808.webp"
+    },
+    {
+        id: 30,
+        titre: "Gâteau au yaourt",
+        description: "Le gâteau d'enfance par excellence, simple et inratable.",
+        temps: 45,
+        difficulte: "Facile",
+        emoji: "🍰",
+        ingredients: [
+            { nom: "yaourt nature", obligatoire: true },
+            { nom: "farine", obligatoire: true },
+            { nom: "sucre", obligatoire: true },
+            { nom: "oeufs", obligatoire: true },
+            { nom: "levure chimique", obligatoire: true },
+            { nom: "huile", obligatoire: true }
+        ],
+        ustensiles: ["moule à gâteau", "four", "saladier"],
+        tags: ["Gateau", "Yaourt", "Dessert"],
+        instructions: [
+            "Mélanger le yaourt avec la levure.",
+            "Ajouter huile, sucre, farine et oeufs.",
+            "Verser dans un moule beurré.",
+            "Enfourner 30 minutes à 180°C."
+        ],
+        image: "https://assets.afcdn.com/recipe/20200828/113345_w648h414c1cx2841cy1816.webp"
+    },
+    {
+        id: 31,
+        titre: "Butternut farcies au quinoa",
+        description: "Un plat complet sain composé de courges butternut farcies au quinoa et pois chiches.",
+        temps: 70,
+        difficulte: "Facile",
+        emoji: "🎃",
+        ingredients: [
+            { nom: "Courge butternut", obligatoire: true },
+            { nom: "Quinoa", obligatoire: true },
+            { nom: "Pois chiches", obligatoire: true },
+            { nom: "Persil", obligatoire: true },
+            { nom: "Huile d'olive", obligatoire: true }
+        ],
+        ustensiles: ["four", "couteau", "saladier"],
+        tags: ["santé", "équilibre", "plat complet", "légumes"],
+        instructions: [
+            "Préchauffez le four à 200°C.",
+            "Coupez les butternuts en 2 et évidez-les.",
+            "Mélangez le quinoa, pois chiches, persil et huile.",
+            "Remplissez les butternuts et enfournez 50 minutes."
+        ],
+        image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FButternut-farcies-quinoa-pois-chiches.jpg&w=3840&q=75"
+    },
+    {
+        id: 32,
+        titre: "Quiche poireaux-roquefort",
+        description: "Une quiche savoureuse aux poireaux et au roquefort.",
+        temps: 45,
+        difficulte: "Facile",
+        emoji: "🥧",
+        ingredients: [
+            { nom: "Poireau", obligatoire: true },
+            { nom: "Pâte feuilletée", obligatoire: true },
+            { nom: "Crème fraîche", obligatoire: true },
+            { nom: "Roquefort", obligatoire: true },
+            { nom: "Œufs", obligatoire: true }
+        ],
+        ustensiles: ["moule", "four", "poêle"],
+        tags: ["santé", "équilibre", "plat complet", "végétarien"],
+        instructions: [
+            "Cuire les poireaux à la poêle pendant 20 min.",
+            "Étaler la pâte dans un moule et pré-cuire 10 min.",
+            "Battre les œufs avec la crème et le roquefort.",
+            "Verser sur les poireaux et enfourner 25 min."
+        ],
+        image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FQuiche-poireaux-roquefort.jpg&w=3840&q=75"
+    },
+    {
+        id: 33,
+        titre: "Gratin de chou-fleur léger",
+        description: "Un gratin de chou-fleur fondant avec une sauce béchamel légère.",
+        temps: 45,
+        difficulte: "Facile",
+        emoji: "🥦",
+        ingredients: [
+            { nom: "Chou-fleur", obligatoire: true },
+            { nom: "Lait demi-écrémé", obligatoire: true },
+            { nom: "Emmental râpé", obligatoire: true },
+            { nom: "Farine", obligatoire: true },
+            { nom: "Beurre", obligatoire: true }
+        ],
+        ustensiles: ["casserole", "plat à gratin", "cuiseur vapeur"],
+        tags: ["santé", "équilibre", "plat complet", "légumes"],
+        instructions: [
+            "Cuire le chou-fleur à la vapeur 20 min.",
+            "Préparer une béchamel légère.",
+            "Placer le chou-fleur dans un plat, verser la sauce.",
+            "Parsemer de fromage et faire gratiner au four."
+        ],
+        image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FGratin-de-chou-fleur.jpg&w=3840&q=75"
+    },
+    {
+        id: 34,
+        titre: "Purée à l'huile d'olive",
+        description: "Une purée onctueuse revisitée avec de l'huile d'olive.",
+        temps: 35,
+        difficulte: "Facile",
+        emoji: "🥔",
+        ingredients: [
+            { nom: "Pomme de terre", obligatoire: true },
+            { nom: "Lait demi-écrémé", obligatoire: true },
+            { nom: "Huile d'olive", obligatoire: true },
+            { nom: "Noix de muscade", obligatoire: true }
+        ],
+        ustensiles: ["moulin à légumes", "casserole"],
+        tags: ["santé", "équilibre", "accompagnement", "végétarien"],
+        instructions: [
+            "Cuire les pommes de terre à l'eau.",
+            "Passer au moulin en ajoutant le lait chaud.",
+            "Ajouter l'huile d'olive et la muscade. Mélanger."
+        ],
+        image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FPuree-de-pommes-de-terre-a-lhuile-dolive.jpg&w=3840&q=75"
+    },
+    {
+        id: 35,
+        titre: "Gâteau bananes et noix",
+        description: "Un gâteau énergétique aux bananes et aux éclats de noix.",
+        temps: 50,
+        difficulte: "Facile",
+        emoji: "🍰",
+        ingredients: [
+            { nom: "Bananes", obligatoire: true },
+            { nom: "Noix", obligatoire: true },
+            { nom: "Farine", obligatoire: true },
+            { nom: "Sucre", obligatoire: true },
+            { nom: "Beurre", obligatoire: true },
+            { nom: "Œufs", obligatoire: true }
+        ],
+        ustensiles: ["moule", "saladier", "four"],
+        tags: ["santé", "équilibre", "dessert", "fruits"],
+        instructions: [
+            "Mélanger beurre fondu et sucre. Ajouter les œufs.",
+            "Incorporer bananes écrasées, noix et farine.",
+            "Cuire 45 min à 180°C."
+        ],
+        image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FGateau-aux-bananes-et-aux-noix.jpg&w=3840&q=75"
+    },
+    {
+        id: 36,
+        titre: "Gratin épinards et saumon",
+        description: "Une alliance classique et saine entre saumon et épinards.",
+        temps: 55,
+        difficulte: "Facile",
+        emoji: "🐟",
+        ingredients: [
+            { nom: "Épinards", obligatoire: true },
+            { nom: "Pavé de saumon", obligatoire: true },
+            { nom: "Fromage de chèvre", obligatoire: true }
+        ],
+        ustensiles: ["plat à gratin", "four"],
+        tags: ["santé", "équilibre", "plat complet", "poisson"],
+        instructions: [
+            "Cuire les épinards et les égoutter.",
+            "Mélanger le chèvre aux épinards.",
+            "Disposer saumon et épinards dans un plat.",
+            "Enfourner 20 minutes."
+        ],
+        image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FGratin-epinards-saumon.jpg&w=3840&q=75"
+    },
+    {
+        id: 37,
+        titre: "Steaks sauce au poivre",
+        description: "Un plat express de viande rouge avec une sauce onctueuse.",
+        temps: 15,
+        difficulte: "Facile",
+        emoji: "🥩",
+        ingredients: [
+            { nom: "Steak", obligatoire: true },
+            { nom: "Crème fraîche", obligatoire: true },
+            { nom: "Moutarde", obligatoire: true },
+            { nom: "Poivre", obligatoire: true }
+        ],
+        ustensiles: ["poêle"],
+        tags: ["santé", "équilibre", "express", "protéines"],
+        instructions: [
+            "Chauffer crème, moutarde et poivre en sauce.",
+            "Saisir la viande 2 min de chaque côté.",
+            "Napper de sauce et servir."
+        ],
+        image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FSteaks-sauce-au-poivre.jpg&w=3840&q=75"
+    },
+    {
+        id: 38,
+        titre: "Boulettes de bœuf aux herbes",
+        description: "Des boulettes maison riches en herbes fraîches.",
+        temps: 20,
+        difficulte: "Facile",
+        emoji: "🧆",
+        ingredients: [
+            { nom: "Steak haché", obligatoire: true },
+            { nom: "Persil", obligatoire: true },
+            { nom: "Coriandre", obligatoire: true },
+            { nom: "Œuf", obligatoire: true }
+        ],
+        ustensiles: ["saladier", "poêle"],
+        tags: ["santé", "équilibre", "protéines", "fait maison"],
+        instructions: [
+            "Mélanger viande, œuf et herbes ciselées.",
+            "Former des boulettes et fariner.",
+            "Faire dorer dans l'huile 10 min."
+        ],
+        image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FBoulettes-de-boeuf-aux-herbes.jpg&w=3840&q=75"
+    },
+    {
+        id: 39,
+        titre: "Petits légumes croquants",
+        description: "Une salade fraîche de carottes et courgettes râpées.",
+        temps: 15,
+        difficulte: "Facile",
+        emoji: "🥗",
+        ingredients: [
+            { nom: "Carotte", obligatoire: true },
+            { nom: "Courgettes", obligatoire: true },
+            { nom: "Pignons de pin", obligatoire: true }
+        ],
+        ustensiles: ["râpe", "saladier", "poêle"],
+        tags: ["santé", "équilibre", "légumes", "express"],
+        instructions: [
+            "Râper les carottes et courgettes.",
+            "Griller les pignons à la poêle.",
+            "Mélanger le tout avec une vinaigrette."
+        ],
+        image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FPetits-legumes-croquants.jpg&w=3840&q=75"
+    },
+    {
+        id: 40,
+        titre: "Trifles à la mangue",
+        description: "Un dessert frais mêlant mangue et fromage blanc.",
+        temps: 70,
+        difficulte: "Facile",
+        emoji: "🍧",
+        ingredients: [
+            { nom: "Mangue", obligatoire: true },
+            { nom: "Fromage blanc", obligatoire: true },
+            { nom: "Mascarpone", obligatoire: true },
+            { nom: "Citron", obligatoire: true }
+        ],
+        ustensiles: ["verrines", "saladier"],
+        tags: ["santé", "équilibre", "dessert", "fruits"],
+        instructions: [
+            "Couper la mangue en dés.",
+            "Fouetter fromage blanc, mascarpone et sucre.",
+            "Alterner couches de mangue et crème en verrines.",
+            "Placer au frais 1h."
+        ],
+        image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FTrifles-a-la-mangue.jpg&w=3840&q=75"
+    },
+    {
+        id: 41,
+        titre: "Framboisier léger",
+        description: "Un gâteau fruité avec mousse légère et génoise fondante.",
+        temps: 50,
+        difficulte: "Moyen",
+        emoji: "🍰",
+        ingredients: [
+            { nom: "Framboises", obligatoire: true },
+            { nom: "Fromage blanc", obligatoire: true },
+            { nom: "Farine", obligatoire: true },
+            { nom: "Oeufs", obligatoire: true },
+            { nom: "Sucre", obligatoire: true }
+        ],
+        ustensiles: ["Moule à manqué", "Fouet électrique"],
+        tags: ["Dessert", "Gâteaux", "Framboise"],
+        instructions: [
+            "Préparer la génoise et cuire 20 min à 180°C.",
+            "Préparer la mousse au fromage blanc et framboises.",
+            "Monter le gâteau et réserver au frais 6h."
+        ],
+        image: "https://img.cuisineactuelle.fr/1200x675/2018/09/25/i47606-framboisier.jpg"
+    },
+    {
+        id: 42,
+        titre: "Bottereaux vendéens",
+        description: "Beignets traditionnels parfaits pour le goûter.",
+        temps: 35,
+        difficulte: "Facile",
+        emoji: "🍩",
+        ingredients: [
+            { nom: "Farine", obligatoire: true },
+            { nom: "Sucre", obligatoire: true },
+            { nom: "Oeufs", obligatoire: true },
+            { nom: "Beurre", obligatoire: true },
+            { nom: "Huile de friture", obligatoire: true }
+        ],
+        ustensiles: ["Saladier", "Rouleau à pâtisserie", "Friteuse"],
+        tags: ["Beignets", "Goûter", "Tradition"],
+        instructions: [
+            "Former une pâte avec farine, sucre, oeufs et beurre.",
+            "Laisser reposer 2 heures.",
+            "Étaler, découper en losanges et frire."
+        ],
+        image: "https://img.cuisineactuelle.fr/1200x675/2019/04/25/i54858-bottereaux.jpg"
+    },
+    {
+        id: 43,
+        titre: "Tchoutchouka",
+        description: "Plat maghrébin aux poivrons, tomates et œufs.",
+        temps: 46,
+        difficulte: "Facile",
+        emoji: "🥘",
+        ingredients: [
+            { nom: "Poivrons", obligatoire: true },
+            { nom: "Tomates", obligatoire: true },
+            { nom: "Oeufs", obligatoire: true },
+            { nom: "Ail", obligatoire: true },
+            { nom: "Huile d'olive", obligatoire: true }
+        ],
+        ustensiles: ["Grande poêle"],
+        tags: ["Plat principal", "Cuisine du monde", "Végétarien"],
+        instructions: [
+            "Faire revenir poivrons et ail 15 min.",
+            "Ajouter les tomates et mijoter 30 min.",
+            "Casser les œufs dessus et cuire 8 min."
+        ],
+        image: "https://img.cuisineactuelle.fr/1200x675/2019/06/27/i21578-tchoutchouka.jpg"
+    },
+    {
+        id: 44,
+        titre: "Scones express",
+        description: "Petits pains anglais parfaits pour le brunch.",
+        temps: 25,
+        difficulte: "Facile",
+        emoji: "🥯",
+        ingredients: [
+            { nom: "Farine", obligatoire: true },
+            { nom: "Beurre", obligatoire: true },
+            { nom: "Lait", obligatoire: true },
+            { nom: "Oeuf", obligatoire: true }
+        ],
+        ustensiles: ["Emporte-pièce", "Plaque de cuisson"],
+        tags: ["Petit-déjeuner", "Brunch", "Rapide"],
+        instructions: [
+            "Mélanger farine, levure et beurre.",
+            "Ajouter oeuf et lait.",
+            "Découper à l'emporte-pièce et cuire 10 min à 210°C."
+        ],
+        image: "https://img.cuisineactuelle.fr/1200x675/2018/09/25/i41855-scones-rapides.jpg"
+    },
+    {
+        id: 45,
+        titre: "Sauce chocolat liquide",
+        description: "Sauce onctueuse pour napper vos desserts.",
+        temps: 20,
+        difficulte: "Facile",
+        emoji: "🍫",
+        ingredients: [
+            { nom: "Chocolat noir", obligatoire: true },
+            { nom: "Lait", obligatoire: true }
+        ],
+        ustensiles: ["Casserole"],
+        tags: ["Sauce", "Chocolat", "Accompagnement"],
+        instructions: [
+            "Casser le chocolat en morceaux.",
+            "Faire fondre avec le lait au bain-marie.",
+            "Remuer jusqu'à ce que ce soit lisse."
+        ],
+        image: "https://img.cuisineactuelle.fr/1200x675/2018/09/25/i55580-chocolat-liquide.jpg"
+    },
+    {
+        id: 46,
+        titre: "Pâté breton traditionnel",
+        description: "Une terrine de campagne riche en saveurs.",
+        temps: 108,
+        difficulte: "Facile",
+        emoji: "🥩",
+        ingredients: [
+            { nom: "Porc (gorge, épaule)", obligatoire: true },
+            { nom: "Foie de porc", obligatoire: true },
+            { nom: "Oignons", obligatoire: true },
+            { nom: "Persil", obligatoire: true }
+        ],
+        ustensiles: ["Hachoir à viande", "Terrine"],
+        tags: ["Entrée", "Charcuterie", "Terroir"],
+        instructions: [
+            "Hacher finement toutes les viandes.",
+            "Mélanger avec oignons et persil.",
+            "Cuire en terrine au four pendant 1h30."
+        ],
+        image: "https://img.cuisineactuelle.fr/1200x675/2021/06/02/i30579-pate-breton.jpg"
+    },
+    {
+        id: 47,
+        titre: "Gaufres croustillantes",
+        description: "Recette pour des gaufres légères et croustillantes.",
+        temps: 30,
+        difficulte: "Facile",
+        emoji: " waffle",
+        ingredients: [
+            { nom: "Farine", obligatoire: true },
+            { nom: "Oeufs", obligatoire: true },
+            { nom: "Lait", obligatoire: true },
+            { nom: "Sucre", obligatoire: true }
+        ],
+        ustensiles: ["Saladier", "Gaufrier"],
+        tags: ["Goûter", "Dessert", "Enfants"],
+        instructions: [
+            "Mélanger les ingrédients secs.",
+            "Ajouter oeufs et lait en fouettant.",
+            "Cuire dans un gaufrier chaud."
+        ],
+        image: "https://img.cuisineactuelle.fr/1200x675/2021/12/21/i39469-gaufre-croustillante.jpg"
+    },
+    {
+        id: 48,
+        titre: "Punch à la vanille",
+        description: "Cocktail exotique parfumé à la vanille.",
+        temps: 20,
+        difficulte: "Facile",
+        emoji: "🍹",
+        ingredients: [
+            { nom: "Rhum blanc", obligatoire: true },
+            { nom: "Jus de fruits", obligatoire: true },
+            { nom: "Vanille", obligatoire: true },
+            { nom: "Sirop de sucre", obligatoire: true }
+        ],
+        ustensiles: ["Grand saladier"],
+        tags: ["Boisson", "Cocktail", "Exotique"],
+        instructions: [
+            "Mélanger rhum, jus et sirop.",
+            "Ajouter la vanille fendue.",
+            "Mettre au frais 1h avant de servir."
+        ],
+        image: "https://img.cuisineactuelle.fr/1200x675/2018/09/25/i10872-punch-vanille.jpg"
+    },
+    {
+        id: 49,
+        titre: "Endives façon apéro",
+        description: "Barquettes d'endives au bleu et noix.",
+        temps: 20,
+        difficulte: "Facile",
+        emoji: "🥗",
+        ingredients: [
+            { nom: "Endives", obligatoire: true },
+            { nom: "Bleu d'Auvergne", obligatoire: true },
+            { nom: "Pommes", obligatoire: true },
+            { nom: "Noix", obligatoire: true }
+        ],
+        ustensiles: ["Plat de service"],
+        tags: ["Apéritif", "Fromage", "Salade"],
+        instructions: [
+            "Laver les feuilles d'endives.",
+            "Garnir de pomme, fromage et noix.",
+            "Arroser d'un filet de vinaigrette."
+        ],
+        image: "https://img.cuisineactuelle.fr/1200x675/2018/09/25/i56747-endives-apero.jpg"
+    },
+    {
+        id: 50,
+        titre: "Soupe julienne",
+        description: "Une soupe de légumes légère et réconfortante.",
+        temps: 40,
+        difficulte: "Facile",
+        emoji: "🥣",
+        ingredients: [
+            { nom: "Carottes", obligatoire: true },
+            { nom: "Pommes de terre", obligatoire: true },
+            { nom: "Poireau", obligatoire: true },
+            { nom: "Beurre", obligatoire: true }
+        ],
+        ustensiles: ["Marmite", "Couteau"],
+        tags: ["Soupe", "Légumes", "Sain"],
+        instructions: [
+            "Éplucher et émincer les légumes.",
+            "Faire suer dans le beurre.",
+            "Couvrir d'eau et cuire 20 min."
+        ],
+        image: "https://img.cuisineactuelle.fr/1200x675/2018/09/25/i51306-soupe-julienne.jpg"
     }
 ];
 
