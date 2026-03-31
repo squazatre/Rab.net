@@ -4,514 +4,543 @@ var recipes = [
         titre: "Boeuf Bourguignon Traditionnel",
         description: "Un grand classique de la cuisine française, mijoté longuement dans une sauce au vin rouge.",
         temps: 180,
+        personnes: 4,
         difficulte: "Moyen",
         emoji: "🥘",
         ingredients: [
-            { nom: "boeuf", obligatoire: true },
-            { nom: "vin rouge (Bourgogne)", obligatoire: true },
-            { nom: "lardons", obligatoire: true },
-            { nom: "carottes", obligatoire: true },
-            { nom: "oignons", obligatoire: true },
-            { nom: "champignons de Paris", obligatoire: false }
+            { nom: "bœuf à mijoter", quantite: "600g", obligatoire: true },
+            { nom: "vin rouge (Bourgogne)", quantite: "750ml", obligatoire: true },
+            { nom: "lardons fumés", quantite: "100g", obligatoire: true },
+            { nom: "carottes", quantite: "4", obligatoire: true },
+            { nom: "oignons", quantite: "350g", obligatoire: true },
+            { nom: "champignons de Paris", quantite: "250g", obligatoire: false },
+            { nom: "ail", quantite: "2 gousses", obligatoire: true },
+            { nom: "bouquet garni", quantite: "1", obligatoire: true }
         ],
-        ustensiles: ["cocotte en fonte", "couteau"],
+        ustensiles: ["cocotte en fonte", "couteau", "passoire"],
         tags: ["classique", "mijote", "dimanche"],
         instructions: [
-            "Coupez la viande en gros cubes et faites-les dorer dans la cocotte.",
-            "Ajoutez les oignons et les lardons, faites revenir 5 minutes.",
-            "Versez le vin rouge et complétez avec un peu d'eau si nécessaire.",
-            "Ajoutez les carottes en rondelles et le bouquet garni.",
-            "Laissez mijoter à feu très doux pendant au moins 3 heures.",
-            "Servez idéalement le lendemain."
-        ]
+            "Couper la viande en cubes de 4cm et les faire dorer dans la cocotte.",
+            "Ajouter les oignons émincés et les lardons, faire revenir 5 minutes.",
+            "Verser le vin rouge et compléter avec un peu de bouillon si nécessaire.",
+            "Ajouter les carottes en rondelles, le bouquet garni et l'ail.",
+            "Laissez mijoter à feu très doux pendant au moins 3 heures ou au four à 150°C.",
+            "Le plat est encore meilleur réchauffé le lendemain."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/vtqxtu1511784197.jpg"
     },
     {
         id: 2,
-        titre: "Blanquette de Veau à l'Ancienne",
-        description: "Une viande tendre nappée d'une sauce blanche onctueuse aux petits champignons.",
-        temps: 90,
-        difficulte: "Moyen",
-        emoji: "🍲",
+        titre: "Crêpes au sucre fondantes",
+        description: "La recette classique et inratable pour des crêpes fines et légères.",
+        temps: 20,
+        personnes: 4,
+        difficulte: "Facile",
+        emoji: "🥞",
         ingredients: [
-            { nom: "veau", obligatoire: true },
-            { nom: "carottes", obligatoire: true },
-            { nom: "poireau", obligatoire: true },
-            { nom: "champignons", obligatoire: true },
-            { nom: "crème fraîche", obligatoire: true },
-            { nom: "oeufs", obligatoire: true }
+            { nom: "farine", quantite: "250g", obligatoire: true },
+            { nom: "lait entier", quantite: "500ml", obligatoire: true },
+            { nom: "oeufs", quantite: "3", obligatoire: true },
+            { nom: "beurre fondu", quantite: "50g", obligatoire: true },
+            { nom: "sucre vanillé", quantite: "1 sachet", obligatoire: false }
         ],
-        ustensiles: ["casserole", "fouet"],
-        tags: ["traditionnel", "réconfort"],
+        ustensiles: ["saladier", "fouet", "poêle à crêpes"],
+        tags: ["dessert", "goûter", "classique"],
         instructions: [
-            "Faites blanchir la viande dans l'eau bouillante pendant 2 minutes.",
-            "Égouttez et remettez dans la casserole avec les carottes et le poireau.",
-            "Couvrez d'eau et laissez mijoter 1h30.",
-            "Préparez la liaison : mélangez la crème et les jaunes d'oeufs.",
-            "Hors du feu, ajoutez la liaison et les champignons déjà poêlés.",
-            "Servez avec du riz blanc."
-        ]
+            "Mélanger la farine et le sucre. Ajouter les oeufs un par un.",
+            "Verser le lait progressivement en fouettant pour éviter les grumeaux.",
+            "Ajouter le beurre fondu et laisser reposer 30 min.",
+            "Cuire dans une poêle bien chaude avec une noisette de beurre."
+        ],
+        image: "https://assets.afcdn.com/recipe/20120905/13271_w600.jpg"
     },
     {
         id: 3,
         titre: "Poulet Rôti et Pommes de Terre",
         description: "Le poulet du dimanche, à la peau bien croustillante et aux pommes de terre fondantes.",
         temps: 75,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🍗",
         ingredients: [
-            { nom: "poulet entier", obligatoire: true },
-            { nom: "pommes de terre", obligatoire: true },
-            { nom: "beurre", obligatoire: true },
-            { nom: "ail", obligatoire: true },
-            { nom: "thym", obligatoire: false }
+            { nom: "poulet entier", quantite: "1.5kg", obligatoire: true },
+            { nom: "pommes de terre", quantite: "800g", obligatoire: true },
+            { nom: "beurre", quantite: "50g", obligatoire: true },
+            { nom: "ail", quantite: "3 gousses", obligatoire: true },
+            { nom: "huile d'olive", quantite: "5 c. à soupe", obligatoire: true },
+            { nom: "thym", quantite: "quelques branches", obligatoire: false }
         ],
-        ustensiles: ["plat à four", "four"],
+        ustensiles: ["plat à four", "four", "pinceau de cuisine"],
         tags: ["familial", "rôti"],
         instructions: [
             "Préchauffez le four à 200°C.",
-            "Badigeonnez le poulet de beurre et poudrez d'herbes.",
-            "Disposez les pommes de terre coupées autour du poulet.",
-            "Ajoutez des gousses d'ail non épluchées.",
-            "Enfournez pour environ 1h15 en arrosant régulièrement.",
-            "Laissez reposer 10 min avant de découper."
-        ]
+            "Badigeonnez le poulet de beurre fondu et saupoudrez de thym.",
+            "Disposez les pommes de terre coupées en quartiers autour du poulet.",
+            "Ajouter les gousses d'ail en chemise (avec la peau).",
+            "Enfournez pour 1h15 en arrosant le poulet de son jus tous les quarts d'heure.",
+            "Laissez reposer 10 min sous de l'alu avant de découper."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/nlxald1764112200.jpg"
     },
     {
         id: 4,
         titre: "Ratatouille Provençale fondante",
         description: "Un mélange de légumes d'été confits à l'huile d'olive.",
         temps: 60,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🥘",
         ingredients: [
-            { nom: "aubergines", obligatoire: true },
-            { nom: "courgettes", obligatoire: true },
-            { nom: "poivrons", obligatoire: true },
-            { nom: "tomates", obligatoire: true },
-            { nom: "oignons", obligatoire: true },
-            { nom: "huile d'olive", obligatoire: true }
+            { nom: "aubergines", quantite: "2 grandes", obligatoire: true },
+            { nom: "courgettes", quantite: "4 petites", obligatoire: true },
+            { nom: "poivrons verts", quantite: "2", obligatoire: true },
+            { nom: "tomates mûres", quantite: "4 larges", obligatoire: true },
+            { nom: "oignons", quantite: "1 moyen", obligatoire: true },
+            { nom: "ail", quantite: "3 gousses", obligatoire: true },
+            { nom: "huile d'olive", quantite: "5 c. à soupe", obligatoire: true }
         ],
-        ustensiles: ["sauteuse", "couteau"],
+        ustensiles: ["sauteuse", "couteau", "planche"],
         tags: ["végétarien", "estival", "santé"],
         instructions: [
-            "Coupez tous les légumes en dés.",
-            "Faites-les revenir séparément dans l'huile d'olive.",
-            "Réunissez tout dans la cocotte.",
-            "Laissez mijoter à feu doux pendant au moins 1 heure."
-        ]
+            "Couper tous les légumes en dés réguliers de 1,5cm.",
+            "Faire revenir chaque légume séparément dans l'huile d'olive pour préserver les textures.",
+            "Réunir tous les légumes dans une grande sauteuse ou cocotte.",
+            "Mijoter à feu très doux pendant 45 minutes jusqu'à ce que les légumes soient confits."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/wrpwuu1511786491.jpg"
     },
     {
         id: 5,
         titre: "Gratin Dauphinois Fondant",
         description: "Des pommes de terre fondantes dans de la crème, sans fromage (la vraie recette !).",
         temps: 80,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🥘",
         ingredients: [
-            { nom: "pommes de terre", obligatoire: true },
-            { nom: "crème fraîche", obligatoire: true },
-            { nom: "lait", obligatoire: true },
-            { nom: "ail", obligatoire: true },
-            { nom: "noix de muscade", obligatoire: false }
+            { nom: "pommes de terre à chair ferme", quantite: "1kg", obligatoire: true },
+            { nom: "crème liquide entière", quantite: "300ml", obligatoire: true },
+            { nom: "lait entier", quantite: "400ml", obligatoire: true },
+            { nom: "ail", quantite: "2 gousses", obligatoire: true },
+            { nom: "beurre", quantite: "50g", obligatoire: true },
+            { nom: "noix de muscade", quantite: "1 pincée", obligatoire: false }
         ],
-        ustensiles: ["plat à gratin", "four", "couteau"],
+        ustensiles: ["plat à gratin", "four", "mandoline"],
         tags: ["classique", "réconfort", "végétarien"],
         instructions: [
-            "Frottez le plat à gratin avec une gousse d'ail.",
-            "Épluchez et coupez les pommes de terre en fines rondelles.",
-            "Mélangez le lait et la crème, salez, poivrez et ajoutez la muscade.",
-            "Disposez les pommes de terre dans le plat et versez le mélange.",
-            "Enfournez à 150°C pendant au moins 1h15 pour que ce soit bien fondant."
-        ]
+            "Frottez l'intérieur du plat à gratin avec une gousse d'ail coupée en deux.",
+            "Épluchez et coupez les pommes de terre en rondelles de 2mm à la mandoline.",
+            "Mélanger le lait, la crème, le sel, le poivre et la muscade dans un bol.",
+            "Disposer les pommes de terre en couches et verser le mélange crème/lait.",
+            "Cuire au four à 150°C pendant 1h15 jusqu'à ce que la lame d'un couteau s'enfonce parfaitement."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/qwrtut1468418027.jpg"
     },
     {
         id: 6,
         titre: "Soupe à l'Oignon Gratinée",
         description: "Le réconfort ultime des nuits d'hiver.",
         temps: 45,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🥣",
         ingredients: [
-            { nom: "oignons jaunes", obligatoire: true },
-            { nom: "bouillon de bœuf", obligatoire: true },
-            { nom: "pain baguette", obligatoire: true },
-            { nom: "fromage râpé (gruyère)", obligatoire: true },
-            { nom: "beurre", obligatoire: true }
+            { nom: "oignons jaunes", quantite: "1kg", obligatoire: true },
+            { nom: "bouillon de bœuf", quantite: "1L", obligatoire: true },
+            { nom: "baguette", quantite: "4 tranches", obligatoire: true },
+            { nom: "gruyère râpé", quantite: "140g", obligatoire: true },
+            { nom: "beurre", quantite: "50g", obligatoire: true },
+            { nom: "vin blanc sec", quantite: "250ml", obligatoire: true }
         ],
-        ustensiles: ["marmite", "four"],
+        ustensiles: ["marmite", "four", "bols résistants à la chaleur"],
         tags: ["hiver", "fête", "classique"],
         instructions: [
-            "Faites caraméliser les oignons émincés dans le beurre jusqu'à ce qu'ils soient bruns.",
-            "Versez le bouillon de bœuf et laissez mijoter 20 minutes.",
-            "Disposez la soupe dans des bols allant au four.",
-            "Ajoutez une tranche de pain grillé et recouvrez généreusement de fromage.",
-            "Passez sous le grill du four jusqu'à ce que ce soit bien doré."
-        ]
+            "Émincer les oignons et les faire confire dans le beurre pendant 20 min avec une touche de sucre.",
+            "Déglacer avec le vin blanc, puis ajouter le bouillon de bœuf.",
+            "Mijoter 20 minutes supplémentaire à feu doux.",
+            "Verser dans des bols, ajouter le pain grillé et recouvrir généreusement de fromage.",
+            "Passer sous le grill du four jusqu'à obtenir une belle croûte dorée."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/xvrrux1511783685.jpg"
     },
     {
         id: 7,
-        titre: "Salade Niçoise authentique",
-        description: "Fraîche, colorée et pleine des saveurs du sud.",
-        temps: 25,
-        difficulte: "Très facile",
-        emoji: "🥗",
+        titre: "Hachis Parmentier Traditionnel",
+        description: "Un gratin de boeuf haché et purée de pommes de terre maison.",
+        temps: 45,
+        personnes: 4,
+        difficulte: "Facile",
+        emoji: "🥘",
         ingredients: [
-            { nom: "thon en boîte", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "tomates", obligatoire: true },
-            { nom: "haricots verts (cuits)", obligatoire: true },
-            { nom: "olives noires", obligatoire: false },
-            { nom: "anchois", obligatoire: false }
+            { nom: "boeuf haché", quantite: "600g", obligatoire: true },
+            { nom: "pommes de terre", quantite: "1kg", obligatoire: true },
+            { nom: "lait", quantite: "40cl", obligatoire: true },
+            { nom: "beurre", quantite: "80g", obligatoire: true },
+            { nom: "fromage râpé", quantite: "40g", obligatoire: true }
         ],
-        ustensiles: ["saladier", "couteau"],
-        tags: ["frais", "santé", "été"],
+        ustensiles: ["moule à gratin", "casserole", "presse-purée"],
+        tags: ["plat principal", "familial", "classique"],
         instructions: [
-            "Faites cuire les haricots verts à la vapeur et les oeufs (9 min).",
-            "Mélangez la salade avec les tomates, le thon et les haricots.",
-            "Ajoutez les quartiers d'oeufs durs, les olives et les anchois.",
-            "Assaisonnez d'une vinaigrette simple à l'huile d'olive."
-        ]
+            "Cuire les pommes de terre et les écraser en purée avec le lait et le beurre.",
+            "Faire revenir la viande avec des oignons hachés.",
+            "Dans un plat, mettre une couche de viande puis recouvrir de purée.",
+            "Saupoudrer de fromage et faire gratiner 20 min à 200°C."
+        ],
+        image: "https://assets.afcdn.com/recipe/20130830/62886_w600.jpg"
     },
     {
         id: 8,
-        titre: "Tartare de Boeuf au couteau",
-        description: "La viande préparée avec amour, relevée de condiments.",
-        temps: 20,
+        titre: "Coq au Vin à l'ancienne",
+        description: "Le roi de la cuisine bourgeoise, mijoté dans une sauce onctueuse.",
+        temps: 120,
+        personnes: 4,
         difficulte: "Moyen",
-        emoji: "🥩",
+        emoji: "🍗",
         ingredients: [
-            { nom: "viande hachée de qualité", obligatoire: true },
-            { nom: "jaune d'œuf", obligatoire: true },
-            { nom: "câpres", obligatoire: true },
-            { nom: "oignon rouge", obligatoire: true },
-            { nom: "moutarde", obligatoire: true },
-            { nom: "sauce worcestershire", obligatoire: false }
+            { nom: "coq ou poulet fermier", quantite: "1.5kg", obligatoire: true },
+            { nom: "lardons fumés", quantite: "150g", obligatoire: true },
+            { nom: "vin rouge corsé", quantite: "750ml", obligatoire: true },
+            { nom: "champignons de Paris", quantite: "250g", obligatoire: true },
+            { nom: "oignons", quantite: "2", obligatoire: true }
         ],
-        ustensiles: ["couteau bien aiguisé", "bol"],
-        tags: ["bistrot", "viande"],
+        ustensiles: ["cocotte", "poêle"],
+        tags: ["mijote", "tradition", "gastronomique"],
         instructions: [
-            "Taillez la viande en tout petits dés au couteau.",
-            "Mélangez le jaune d'oeuf, la moutarde, les câpres et l'oignon haché.",
-            "Incorporez la viande à la préparation.",
-            "Salez, poivrez et servez immédiatement avec des frites."
-        ]
+            "Faire dorer les morceaux de coq dans une cocotte avec les lardons.",
+            "Saupoudrer de farine, bien mélanger et verser le vin rouge.",
+            "Ajouter les champignons et les oignons. Laisser mijoter 1h30 à feu doux.",
+            "Servir avec des pâtes fraîches ou des pommes de terre vapeur."
+        ],
+        image: "https://assets.afcdn.com/recipe/20131230/50702_w600.jpg"
     },
     {
         id: 9,
         titre: "Magret de Canard au Miel",
         description: "Une cuisson rosée et un glaçage sucré-salé irrésistible.",
         temps: 25,
+        personnes: 2,
         difficulte: "Moyen",
         emoji: "🦆",
         ingredients: [
-            { nom: "magret de canard", obligatoire: true },
-            { nom: "miel", obligatoire: true },
-            { nom: "vinaigre balsamique", obligatoire: true },
-            { nom: "sel", obligatoire: true },
-            { nom: "poivre", obligatoire: true }
+            { nom: "magrets de canard", quantite: "2", obligatoire: true },
+            { nom: "miel toutes fleurs", quantite: "3 c. à soupe", obligatoire: true },
+            { nom: "vinaigre balsamique", quantite: "2 c. à soupe", obligatoire: true },
+            { nom: "fleur de sel", quantite: "2 pincées", obligatoire: true },
+            { nom: "poivre du moulin", quantite: "selon goût", obligatoire: true }
         ],
-        ustensiles: ["poêle", "couteau"],
+        ustensiles: ["poêle", "couteau bien aiguisé", "papier aluminium"],
         tags: ["fête", "gastronomique"],
         instructions: [
-            "Quadrillez la peau du magret avec un couteau sans toucher la chair.",
-            "Démarrez la cuisson côté peau à feu moyen pendant 8 minutes.",
-            "Retirez l'excédent de gras et faites cuire 3 minutes côté chair.",
-            "Réservez la viande dans du papier alu.",
-            "Déglacez la poêle avec le miel et le vinaigre pour créer la sauce.",
-            "Tranchez le magret et nappez de sauce avant de servir."
-        ]
+            "Quadriller la peau du magret sans entamer la chair.",
+            "Démarrer la cuisson à froid côté peau à feu moyen pendant 8-10 min pour faire fondre le gras.",
+            "Jeter l'excès de graisse et cuire 3-4 min côté chair (pour une cuisson rosée).",
+            "Laisser reposer la viande emballée dans l'alu pendant 5 min.",
+            "Déglacer la poêle avec le miel et le vinaigre pour obtenir un sirop nappant.",
+            "Couper en tranches épaisses et verser la sauce au miel."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/wvpvsu1511786158.jpg"
     },
     {
         id: 10,
-        titre: "Salade César Royale",
-        description: "La légende des salades : poulet croustillant, sauce onctueuse et parmesan.",
-        temps: 30,
-        difficulte: "Facile",
-        emoji: "🥗",
+        titre: "Pot-au-feu de grand-mère",
+        description: "Le bouillon fumant et les légumes d'hiver qui réchauffent le coeur.",
+        temps: 180,
+        personnes: 4,
+        difficulte: "Moyen",
+        emoji: "🥘",
         ingredients: [
-            { nom: "salade romaine", obligatoire: true },
-            { nom: "filet de poulet", obligatoire: true },
-            { nom: "parmesan", obligatoire: true },
-            { nom: "pain", obligatoire: true },
-            { nom: "sauce césar (en pot ou maison)", obligatoire: true }
+            { nom: "boeuf (gîte, paleron)", quantite: "1kg", obligatoire: true },
+            { nom: "os à moelle", quantite: "4", obligatoire: true },
+            { nom: "carottes", quantite: "4", obligatoire: true },
+            { nom: "poireaux", quantite: "3", obligatoire: true },
+            { nom: "navets", quantite: "2", obligatoire: true }
         ],
-        ustensiles: ["poêle", "saladier"],
-        tags: ["salade", "frais", "complet"],
+        ustensiles: ["marmite", "écumoire"],
+        tags: ["hiver", "bouillon", "tradition"],
         instructions: [
-            "Faites dorer le poulet coupé en lanières à la poêle.",
-            "Coupez le pain en dés et faites-en des croûtons à la poêle avec un peu d'huile.",
-            "Mélangez la salade, le poulet et les croûtons dans un saladier.",
-            "Ajoutez des copeaux de parmesan.",
-            "Arrosez généreusement de sauce et mélangez le tout."
-        ]
+            "Mettre la viande dans une grande marmite d'eau froide et porter à ébullition.",
+            "Écumer régulièrement. Ajouter les légumes entiers et le bouquet garni.",
+            "Laisser mijoter 3h à feu doux. Servir avec de la moutarde et du gros sel."
+        ],
+        image: "https://assets.afcdn.com/recipe/20120104/16087_w600.jpg"
     },
     {
         id: 11,
         titre: "Lasagnes à la Bolognaise",
         description: "Le plat italien gourmand par excellence.",
         temps: 60,
+        personnes: 6,
         difficulte: "Moyen",
         emoji: "🍝",
         ingredients: [
-            { nom: "pâtes (lasagnes)", obligatoire: true },
-            { nom: "viande hachée", obligatoire: true },
-            { nom: "tomates", obligatoire: true },
-            { nom: "fromage râpé", obligatoire: true },
-            { nom: "beurre", obligatoire: true },
-            { nom: "farine", obligatoire: true },
-            { nom: "lait", obligatoire: true }
+            { nom: "plaques de lasagnes", quantite: "12", obligatoire: true },
+            { nom: "viande de bœuf hachée", quantite: "500g", obligatoire: true },
+            { nom: "sauce tomate cuisinée", quantite: "800g", obligatoire: true },
+            { nom: "fromage râpé (emmental/mozzarella)", quantite: "150g", obligatoire: true },
+            { nom: "beurre", quantite: "50g", obligatoire: true },
+            { nom: "farine", quantite: "50g", obligatoire: true },
+            { nom: "lait", quantite: "500ml", obligatoire: true }
         ],
-        ustensiles: ["plat à gratin", "four"],
+        ustensiles: ["plat à gratin", "four", "casserole"],
         tags: ["italien", "familial"],
         instructions: [
-            "Préparez une sauce bolognaise avec la viande et la tomate.",
-            "Préparez une béchamel avec le beurre, la farine et le lait.",
-            "Alternez couches de pâtes, bolognaise et béchamel.",
-            "Finissez par une couche de fromage.",
-            "Faites cuire 35 minutes à 180°C."
-        ]
+            "Faire mijoter la viande hachée avec la sauce tomate pendant 15 minutes.",
+            "Réaliser une béchamel lisse avec le beurre, la farine et le lait.",
+            "Monter le plat : alterner couches de pâtes, bolognaise et béchamel.",
+            "Terminer par une généreuse couche de fromage râpé.",
+            "Enfourner 35 minutes à 180°C jusqu'à ce que le dessus soit gratiné."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/wtsvxx1511296896.jpg"
     },
     {
         id: 12,
         titre: "Risotto aux Champignons",
         description: "Crémeux, fondant et délicieusement boisé.",
         temps: 35,
+        personnes: 4,
         difficulte: "Difficile",
         emoji: "🍚",
         ingredients: [
-            { nom: "riz", obligatoire: true },
-            { nom: "champignons", obligatoire: true },
-            { nom: "parmesan", obligatoire: true },
-            { nom: "oignons", obligatoire: true },
-            { nom: "bouillon", obligatoire: true }
+            { nom: "riz arborio", quantite: "300g", obligatoire: true },
+            { nom: "champignons de saison", quantite: "400g", obligatoire: true },
+            { nom: "parmesan râpé", quantite: "50g", obligatoire: true },
+            { nom: "oignons", quantite: "1", obligatoire: true },
+            { nom: "bouillon de légumes", quantite: "1L", obligatoire: true },
+            { nom: "vin blanc", quantite: "100ml", obligatoire: true }
         ],
-        ustensiles: ["casserole"],
+        ustensiles: ["casserole", "poêle"],
         tags: ["végétarien", "gastronomique"],
         instructions: [
-            "Faites revenir les oignons et les champignons.",
-            "Ajoutez le riz et faites-le nacrer.",
-            "Ajoutez le bouillon louche après louche en remuant sans cesse.",
-            "Ajoutez le parmesan à la fin pour la texture."
-        ]
+            "Dorer les champignons tranchés séparément à la poêle.",
+            "Faire suer les oignons dans une casserole, ajouter le riz et le faire nacrer (devenir translucide).",
+            "Déglacer avec le vin blanc, puis ajouter le bouillon louche après louche en remuant.",
+            "Une fois le riz cuit (al dente), incorporer les champignons et le parmesan pour lier le tout."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/xxrxux1503070723.jpg"
     },
     {
         id: 13,
         titre: "Spaghetti Carbonara (Vraie)",
         description: "Pas de crème ! Juste des œufs, du pecorino et du guanciale (ou pancetta).",
         temps: 20,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🍝",
         ingredients: [
-            { nom: "pâtes", obligatoire: true },
-            { nom: "pancetta ou lardons", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "parmesan ou pecorino", obligatoire: true }
+            { nom: "spaghetti", quantite: "350g", obligatoire: true },
+            { nom: "pancetta ou guanciale", quantite: "150g", obligatoire: true },
+            { nom: "œufs frais", quantite: "3", obligatoire: true },
+            { nom: "parmesan ou pecorino", quantite: "100g", obligatoire: true },
+            { nom: "beurre (pour la dorure)", quantite: "50g", obligatoire: true }
         ],
-        ustensiles: ["casserole", "poêle"],
+        ustensiles: ["casserole", "poêle", "bol"],
         tags: ["italien", "rapide"],
         instructions: [
-            "Cuisez les pâtes dans l'eau bouillante.",
-            "Faites dorer la pancetta à la poêle.",
-            "Battez les oeufs avec le fromage.",
-            "Mélangez les pâtes égouttées avec la pancetta.",
-            "Hors du feu, versez le mélange d'oeufs et remuez vite pour créer la sauce crémeuse."
-        ]
+            "Cuire les pâtes al dente dans une grande casserole d'eau salée.",
+            "Faire dorer la pancetta à la poêle avec un peu de beurre jusqu'à ce qu'elle soit croustillante.",
+            "Battre les œufs avec the fromage et beaucoup de poivre noir dans un bol.",
+            "Mélanger les pâtes égouttées (garder un peu de jus) avec la pancetta.",
+            "Hors du feu, verser le mélange d'œufs et remuer énergiquement pour une sauce onctueuse."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg"
     },
     {
         id: 14,
-        titre: "Tartiflette au Reblochon",
-        description: "La reine des pistes ! Pommes de terre, lardons, oignons et reblochon coulant.",
-        temps: 45,
+        titre: "Blanquette de veau à l'ancienne",
+        description: "Un ragoût de veau à la sauce blanche onctueuse.",
+        temps: 90,
+        personnes: 4,
         difficulte: "Moyen",
         emoji: "🥘",
         ingredients: [
-            { nom: "pommes de terre", obligatoire: true },
-            { nom: "reblochon", obligatoire: true },
-            { nom: "lardons", obligatoire: true },
-            { nom: "oignons", obligatoire: true },
-            { nom: "vin blanc", obligatoire: false }
+            { nom: "épaule de veau", quantite: "1kg", obligatoire: true },
+            { nom: "carottes", quantite: "3", obligatoire: true },
+            { nom: "champignons", quantite: "250g", obligatoire: true },
+            { nom: "crème fraîche", quantite: "20cl", obligatoire: true },
+            { nom: "jaunes d'oeufs", quantite: "2", obligatoire: true }
         ],
-        ustensiles: ["plat à gratin", "four", "poêle"],
-        tags: ["hiver", "montagne", "familial"],
+        ustensiles: ["cocotte", "bol"],
+        tags: ["mijote", "tradition", "classique"],
         instructions: [
-            "Cuisez les pommes de terre à l'eau.",
-            "Faites revenir lardons et oignons à la poêle.",
-            "Coupez les pommes de terre en rondelles et disposez-les dans le plat.",
-            "Ajoutez lardons et oignons, puis un petit fond de vin blanc.",
-            "Coupez le reblochon en deux dans l'épaisseur et posez-le sur le dessus.",
-            "Faites gratiner au four 20 minutes à 200°C."
-        ]
+            "Cuire le veau avec les légumes dans un bouillon pendant 1h.",
+            "Préparer un roux et lier avec le bouillon du veau.",
+            "Ajouter la crème et les jaunes d'oeufs à la fin sans faire bouillir.",
+            "Servir avec du riz blanc."
+        ],
+        image: "https://assets.afcdn.com/recipe/20120126/62650_w600.jpg"
     },
     {
         id: 15,
-        titre: "Hachis Parmentier",
-        description: "Le confort d'une purée maison et d'une viande savoureuse.",
+        titre: "Tarte Tatin caramélisée",
+        description: "Le dessert mythique aux pommes fondantes et caramel craquant.",
         temps: 45,
-        difficulte: "Facile",
-        emoji: "🥘",
+        personnes: 6,
+        difficulte: "Moyen",
+        emoji: "🥧",
         ingredients: [
-            { nom: "pommes de terre", obligatoire: true },
-            { nom: "viande hachée", obligatoire: true },
-            { nom: "beurre", obligatoire: true },
-            { nom: "lait", obligatoire: true },
-            { nom: "oignons", obligatoire: true },
-            { nom: "fromage râpé", obligatoire: false }
+            { nom: "pommes Golden", quantite: "1kg", obligatoire: true },
+            { nom: "sucre en poudre", quantite: "150g", obligatoire: true },
+            { nom: "beurre", quantite: "100g", obligatoire: true },
+            { nom: "pâte brisée", quantite: "1", obligatoire: true }
         ],
-        ustensiles: ["plat à gratin", "four", "presse-purée"],
-        tags: ["familial", "budget"],
+        ustensiles: ["moule à tatin", "four"],
+        tags: ["dessert", "pommes", "classique"],
         instructions: [
-            "Cuisez les pommes de terre à l'eau et écrasez-les en purée avec beurre et lait.",
-            "Faites revenir la viande avec les oignons émincés.",
-            "Disposez la viande au fond du plat à gratin.",
-            "Recouvrez avec la purée et striez avec une fourchette.",
-            "Ajoutez du fromage si désiré et gratinez 15 minutes au four."
-        ]
+            "Faire un caramel dans le moule avec le sucre et le beurre.",
+            "Disposer les pommes en quartiers serrés sur le caramel.",
+            "Recouvrir de pâte et enfourner 30 min à 180°C. Retourner encore chaud."
+        ],
+        image: "https://assets.afcdn.com/recipe/20120905/13444_w600.jpg"
     },
     {
         id: 16,
-        titre: "Pot-au-Feu",
-        description: "Le bouillon fumant et les viandes tendres du dimanche.",
-        temps: 180,
-        difficulte: "Moyen",
-        emoji: "🍲",
+        titre: "Petit salé aux lentilles",
+        description: "Un plat de terroir réconfortant aux lentilles vertes.",
+        temps: 120,
+        personnes: 4,
+        difficulte: "Facile",
+        emoji: "🥘",
         ingredients: [
-            { nom: "boeuf", obligatoire: true },
-            { nom: "plats-de-côtes", obligatoire: true },
-            { nom: "poireau", obligatoire: true },
-            { nom: "carottes", obligatoire: true },
-            { nom: "navets", obligatoire: true },
-            { nom: "os à moelle", obligatoire: false }
+            { nom: "petit salé (poitrine)", quantite: "1kg", obligatoire: true },
+            { nom: "lentilles vertes", quantite: "400g", obligatoire: true },
+            { nom: "saucisse de Morteau", quantite: "1", obligatoire: true },
+            { nom: "carottes", quantite: "2", obligatoire: true },
+            { nom: "oignon piqué", quantite: "1", obligatoire: true }
         ],
-        ustensiles: ["marmite"],
-        tags: ["mijote", "hiver"],
+        ustensiles: ["cocotte"],
+        tags: ["terroir", "lentilles", "hiver"],
         instructions: [
-            "Mettez la viande dans une grande marmite d'eau froide et portez à ébullition.",
-            "Écumez soigneusement les impuretés en surface.",
-            "Ajoutez les légumes lavés et coupés en gros morceaux.",
-            "Laissez mijoter à petits bouillons pendant 3 heures.",
-            "Servez le bouillon en entrée et la viande/légumes avec du gros sel."
-        ]
+            "Dessaler le porc si nécessaire. Le cuire dans l'eau pendant 1h15.",
+            "Ajouter les lentilles, les carottes et la saucisse.",
+            "Poursuivre la cuisson 35 min jusqu'à ce que les lentilles soient tendres."
+        ],
+        image: "https://assets.afcdn.com/recipe/20140228/35545_w600.jpg"
     },
     {
         id: 17,
         titre: "Cassoulet de Castelnaudary",
         description: "Le plat languedocien par excellence, riche et généreux.",
         temps: 240,
+        personnes: 6,
         difficulte: "Difficile",
         emoji: "🍲",
         ingredients: [
-            { nom: "haricots blancs", obligatoire: true },
-            { nom: "confit de canard", obligatoire: true },
-            { nom: "saucisse de toulouse", obligatoire: true },
-            { nom: "lardons", obligatoire: true },
-            { nom: "couenne de porc", obligatoire: false },
-            { nom: "ail", obligatoire: true }
+            { nom: "haricots blancs (Lingots)", quantite: "600g", obligatoire: true },
+            { nom: "confit de canard", quantite: "3 cuisses", obligatoire: true },
+            { nom: "saucisse de Toulouse", quantite: "500g", obligatoire: true },
+            { nom: "lardons", quantite: "150g", obligatoire: true },
+            { nom: "échine de porc", quantite: "500g", obligatoire: true },
+            { nom: "ail", quantite: "3 gousses", obligatoire: true },
+            { nom: "bouillon de porc", quantite: "1.5L", obligatoire: true }
         ],
-        ustensiles: ["cassole", "cocotte"],
+        ustensiles: ["cassole en terre cuite", "cocotte", "four"],
         tags: ["traditionnel", "mijote", "fête"],
         instructions: [
-            "Faites tremper les haricots la veille.",
-            "Cuisez les haricots à l'eau avec la couenne pendant 1h30.",
-            "Dans une cocotte, faites dorer les saucisses et le canard.",
-            "Disposez les haricots et les viandes dans une cassole en terre cuite.",
-            "Ajoutez du bouillon de cuisson des haricots.",
-            "Enfournez à 150°C pendant 2h en 'cassant la croûte' qui se forme 7 fois."
-        ]
+            "Faire tremper les haricots la veille (12h minimum).",
+            "Cuire les haricots et la viande de porc dans le bouillon pendant 1h30.",
+            "Dorer les saucisses et le canard séparément dans une poêle.",
+            "Dans la cassole, alterner couches de haricots et de viandes.",
+            "Enfournez à 150°C pendant 2h sans oublier de casser la croûte brune 7 fois."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/wxuvuv1511299147.jpg"
     },
     {
         id: 18,
         titre: "Crème Brûlée à la Vanille",
         description: "L'onctuosité protégée par une fine couche de caramel craquant.",
         temps: 60,
+        personnes: 4,
         difficulte: "Moyen",
         emoji: "🍮",
         ingredients: [
-            { nom: "jaune d'œuf", obligatoire: true },
-            { nom: "crème fraîche liquide", obligatoire: true },
-            { nom: "sucre", obligatoire: true },
-            { nom: "vanille en poudre", obligatoire: true }
+            { nom: "jaunes d'œufs", quantite: "5", obligatoire: true },
+            { nom: "crème liquide entière", quantite: "500ml", obligatoire: true },
+            { nom: "sucre en poudre", quantite: "100g", obligatoire: true },
+            { nom: "vanille (extrait ou gousse)", quantite: "1 c. à soupe", obligatoire: true },
+            { nom: "sucre roux (cassonade)", quantite: "50g", obligatoire: true }
         ],
-        ustensiles: ["ramequins", "four", "chalumeau"],
+        ustensiles: ["ramequins", "four", "chalumeau", "bain-marie"],
         tags: ["dessert", "classique"],
         instructions: [
-            "Préchauffez le four à 100°C.",
-            "Fouettez les jaunes d'oeufs avec le sucre jusqu'à ce que le mélange blanchisse.",
-            "Ajoutez la crème et la vanille, mélangez doucement sans faire mousser.",
-            "Répartissez dans les ramequins et cuisez au bain-marie pendant 50 minutes.",
-            "Laissez refroidir et placez au réfrigérateur au moins 4 heures.",
-            "Saupoudrez de sucre et caramélisez au chalumeau juste avant de servir."
-        ]
+            "Mélanger les jaunes d'œufs avec le sucre sans faire mousser.",
+            "Verser la crème et la vanille sur le mélange en remuant doucement.",
+            "Répartir dans les ramequins et cuire au bain-marie à 100°C pendant 50 min.",
+            "Réfrigérer pendant au moins 4 heures.",
+            "Saupoudrer de cassonade et brûler au chalumeau juste avant de servir."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/uryqru1511798039.jpg"
     },
     {
         id: 19,
-        titre: "Profiteroles au Chocolat",
-        description: "Le dessert gourmand : choux, glace vanille et chocolat chaud.",
-        temps: 45,
-        difficulte: "Difficile",
-        emoji: "🍦",
+        titre: "Sole meunière au beurre citronné",
+        description: "Une cuisson parfaite pour un poisson noble et délicat.",
+        temps: 15,
+        personnes: 2,
+        difficulte: "Moyen",
+        emoji: "🐟",
         ingredients: [
-            { nom: "pâte à choux", obligatoire: true },
-            { nom: "glace vanille", obligatoire: true },
-            { nom: "chocolat noir", obligatoire: true },
-            { nom: "beurre", obligatoire: true }
+            { nom: "soles parées", quantite: "2", obligatoire: true },
+            { nom: "beurre", quantite: "60g", obligatoire: true },
+            { nom: "farine", quantite: "30g", obligatoire: true },
+            { nom: "citron", quantite: "1", obligatoire: true }
         ],
-        ustensiles: ["casserole", "four", "poche à douille"],
-        tags: ["dessert", "gourmand"],
+        ustensiles: ["grande poêle", "pince"],
+        tags: ["poisson", "gastronomique", "bistrot"],
         instructions: [
-            "Préparez les choux (ou utilisez des prêts à l'emploi).",
-            "Coupez les choux en deux et garnissez-les d'une boule de glace vanille.",
-            "Faites fondre le chocolat avec un peu de beurre et d'eau pour obtenir une sauce lisse.",
-            "Disposez les choux dans une assiette et nappez-les généreusement de sauce chocolat chaude.",
-            "Servez immédiatement pour le contraste chaud-froid."
-        ]
+            "Fariner les soles et secouer l'excédent.",
+            "Les cuire à la poêle dans le beurre moussant 4-5 min par face.",
+            "Arroser de jus de citron et de persil ciselé avant de servir."
+        ],
+        image: "https://assets.afcdn.com/recipe/20120104/17359_w600.jpg"
     },
     {
         id: 20,
         titre: "Steak Frites de Bistrot",
         description: "Le plaisir simple d'une viande de qualité et de frites maison.",
         temps: 30,
+        personnes: 2,
         difficulte: "Facile",
         emoji: "🥩",
         ingredients: [
-            { nom: "boeuf (steak)", obligatoire: true },
-            { nom: "pommes de terre", obligatoire: true },
-            { nom: "huile", obligatoire: true },
-            { nom: "sel", obligatoire: true }
+            { nom: "steaks de bœuf (entrecôte)", quantite: "2", obligatoire: true },
+            { nom: "pommes de terre à frites", quantite: "500g", obligatoire: true },
+            { nom: "beurre clarifié", quantite: "30g", obligatoire: true },
+            { nom: "sel et poivre", quantite: "selon goût", obligatoire: true },
+            { nom: "huile de friture", quantite: "selon besoin", obligatoire: true }
         ],
-        ustensiles: ["friteuse", "poêle", "air fryer"],
+        ustensiles: ["friteuse", "poêle en fer", "planche"],
         tags: ["rapide", "bistrot"],
         instructions: [
-            "Épluchez et coupez les pommes de terre en bâtonnets.",
-            "Faites cuire les frites à la friteuse (deux bains) ou à l'Air Fryer (25 min à 200°C).",
-            "Faites saisir le steak à la poêle à feu très vif selon votre goût (bleu, saignant, à point).",
-            "Salez et poivrez la viande après cuisson.",
-            "Servez bien chaud avec une pincée de sel sur les frites."
-        ]
+            "Tailler les frites et les rincer pour enlever l'amidon.",
+            "Réaliser deux bains de friture (150°C puis 180°C) ou cuire à l'Air Fryer.",
+            "Saisir les steaks à la poêle très chaude avec le beurre, 2-3 min par face selon épuisement.",
+            "Laisser reposer la viande 5 min avant de servir avec les frites bien croustillantes."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/vussxq1511882648.jpg"
     },
     {
         id: 21,
         titre: "Gratin dauphinois traditionnel",
         description: "Une recette de gratin de pommes de terre à la crème et à l'ail.",
         temps: 60,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🥘",
         ingredients: [
-            { nom: "pomme de terre", obligatoire: true },
-            { nom: "crème liquide", obligatoire: true },
-            { nom: "ail", obligatoire: true },
-            { nom: "sel", obligatoire: true },
-            { nom: "poivre", obligatoire: true }
+            { nom: "pomme de terre", quantite: "1kg", obligatoire: true },
+            { nom: "crème liquide", quantite: "300ml", obligatoire: true },
+            { nom: "lait", quantite: "200ml", obligatoire: true },
+            { nom: "ail", quantite: "2 gousses", obligatoire: true },
+            { nom: "beurre", quantite: "30g", obligatoire: true }
         ],
         ustensiles: ["plat à gratin", "four"],
         tags: ["Gratin", "Pommes de terre", "Accompagnement"],
         instructions: [
             "Préchauffer le four à 150°C.",
-            "Eplucher et couper les pommes de terres en rondelles.",
-            "Presser l'ail.",
-            "Napper le fond d'un plat à gratin de crème.",
+            "Eplucher et couper les pommes de terres en rondelles fines.",
+            "Frotter le plat avec une gousse d'ail, puis napper le fond de crème.",
             "Alterner une couche de pommes de terres, crème, ail, sel, poivre.",
-            "Terminer en nappant de crème.",
-            "Mettre au four pendant au moins une heure."
+            "Terminer en nappant de crème et enfourner pendant au moins une heure."
         ],
         image: "https://assets.afcdn.com/recipe/20201217/116564_w648h414c1cx1009cy951.webp"
     },
@@ -520,26 +549,26 @@ var recipes = [
         titre: "Quiche lorraine maison",
         description: "La quiche traditionnelle à base de lardons, crème et oeufs.",
         temps: 55,
+        personnes: 6,
         difficulte: "Facile",
         emoji: "🥧",
         ingredients: [
-            { nom: "pâte brisée", obligatoire: true },
-            { nom: "lardons", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "crème fraîche", obligatoire: true },
-            { nom: "lait", obligatoire: true },
-            { nom: "beurre", obligatoire: true },
-            { nom: "muscade", obligatoire: true }
+            { nom: "pâte brisée", quantite: "1", obligatoire: true },
+            { nom: "lardons fumés", quantite: "200g", obligatoire: true },
+            { nom: "oeufs", quantite: "3", obligatoire: true },
+            { nom: "crème fraîche", quantite: "200ml", obligatoire: true },
+            { nom: "lait", quantite: "200ml", obligatoire: true },
+            { nom: "beurre", quantite: "1 noisette", obligatoire: true },
+            { nom: "muscade", quantite: "1 pincée", obligatoire: true }
         ],
         ustensiles: ["moule à tarte", "four", "poêle"],
         tags: ["Quiche", "Plat principal", "Classique"],
         instructions: [
             "Préchauffer le four à 180°C.",
             "Etaler la pâte dans un moule, la piquer à la fourchette.",
-            "Faire rissoler les lardons à la poêle.",
-            "Battre les oeufs, la crème fraîche et le lait. Ajouter les lardons.",
-            "Assaisonner de sel, poivre et muscade.",
-            "Verser sur la pâte et cuire 45 à 50 min."
+            "Faire rissoler les lardons à la poêle pour enlever l'excès de gras.",
+            "Battre les oeufs, la crème fraîche et le lait. Ajouter les lardons et la muscade.",
+            "Verser sur la pâte et cuire 45 à 50 min jusqu'à ce qu'elle soit bien dorée."
         ],
         image: "https://assets.afcdn.com/recipe/20161128/28118_w648h414c1cx845cy3505.webp"
     },
@@ -548,19 +577,21 @@ var recipes = [
         titre: "Poulet rôti simple",
         description: "Un poulet rôti juteux et croustillant sans fioritures.",
         temps: 60,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🍗",
         ingredients: [
-            { nom: "poulet", obligatoire: true },
-            { nom: "huile", obligatoire: true }
+            { nom: "poulet entier", quantite: "1.5kg", obligatoire: true },
+            { nom: "huile de tournesol", quantite: "3 c. à soupe", obligatoire: true },
+            { nom: "sel et poivre", quantite: "selon goût", obligatoire: true }
         ],
         ustensiles: ["plat à four", "four"],
         tags: ["Poulet", "Plat principal", "Classique"],
         instructions: [
-            "Préchauffer le four à 190°.",
-            "Masser le poulet avec de l'huile.",
+            "Préchauffer le four à 190°C.",
+            "Masser le poulet avec de l'huile et bien assaisonner l'intérieur et l'extérieur.",
             "Le poser dans un plat et le mettre au four pendant 1 h 30.",
-            "Ne pas le piquer ni le retourner pendant la cuisson."
+            "Arroser régulièrement avec le jus de cuisson pour une peau croustillante."
         ],
         image: "https://assets.afcdn.com/recipe/20130909/63747_w648h414c1cx1872cy2808.webp"
     },
@@ -569,27 +600,28 @@ var recipes = [
         titre: "Salade Niçoise authentique",
         description: "La véritable salade niçoise avec thon, anchois et légumes frais.",
         temps: 28,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🥗",
         ingredients: [
-            { nom: "tomates", obligatoire: true },
-            { nom: "poivron vert", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "oignons cébettes", obligatoire: true },
-            { nom: "févettes", obligatoire: true },
-            { nom: "thon", obligatoire: true },
-            { nom: "anchois", obligatoire: true },
-            { nom: "olives noires", obligatoire: true },
-            { nom: "basilic", obligatoire: true },
-            { nom: "huile d'olive", obligatoire: true }
+            { nom: "tomates mûres", quantite: "4", obligatoire: true },
+            { nom: "poivron vert", quantite: "1", obligatoire: true },
+            { nom: "oeufs", quantite: "4", obligatoire: true },
+            { nom: "oignons cébettes", quantite: "2", obligatoire: true },
+            { nom: "févettes", quantite: "100g", obligatoire: true },
+            { nom: "thon à l'huile", quantite: "200g", obligatoire: true },
+            { nom: "anchois", quantite: "8 filets", obligatoire: true },
+            { nom: "olives noires", quantite: "50g", obligatoire: true },
+            { nom: "basilic frais", quantite: "10 feuilles", obligatoire: true },
+            { nom: "huile d'olive", quantite: "4 c. à soupe", obligatoire: true }
         ],
         ustensiles: ["saladier", "casserole"],
         tags: ["Salade", "Entrée", "Nicoise"],
         instructions: [
-            "Faire durcir les oeufs, puis les faire refroidir.",
-            "Disposer les légumes, le thon et les oeufs dans un plat.",
-            "Ajouter les anchois, les olives et le basilic.",
-            "Arroser d'huile d'olive et de vinaigre."
+            "Faire durcir les oeufs (9 min), puis les faire refroidir dans l'eau glacée.",
+            "Disposer les légumes coupés, le thon émietté et les oeufs en quartiers dans un plat.",
+            "Ajouter les anchois, les olives et le basilic ciselé.",
+            "Arroser d'un mélange huile d'olive et vinaigre de vin rouge."
         ],
         image: "https://assets.afcdn.com/recipe/20190704/94687_w648h414c1cx3008cy2008.webp"
     },
@@ -598,20 +630,22 @@ var recipes = [
         titre: "Mousse au chocolat facile",
         description: "Une mousse au chocolat aérienne préparée avec seulement 3 ingrédients.",
         temps: 15,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🍮",
         ingredients: [
-            { nom: "chocolat noir", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "sucre vanillé", obligatoire: true }
+            { nom: "chocolat noir pâtissier", quantite: "200g", obligatoire: true },
+            { nom: "oeufs frais", quantite: "6", obligatoire: true },
+            { nom: "sucre vanillé", quantite: "1 sachet", obligatoire: true }
         ],
-        ustensiles: ["bol", "fouet", "verrines"],
+        ustensiles: ["bol", "fouet", "verrines", "bain-marie"],
         tags: ["Dessert", "Chocolat", "Classique"],
         instructions: [
             "Séparer les blancs des jaunes d'oeufs.",
-            "Faire fondre le chocolat au bain-marie.",
-            "Incorporer les jaunes et le sucre au chocolat.",
-            "Battre les blancs en neige ferme et les ajouter délicatement."
+            "Faire fondre le chocolat au bain-marie doucement.",
+            "Incorporer les jaunes et le sucre au chocolat fondu.",
+            "Battre les blancs en neige ferme et les ajouter délicatement à la maryse.",
+            "Réserver au frais au moins 3 heures avant de servir."
         ],
         image: "https://assets.afcdn.com/recipe/20210311/118509_w648h414c1cx300cy533.webp"
     },
@@ -620,23 +654,24 @@ var recipes = [
         titre: "Pâte à crêpes raffinée",
         description: "Une pâte à crêpes lisse et parfumée pour des crêpes parfaites.",
         temps: 17,
+        personnes: 6,
         difficulte: "Facile",
         emoji: "🥞",
         ingredients: [
-            { nom: "farine", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "lait", obligatoire: true },
-            { nom: "beurre", obligatoire: true },
-            { nom: "sucre", obligatoire: true },
-            { nom: "grand-marnier", obligatoire: false }
+            { nom: "farine", quantite: "250g", obligatoire: true },
+            { nom: "oeufs", quantite: "4", obligatoire: true },
+            { nom: "lait", quantite: "500ml", obligatoire: true },
+            { nom: "beurre", quantite: "50g", obligatoire: true },
+            { nom: "sucre", quantite: "2 c. à soupe", obligatoire: true },
+            { nom: "grand-marnier", quantite: "1 c. à café", obligatoire: false }
         ],
         ustensiles: ["saladier", "fouet", "poêle à crêpes"],
         tags: ["Crêpes", "Dessert", "Gouter"],
         instructions: [
             "Mélanger farine, sel et sucre. Faire une fontaine.",
-            "Ajouter les oeufs, puis le beurre fondu.",
-            "Incorporer le lait petit à petit pour éviter les grumeaux.",
-            "Cuire dans une poêle chaude huilée."
+            "Ajouter les oeufs, puis le beurre fondu et le parfum choisi.",
+            "Incorporer le lait petit à petit avec un fouet pour éviter les grumeaux.",
+            "Laisser reposer 30 min, puis cuire dans une poêle chaude et légèrement huilée."
         ],
         image: "https://assets.afcdn.com/recipe/20260126/165572_w648h414c1cx3210cy2530.webp"
     },
@@ -645,23 +680,25 @@ var recipes = [
         titre: "Lasagnes à la bolognaise",
         description: "Lasagnes généreuses avec sauce bolognaise maison et béchamel.",
         temps: 120,
+        personnes: 6,
         difficulte: "Moyen",
         emoji: "🍝",
         ingredients: [
-            { nom: "lasagnes", obligatoire: true },
-            { nom: "boeuf haché", obligatoire: true },
-            { nom: "purée de tomate", obligatoire: true },
-            { nom: "lait", obligatoire: true },
-            { nom: "farine", obligatoire: true },
-            { nom: "beurre", obligatoire: true },
-            { nom: "parmesan", obligatoire: true }
+            { nom: "lasagnes", quantite: "12 plaques", obligatoire: true },
+            { nom: "boeuf haché", quantite: "500g", obligatoire: true },
+            { nom: "purée de tomate", quantite: "800g", obligatoire: true },
+            { nom: "lait", quantite: "500ml", obligatoire: true },
+            { nom: "farine", quantite: "50g", obligatoire: true },
+            { nom: "beurre", quantite: "50g", obligatoire: true },
+            { nom: "parmesan", quantite: "100g", obligatoire: true }
         ],
         ustensiles: ["plat à gratin", "four", "casserole"],
         tags: ["Lasagnes", "Plat principal", "Italien"],
         instructions: [
-            "Préparer la sauce bolognaise et la béchamel.",
-            "Alterner les couches de lasagnes, bolognaise et béchamel.",
-            "Terminer par du fromage et cuire 25 minutes à 200°C."
+            "Préparer la sauce bolognaise avec la viande et la tomate.",
+            "Réaliser une béchamel avec le beurre, la farine et le lait.",
+            "Alterner les couches de lasagnes, bolognaise et béchamel dans le plat.",
+            "Terminer par du parmesan râpé et cuire 25 minutes à 200°C."
         ],
         image: "https://assets.afcdn.com/recipe/20200408/109520_w648h414c1cx1866cy2800.webp"
     },
@@ -670,23 +707,24 @@ var recipes = [
         titre: "Cake à la banane",
         description: "Un gâteau moelleux pour utiliser vos bananes trop mûres.",
         temps: 55,
+        personnes: 8,
         difficulte: "Facile",
         emoji: "🍞",
         ingredients: [
-            { nom: "bananes", obligatoire: true },
-            { nom: "farine", obligatoire: true },
-            { nom: "sucre", obligatoire: true },
-            { nom: "beurre", obligatoire: true },
-            { nom: "oeuf", obligatoire: true },
-            { nom: "levure chimique", obligatoire: true }
+            { nom: "bananes très mûres", quantite: "3", obligatoire: true },
+            { nom: "farine", quantite: "200g", obligatoire: true },
+            { nom: "sucre", quantite: "100g", obligatoire: true },
+            { nom: "beurre fondu", quantite: "100g", obligatoire: true },
+            { nom: "oeuf", quantite: "1 large", obligatoire: true },
+            { nom: "levure chimique", quantite: "1 sachet", obligatoire: true }
         ],
         ustensiles: ["moule à cake", "four", "bol"],
         tags: ["Cake", "Banane", "Gouter"],
         instructions: [
-            "Mélanger les ingrédients secs.",
-            "Mélanger sucre, oeuf, beurre et bananes écrasées.",
-            "Réunir les deux préparations.",
-            "Cuire 45 min à 180°C."
+            "Mélanger les ingrédients secs (farine, levure).",
+            "Mélanger sucre, oeuf, beurre et les bananes écrasées en purée.",
+            "Réunir les deux préparations sans trop mélanger.",
+            "Verser dans un moule beurré et cuire 45 min à 180°C."
         ],
         image: "https://assets.afcdn.com/recipe/20181017/82817_w648h414c1cx1866cy2488.webp"
     },
@@ -695,23 +733,24 @@ var recipes = [
         titre: "Boeuf Bourguignon express",
         description: "Une version rapide à la cocotte-minute du célèbre plat bourguignon.",
         temps: 60,
+        personnes: 4,
         difficulte: "Moyen",
         emoji: "🍲",
         ingredients: [
-            { nom: "boeuf", obligatoire: true },
-            { nom: "lardons", obligatoire: true },
-            { nom: "vin rouge", obligatoire: true },
-            { nom: "oignons", obligatoire: true },
-            { nom: "champignons de Paris", obligatoire: true },
-            { nom: "farine", obligatoire: true }
+            { nom: "boeuf à bourguignon", quantite: "800g", obligatoire: true },
+            { nom: "lardons", quantite: "100g", obligatoire: true },
+            { nom: "vin rouge", quantite: "500ml", obligatoire: true },
+            { nom: "oignons", quantite: "2", obligatoire: true },
+            { nom: "champignons de Paris", quantite: "200g", obligatoire: true },
+            { nom: "farine", quantite: "2 c. à soupe", obligatoire: true }
         ],
         ustensiles: ["cocotte-minute"],
         tags: ["Boeuf", "Plat principal", "Classique"],
         instructions: [
-            "Faire roussir la viande et les lardons.",
-            "Ajouter oignons, champignons et farine.",
-            "Mouiller au vin rouge.",
-            "Cuire 60 min sous pression."
+            "Faire roussir la viande et les lardons dans la cocotte ouverte.",
+            "Ajouter les oignons émincés, les champignons et saupoudrer de farine.",
+            "Mouiller au vin rouge, fermer la cocotte.",
+            "Cuire 60 min sous pression à partir du sifflement de la soupape."
         ],
         image: "https://assets.afcdn.com/recipe/20131009/56293_w648h414c1cx1872cy2808.webp"
     },
@@ -720,23 +759,24 @@ var recipes = [
         titre: "Gâteau au yaourt",
         description: "Le gâteau d'enfance par excellence, simple et inratable.",
         temps: 45,
+        personnes: 8,
         difficulte: "Facile",
         emoji: "🍰",
         ingredients: [
-            { nom: "yaourt nature", obligatoire: true },
-            { nom: "farine", obligatoire: true },
-            { nom: "sucre", obligatoire: true },
-            { nom: "oeufs", obligatoire: true },
-            { nom: "levure chimique", obligatoire: true },
-            { nom: "huile", obligatoire: true }
+            { nom: "yaourt nature", quantite: "1 pot", obligatoire: true },
+            { nom: "farine", quantite: "3 pots", obligatoire: true },
+            { nom: "sucre", quantite: "2 pots", obligatoire: true },
+            { nom: "oeufs", quantite: "3", obligatoire: true },
+            { nom: "levure chimique", quantite: "1 sachet", obligatoire: true },
+            { nom: "huile neutre", quantite: "1/2 pot", obligatoire: true }
         ],
         ustensiles: ["moule à gâteau", "four", "saladier"],
         tags: ["Gateau", "Yaourt", "Dessert"],
         instructions: [
-            "Mélanger le yaourt avec la levure.",
-            "Ajouter huile, sucre, farine et oeufs.",
-            "Verser dans un moule beurré.",
-            "Enfourner 30 minutes à 180°C."
+            "Vider le pot de yaourt dans le saladier (il servira de mesure).",
+            "Ajouter les oeufs, le sucre, la farine, la levure et l'huile.",
+            "Mélanger jusqu'à obtenir une pâte lisse.",
+            "Verser dans un moule beurré et enfourner 30 minutes à 180°C."
         ],
         image: "https://assets.afcdn.com/recipe/20200828/113345_w648h414c1cx2841cy1816.webp"
     },
@@ -745,22 +785,23 @@ var recipes = [
         titre: "Butternut farcies au quinoa",
         description: "Un plat complet sain composé de courges butternut farcies au quinoa et pois chiches.",
         temps: 70,
+        personnes: 2,
         difficulte: "Facile",
         emoji: "🎃",
         ingredients: [
-            { nom: "Courge butternut", obligatoire: true },
-            { nom: "Quinoa", obligatoire: true },
-            { nom: "Pois chiches", obligatoire: true },
-            { nom: "Persil", obligatoire: true },
-            { nom: "Huile d'olive", obligatoire: true }
+            { nom: "Courge butternut moyenne", quantite: "1", obligatoire: true },
+            { nom: "Quinoa cru", quantite: "100g", obligatoire: true },
+            { nom: "Pois chiches cuits", quantite: "200g", obligatoire: true },
+            { nom: "Persil frais", quantite: "1/2 bouquet", obligatoire: true },
+            { nom: "Huile d'olive", quantite: "2 c. à soupe", obligatoire: true }
         ],
         ustensiles: ["four", "couteau", "saladier"],
         tags: ["santé", "équilibre", "plat complet", "légumes"],
         instructions: [
-            "Préchauffez le four à 200°C.",
-            "Coupez les butternuts en 2 et évidez-les.",
-            "Mélangez le quinoa, pois chiches, persil et huile.",
-            "Remplissez les butternuts et enfournez 50 minutes."
+            "Préchauffez le four à 200°C. Coupez la butternut en deux et évidez les pépins.",
+            "Cuire le quinoa à l'eau bouillante pendant 12-15 minutes.",
+            "Mélangez le quinoa cuit, les pois chiches, le persil ciselé et l'huile.",
+            "Remplissez les cavités des butternuts et enfournez 50 minutes."
         ],
         image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FButternut-farcies-quinoa-pois-chiches.jpg&w=3840&q=75"
     },
@@ -769,22 +810,24 @@ var recipes = [
         titre: "Quiche poireaux-roquefort",
         description: "Une quiche savoureuse aux poireaux et au roquefort.",
         temps: 45,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🥧",
         ingredients: [
-            { nom: "Poireau", obligatoire: true },
-            { nom: "Pâte feuilletée", obligatoire: true },
-            { nom: "Crème fraîche", obligatoire: true },
-            { nom: "Roquefort", obligatoire: true },
-            { nom: "Œufs", obligatoire: true }
+            { nom: "poireaux", quantite: "3 gros", obligatoire: true },
+            { nom: "pâte brisée", quantite: "1", obligatoire: true },
+            { nom: "crème fraîche", quantite: "20cl", obligatoire: true },
+            { nom: "roquefort", quantite: "125g", obligatoire: true },
+            { nom: "œufs", quantite: "4", obligatoire: true },
+            { nom: "lait", quantite: "10cl", obligatoire: true }
         ],
-        ustensiles: ["moule", "four", "poêle"],
+        ustensiles: ["moule à tarte", "four", "poêle"],
         tags: ["santé", "équilibre", "plat complet", "végétarien"],
         instructions: [
-            "Cuire les poireaux à la poêle pendant 20 min.",
-            "Étaler la pâte dans un moule et pré-cuire 10 min.",
-            "Battre les œufs avec la crème et le roquefort.",
-            "Verser sur les poireaux et enfourner 25 min."
+            "Faire revenir les poireaux émincés à la poêle pendant 20 min jusqu'à ce qu'ils soient tendres.",
+            "Étaler la pâte dans un moule et la piquer à la fourchette.",
+            "Battre les œufs avec la crème, le lait et le roquefort émietté.",
+            "Disposer les poireaux sur le fond de pâte, verser l'appareil et enfourner 25 min à 180°C."
         ],
         image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FQuiche-poireaux-roquefort.jpg&w=3840&q=75"
     },
@@ -793,22 +836,24 @@ var recipes = [
         titre: "Gratin de chou-fleur léger",
         description: "Un gratin de chou-fleur fondant avec une sauce béchamel légère.",
         temps: 45,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🥦",
         ingredients: [
-            { nom: "Chou-fleur", obligatoire: true },
-            { nom: "Lait demi-écrémé", obligatoire: true },
-            { nom: "Emmental râpé", obligatoire: true },
-            { nom: "Farine", obligatoire: true },
-            { nom: "Beurre", obligatoire: true }
+            { nom: "chou-fleur", quantite: "1 gros", obligatoire: true },
+            { nom: "lait demi-écrémé", quantite: "250ml", obligatoire: true },
+            { nom: "emmental râpé", quantite: "50g", obligatoire: true },
+            { nom: "farine", quantite: "2 c. à soupe", obligatoire: true },
+            { nom: "beurre", quantite: "20g", obligatoire: true },
+            { nom: "oeufs", quantite: "2", obligatoire: true }
         ],
         ustensiles: ["casserole", "plat à gratin", "cuiseur vapeur"],
         tags: ["santé", "équilibre", "plat complet", "légumes"],
         instructions: [
-            "Cuire le chou-fleur à la vapeur 20 min.",
-            "Préparer une béchamel légère.",
-            "Placer le chou-fleur dans un plat, verser la sauce.",
-            "Parsemer de fromage et faire gratiner au four."
+            "Détailler le chou-fleur en bouquets et les cuire à la vapeur 20 min.",
+            "Préparer une béchamel légère avec le beurre, la farine et le lait.",
+            "Hors du feu, incorporer les oeufs battus à la béchamel pour plus d'onctuosité.",
+            "Placer le chou-fleur dans un plat, verser la sauce, parsemer de fromage et faire gratiner au four."
         ],
         image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FGratin-de-chou-fleur.jpg&w=3840&q=75"
     },
@@ -817,20 +862,23 @@ var recipes = [
         titre: "Purée à l'huile d'olive",
         description: "Une purée onctueuse revisitée avec de l'huile d'olive.",
         temps: 35,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🥔",
         ingredients: [
-            { nom: "Pomme de terre", obligatoire: true },
-            { nom: "Lait demi-écrémé", obligatoire: true },
-            { nom: "Huile d'olive", obligatoire: true },
-            { nom: "Noix de muscade", obligatoire: true }
+            { nom: "pommes de terre (Agata)", quantite: "1kg", obligatoire: true },
+            { nom: "lait demi-écrémé", quantite: "150ml", obligatoire: true },
+            { nom: "huile d'olive extra vierge", quantite: "100ml", obligatoire: true },
+            { nom: "ail", quantite: "2 gousses", obligatoire: true },
+            { nom: "noix de muscade", quantite: "1 pincée", obligatoire: true }
         ],
         ustensiles: ["moulin à légumes", "casserole"],
         tags: ["santé", "équilibre", "accompagnement", "végétarien"],
         instructions: [
-            "Cuire les pommes de terre à l'eau.",
-            "Passer au moulin en ajoutant le lait chaud.",
-            "Ajouter l'huile d'olive et la muscade. Mélanger."
+            "Cuire les pommes de terre épluchées à l'eau salée pendant 25 min.",
+            "Les passer au moulin à légumes en ajoutant progressivement le lait chaud.",
+            "Monter la purée à l'huile d'olive en mélangeant énergiquement.",
+            "Ajouter l'ail pressé et une touche de muscade pour parfumer."
         ],
         image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FPuree-de-pommes-de-terre-a-lhuile-dolive.jpg&w=3840&q=75"
     },
@@ -839,22 +887,25 @@ var recipes = [
         titre: "Gâteau bananes et noix",
         description: "Un gâteau énergétique aux bananes et aux éclats de noix.",
         temps: 50,
+        personnes: 8,
         difficulte: "Facile",
         emoji: "🍰",
         ingredients: [
-            { nom: "Bananes", obligatoire: true },
-            { nom: "Noix", obligatoire: true },
-            { nom: "Farine", obligatoire: true },
-            { nom: "Sucre", obligatoire: true },
-            { nom: "Beurre", obligatoire: true },
-            { nom: "Œufs", obligatoire: true }
+            { nom: "bananes bien mûres", quantite: "3", obligatoire: true },
+            { nom: "noix décortiquées", quantite: "100g", obligatoire: true },
+            { nom: "farine de blé", quantite: "250g", obligatoire: true },
+            { nom: "sucre roux", quantite: "100g", obligatoire: true },
+            { nom: "beurre demi-sel", quantite: "125g", obligatoire: true },
+            { nom: "oeufs", quantite: "3", obligatoire: true },
+            { nom: "levure chimique", quantite: "1 sachet", obligatoire: true }
         ],
-        ustensiles: ["moule", "saladier", "four"],
+        ustensiles: ["moule à manqué", "saladier", "four"],
         tags: ["santé", "équilibre", "dessert", "fruits"],
         instructions: [
-            "Mélanger beurre fondu et sucre. Ajouter les œufs.",
-            "Incorporer bananes écrasées, noix et farine.",
-            "Cuire 45 min à 180°C."
+            "Préchauffer le four à 180°C. Travailler le beurre mou avec le sucre.",
+            "Ajouter les oeufs un par un, puis les bananes écrasées et les noix concassées.",
+            "Incorporer la farine et la levure tamisées.",
+            "Verser dans le moule et cuire 45 min jusqu'à ce que la pointe d'un couteau ressorte sèche."
         ],
         image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FGateau-aux-bananes-et-aux-noix.jpg&w=3840&q=75"
     },
@@ -863,20 +914,23 @@ var recipes = [
         titre: "Gratin épinards et saumon",
         description: "Une alliance classique et saine entre saumon et épinards.",
         temps: 55,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🐟",
         ingredients: [
-            { nom: "Épinards", obligatoire: true },
-            { nom: "Pavé de saumon", obligatoire: true },
-            { nom: "Fromage de chèvre", obligatoire: true }
+            { nom: "épinards hachés", quantite: "500g", obligatoire: true },
+            { nom: "pavés de saumon", quantite: "500g", obligatoire: true },
+            { nom: "pommes de terre", quantite: "500g", obligatoire: true },
+            { nom: "fromage de chèvre frais", quantite: "150g", obligatoire: true },
+            { nom: "crème liquide", quantite: "20cl", obligatoire: true }
         ],
-        ustensiles: ["plat à gratin", "four"],
+        ustensiles: ["plat à gratin", "four", "casserole"],
         tags: ["santé", "équilibre", "plat complet", "poisson"],
         instructions: [
-            "Cuire les épinards et les égoutter.",
-            "Mélanger le chèvre aux épinards.",
-            "Disposer saumon et épinards dans un plat.",
-            "Enfourner 20 minutes."
+            "Cuire les pommes de terre à l'eau et les couper en rondelles.",
+            "Faire suer les épinards et les égoutter soigneusement.",
+            "Mélanger le chèvre et la crème aux épinards.",
+            "Disposer les pommes de terre, le saumon cru coupé en dés, et recouvrir du mélange aux épinards avant d'enfourner 20 min à 200°C."
         ],
         image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FGratin-epinards-saumon.jpg&w=3840&q=75"
     },
@@ -885,20 +939,23 @@ var recipes = [
         titre: "Steaks sauce au poivre",
         description: "Un plat express de viande rouge avec une sauce onctueuse.",
         temps: 15,
+        personnes: 2,
         difficulte: "Facile",
         emoji: "🥩",
         ingredients: [
-            { nom: "Steak", obligatoire: true },
-            { nom: "Crème fraîche", obligatoire: true },
-            { nom: "Moutarde", obligatoire: true },
-            { nom: "Poivre", obligatoire: true }
+            { nom: "steaks (faux-filet)", quantite: "2", obligatoire: true },
+            { nom: "crème liquide à 30%", quantite: "100ml", obligatoire: true },
+            { nom: "grains de poivre noir", quantite: "2 c. à soupe", obligatoire: true },
+            { nom: "cognac ou brandy", quantite: "30ml", obligatoire: false },
+            { nom: "beurre", quantite: "15g", obligatoire: true }
         ],
-        ustensiles: ["poêle"],
+        ustensiles: ["poêle en fonte", "mortier"],
         tags: ["santé", "équilibre", "express", "protéines"],
         instructions: [
-            "Chauffer crème, moutarde et poivre en sauce.",
-            "Saisir la viande 2 min de chaque côté.",
-            "Napper de sauce et servir."
+            "Concasser grossièrement les grains de poivre et en croûter une face des steaks.",
+            "Saisir la viande 2-3 min de chaque côté dans le beurre moussant.",
+            "Déglacer avec le cognac (flamber si souhaité), puis ajouter la crème.",
+            "Laisser réduire la sauce quelques instants et napper la viande."
         ],
         image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FSteaks-sauce-au-poivre.jpg&w=3840&q=75"
     },
@@ -907,41 +964,48 @@ var recipes = [
         titre: "Boulettes de bœuf aux herbes",
         description: "Des boulettes maison riches en herbes fraîches.",
         temps: 20,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🧆",
         ingredients: [
-            { nom: "Steak haché", obligatoire: true },
-            { nom: "Persil", obligatoire: true },
-            { nom: "Coriandre", obligatoire: true },
-            { nom: "Œuf", obligatoire: true }
+            { nom: "bœuf haché 5% MG", quantite: "500g", obligatoire: true },
+            { nom: "herbes fraîches (persil/menthe)", quantite: "1 bouquet", obligatoire: true },
+            { nom: "chapelure fine", quantite: "3 c. à soupe", obligatoire: true },
+            { nom: "oeuf", quantite: "1", obligatoire: true },
+            { nom: "oignon haché", quantite: "1 petit", obligatoire: true }
         ],
         ustensiles: ["saladier", "poêle"],
         tags: ["santé", "équilibre", "protéines", "fait maison"],
         instructions: [
-            "Mélanger viande, œuf et herbes ciselées.",
-            "Former des boulettes et fariner.",
-            "Faire dorer dans l'huile 10 min."
+            "Mélanger la viande, l'oeuf, l'oignon et les herbes ciselées dans un saladier.",
+            "Ajouter la chapelure pour obtenir une texture malléable.",
+            "Former des boulettes de la taille d'une noix et les faire dorer dans un filet d'huile 10 min en les retournant."
         ],
         image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FBoulettes-de-boeuf-aux-herbes.jpg&w=3840&q=75"
     },
     {
         id: 39,
         titre: "Petits légumes croquants",
-        description: "Une salade fraîche de carottes et courgettes râpées.",
+        description: "Une poêlée croquante de légumes de saison.",
         temps: 15,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🥗",
         ingredients: [
-            { nom: "Carotte", obligatoire: true },
-            { nom: "Courgettes", obligatoire: true },
-            { nom: "Pignons de pin", obligatoire: true }
+            { nom: "carottes", quantite: "2", obligatoire: true },
+            { nom: "courgettes", quantite: "2", obligatoire: true },
+            { nom: "brocoli", quantite: "200g", obligatoire: true },
+            { nom: "haricots verts", quantite: "200g", obligatoire: true },
+            { nom: "huile d'olive", quantite: "2 c. à soupe", obligatoire: true },
+            { nom: "pignons de pin", quantite: "20g", obligatoire: false }
         ],
-        ustensiles: ["râpe", "saladier", "poêle"],
+        ustensiles: ["économe", "wok ou sauteuse", "poêle"],
         tags: ["santé", "équilibre", "légumes", "express"],
         instructions: [
-            "Râper les carottes et courgettes.",
-            "Griller les pignons à la poêle.",
-            "Mélanger le tout avec une vinaigrette."
+            "Tailler les carottes et courgettes en fins lanières à l'économe.",
+            "Blanchir le brocoli et les haricots 3 min dans l'eau bouillante et égoutter.",
+            "Faire sauter tous les légumes au wok avec l'huile pendant 5 min pour garder le croquant.",
+            "Parsemer de pignons de pignons grillés à sec avant de servir."
         ],
         image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FPetits-legumes-croquants.jpg&w=3840&q=75"
     },
@@ -950,21 +1014,23 @@ var recipes = [
         titre: "Trifles à la mangue",
         description: "Un dessert frais mêlant mangue et fromage blanc.",
         temps: 70,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🍧",
         ingredients: [
-            { nom: "Mangue", obligatoire: true },
-            { nom: "Fromage blanc", obligatoire: true },
-            { nom: "Mascarpone", obligatoire: true },
-            { nom: "Citron", obligatoire: true }
+            { nom: "mangues bien mûres", quantite: "2", obligatoire: true },
+            { nom: "fromage blanc", quantite: "250g", obligatoire: true },
+            { nom: "mascarpone", quantite: "250g", obligatoire: true },
+            { nom: "biscuits à la cuillère", quantite: "200g", obligatoire: true },
+            { nom: "citron vert", quantite: "1", obligatoire: true }
         ],
-        ustensiles: ["verrines", "saladier"],
+        ustensiles: ["verrines", "saladier", "fouet"],
         tags: ["santé", "équilibre", "dessert", "fruits"],
         instructions: [
-            "Couper la mangue en dés.",
-            "Fouetter fromage blanc, mascarpone et sucre.",
-            "Alterner couches de mangue et crème en verrines.",
-            "Placer au frais 1h."
+            "Couper la mangue en petits dés et les arroser de jus de citron vert.",
+            "Fouetter le fromage blanc, le mascarpone et un peu de sucre jusqu'à obtenir une crème lisse.",
+            "Dans des verrines, alterner couches de biscuits cassés, dés de mangue et crème.",
+            "Placer au frais au moins 1h avant de déguster."
         ],
         image: "https://www.mangerbouger.fr/manger-mieux/la-fabrique-a-menus/_next/image?url=https%3A%2F%2Fapi-prod-fam.mangerbouger.fr%2Fstorage%2Frecettes%2FTrifles-a-la-mangue.jpg&w=3840&q=75"
     },
@@ -973,21 +1039,23 @@ var recipes = [
         titre: "Framboisier léger",
         description: "Un gâteau fruité avec mousse légère et génoise fondante.",
         temps: 50,
+        personnes: 8,
         difficulte: "Moyen",
         emoji: "🍰",
         ingredients: [
-            { nom: "Framboises", obligatoire: true },
-            { nom: "Fromage blanc", obligatoire: true },
-            { nom: "Farine", obligatoire: true },
-            { nom: "Oeufs", obligatoire: true },
-            { nom: "Sucre", obligatoire: true }
+            { nom: "génoise nature", quantite: "1", obligatoire: true },
+            { nom: "framboises fraîches", quantite: "600g", obligatoire: true },
+            { nom: "mascarpone", quantite: "250g", obligatoire: true },
+            { nom: "fromage blanc 0%", quantite: "200g", obligatoire: true },
+            { nom: "sucre glace", quantite: "80g", obligatoire: true }
         ],
-        ustensiles: ["Moule à manqué", "Fouet électrique"],
+        ustensiles: ["moule à manqué", "fouet électrique", "cercle pâtissier"],
         tags: ["Dessert", "Gâteaux", "Framboise"],
         instructions: [
-            "Préparer la génoise et cuire 20 min à 180°C.",
-            "Préparer la mousse au fromage blanc et framboises.",
-            "Monter le gâteau et réserver au frais 6h."
+            "Préparer la génoise et la couper en deux dans l'épaisseur.",
+            "Monter la crème en fouettant mascarpone, fromage blanc et sucre glace.",
+            "Imbiber la génoise d'un léger sirop, disposer les framboises et recouvrir de mousse.",
+            "Réserver au frais 6h avant de retirer le cercle et décorer."
         ],
         image: "https://img.cuisineactuelle.fr/1200x675/2018/09/25/i47606-framboisier.jpg"
     },
@@ -996,21 +1064,23 @@ var recipes = [
         titre: "Bottereaux vendéens",
         description: "Beignets traditionnels parfaits pour le goûter.",
         temps: 35,
+        personnes: 6,
         difficulte: "Facile",
         emoji: "🍩",
         ingredients: [
-            { nom: "Farine", obligatoire: true },
-            { nom: "Sucre", obligatoire: true },
-            { nom: "Oeufs", obligatoire: true },
-            { nom: "Beurre", obligatoire: true },
-            { nom: "Huile de friture", obligatoire: true }
+            { nom: "farine", quantite: "500g", obligatoire: true },
+            { nom: "sucre en poudre", quantite: "150g", obligatoire: true },
+            { nom: "oeufs", quantite: "3", obligatoire: true },
+            { nom: "beurre mou", quantite: "100g", obligatoire: true },
+            { nom: "rhum ambré", quantite: "1 c. à soupe", obligatoire: false },
+            { nom: "levure de boulanger", quantite: "1 sachet", obligatoire: true }
         ],
-        ustensiles: ["Saladier", "Rouleau à pâtisserie", "Friteuse"],
+        ustensiles: ["saladier", "rouleau à pâtisserie", "friteuse"],
         tags: ["Beignets", "Goûter", "Tradition"],
         instructions: [
-            "Former une pâte avec farine, sucre, oeufs et beurre.",
-            "Laisser reposer 2 heures.",
-            "Étaler, découper en losanges et frire."
+            "Former une pâte avec la farine, le sucre, les oeufs, le beurre et le rhum.",
+            "Laisser reposer la pâte sous un linge pendant 2 heures.",
+            "Étaler la pâte, la découper en losanges et les frire dans l'huile chaude jusqu'à ce qu'ils soient bien dorés."
         ],
         image: "https://img.cuisineactuelle.fr/1200x675/2019/04/25/i54858-bottereaux.jpg"
     },
@@ -1019,21 +1089,23 @@ var recipes = [
         titre: "Tchoutchouka",
         description: "Plat maghrébin aux poivrons, tomates et œufs.",
         temps: 46,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🥘",
         ingredients: [
-            { nom: "Poivrons", obligatoire: true },
-            { nom: "Tomates", obligatoire: true },
-            { nom: "Oeufs", obligatoire: true },
-            { nom: "Ail", obligatoire: true },
-            { nom: "Huile d'olive", obligatoire: true }
+            { nom: "poivrons (rouges et verts)", quantite: "3", obligatoire: true },
+            { nom: "tomates mûres", quantite: "3", obligatoire: true },
+            { nom: "oeufs", quantite: "4", obligatoire: true },
+            { nom: "oignon gros", quantite: "1", obligatoire: true },
+            { nom: "ail", quantite: "2 gousses", obligatoire: true },
+            { nom: "cumin", quantite: "1 c. à café", obligatoire: false }
         ],
-        ustensiles: ["Grande poêle"],
+        ustensiles: ["grande poêle"],
         tags: ["Plat principal", "Cuisine du monde", "Végétarien"],
         instructions: [
-            "Faire revenir poivrons et ail 15 min.",
-            "Ajouter les tomates et mijoter 30 min.",
-            "Casser les œufs dessus et cuire 8 min."
+            "Faire revenir les poivrons en lamelles et l'ail dans l'huile pendant 15 min.",
+            "Ajouter les tomates concassées, le cumin et laisser mijoter 30 min.",
+            "Casser les œufs délicatement sur le mélange et cuire à couvert 8 min."
         ],
         image: "https://img.cuisineactuelle.fr/1200x675/2019/06/27/i21578-tchoutchouka.jpg"
     },
@@ -1042,20 +1114,22 @@ var recipes = [
         titre: "Scones express",
         description: "Petits pains anglais parfaits pour le brunch.",
         temps: 25,
+        personnes: 6,
         difficulte: "Facile",
         emoji: "🥯",
         ingredients: [
-            { nom: "Farine", obligatoire: true },
-            { nom: "Beurre", obligatoire: true },
-            { nom: "Lait", obligatoire: true },
-            { nom: "Oeuf", obligatoire: true }
+            { nom: "farine", quantite: "250g", obligatoire: true },
+            { nom: "beurre bien froid", quantite: "60g", obligatoire: true },
+            { nom: "lait", quantite: "15cl", obligatoire: true },
+            { nom: "oeuf (dorure)", quantite: "1", obligatoire: false },
+            { nom: "sucre", quantite: "50g", obligatoire: true }
         ],
-        ustensiles: ["Emporte-pièce", "Plaque de cuisson"],
+        ustensiles: ["emporte-pièce", "plaque de cuisson", "pinceau"],
         tags: ["Petit-déjeuner", "Brunch", "Rapide"],
         instructions: [
-            "Mélanger farine, levure et beurre.",
-            "Ajouter oeuf et lait.",
-            "Découper à l'emporte-pièce et cuire 10 min à 210°C."
+            "Mélanger rapidement la farine, la levure et le beurre du bout des doigts.",
+            "Ajouter le lait et pétrir brièvement pour former une boule.",
+            "Étaler sur 2cm, découper à l'emporte-pièce, dorer à l'oeuf et cuire 10 min à 210°C."
         ],
         image: "https://img.cuisineactuelle.fr/1200x675/2018/09/25/i41855-scones-rapides.jpg"
     },
@@ -1064,18 +1138,20 @@ var recipes = [
         titre: "Sauce chocolat liquide",
         description: "Sauce onctueuse pour napper vos desserts.",
         temps: 20,
+        personnes: 6,
         difficulte: "Facile",
         emoji: "🍫",
         ingredients: [
-            { nom: "Chocolat noir", obligatoire: true },
-            { nom: "Lait", obligatoire: true }
+            { nom: "chocolat noir pâtissier", quantite: "200g", obligatoire: true },
+            { nom: "lait entier", quantite: "100ml", obligatoire: true },
+            { nom: "beurre", quantite: "20g", obligatoire: false }
         ],
-        ustensiles: ["Casserole"],
+        ustensiles: ["casserole", "fouet"],
         tags: ["Sauce", "Chocolat", "Accompagnement"],
         instructions: [
-            "Casser le chocolat en morceaux.",
-            "Faire fondre avec le lait au bain-marie.",
-            "Remuer jusqu'à ce que ce soit lisse."
+            "Casser le chocolat en petits morceaux réguliers.",
+            "Faire fondre avec le lait au bain-marie à feu doux.",
+            "Ajouter le beurre à la fin et remuer jusqu'à ce que la sauce soit bien lisse et brillante."
         ],
         image: "https://img.cuisineactuelle.fr/1200x675/2018/09/25/i55580-chocolat-liquide.jpg"
     },
@@ -1084,20 +1160,22 @@ var recipes = [
         titre: "Pâté breton traditionnel",
         description: "Une terrine de campagne riche en saveurs.",
         temps: 108,
+        personnes: 10,
         difficulte: "Facile",
         emoji: "🥩",
         ingredients: [
-            { nom: "Porc (gorge, épaule)", obligatoire: true },
-            { nom: "Foie de porc", obligatoire: true },
-            { nom: "Oignons", obligatoire: true },
-            { nom: "Persil", obligatoire: true }
+            { nom: "gorge de porc", quantite: "1kg", obligatoire: true },
+            { nom: "poitrine de porc", quantite: "1kg", obligatoire: true },
+            { nom: "foie de porc", quantite: "500g", obligatoire: true },
+            { nom: "ail et oignons", quantite: "3 de chaque", obligatoire: true },
+            { nom: "persil plat", quantite: "1 bouquet", obligatoire: true }
         ],
-        ustensiles: ["Hachoir à viande", "Terrine"],
+        ustensiles: ["hachoir à viande", "terrine en terre cuite", "bain-marie"],
         tags: ["Entrée", "Charcuterie", "Terroir"],
         instructions: [
-            "Hacher finement toutes les viandes.",
-            "Mélanger avec oignons et persil.",
-            "Cuire en terrine au four pendant 1h30."
+            "Hacher finement toutes les viandes, l'ail et les oignons.",
+            "Mélanger intimement avec le persil ciselé, le sel (20g/kg) et le poivre.",
+            "Tasser dans une terrine et cuire au bain-marie au four pendant 1h30 à 180°C."
         ],
         image: "https://img.cuisineactuelle.fr/1200x675/2021/06/02/i30579-pate-breton.jpg"
     },
@@ -1106,88 +1184,1432 @@ var recipes = [
         titre: "Gaufres croustillantes",
         description: "Recette pour des gaufres légères et croustillantes.",
         temps: 30,
+        personnes: 6,
         difficulte: "Facile",
         emoji: " waffle",
         ingredients: [
-            { nom: "Farine", obligatoire: true },
-            { nom: "Oeufs", obligatoire: true },
-            { nom: "Lait", obligatoire: true },
-            { nom: "Sucre", obligatoire: true }
+            { nom: "farine", quantite: "250g", obligatoire: true },
+            { nom: "oeufs", quantite: "3", obligatoire: true },
+            { nom: "lait entier", quantite: "250ml", obligatoire: true },
+            { nom: "beurre fondu", quantite: "125g", obligatoire: true },
+            { nom: "sucre", quantite: "60g", obligatoire: true }
         ],
-        ustensiles: ["Saladier", "Gaufrier"],
+        ustensiles: ["saladier", "gaufrier électrique"],
         tags: ["Goûter", "Dessert", "Enfants"],
         instructions: [
-            "Mélanger les ingrédients secs.",
-            "Ajouter oeufs et lait en fouettant.",
-            "Cuire dans un gaufrier chaud."
+            "Mélanger la farine, le sucre et une pincée de sel.",
+            "Ajouter les oeufs battus, puis incorporer le lait et le beurre fondu en fouettant.",
+            "Laisser reposer 20 min et cuire dans un gaufrier bien chaud légèrement huilé."
         ],
         image: "https://img.cuisineactuelle.fr/1200x675/2021/12/21/i39469-gaufre-croustillante.jpg"
     },
     {
         id: 48,
-        titre: "Punch à la vanille",
+        titre: "Punch à la vanille exotique",
         description: "Cocktail exotique parfumé à la vanille.",
         temps: 20,
+        personnes: 10,
         difficulte: "Facile",
         emoji: "🍹",
         ingredients: [
-            { nom: "Rhum blanc", obligatoire: true },
-            { nom: "Jus de fruits", obligatoire: true },
-            { nom: "Vanille", obligatoire: true },
-            { nom: "Sirop de sucre", obligatoire: true }
+            { nom: "rhum blanc agricole", quantite: "1L", obligatoire: true },
+            { nom: "jus d'ananas et orange", quantite: "2L", obligatoire: true },
+            { nom: "gousses de vanille", quantite: "2", obligatoire: true },
+            { nom: "sirop de sucre de canne", quantite: "20cl", obligatoire: true },
+            { nom: "citrons verts", quantite: "2", obligatoire: true }
         ],
-        ustensiles: ["Grand saladier"],
+        ustensiles: ["grand saladier", "bouteille en verre"],
         tags: ["Boisson", "Cocktail", "Exotique"],
         instructions: [
-            "Mélanger rhum, jus et sirop.",
-            "Ajouter la vanille fendue.",
-            "Mettre au frais 1h avant de servir."
+            "Dans un grand récipient, mélanger le rhum, les jus et le sirop de sucre.",
+            "Ajouter les gousses de vanille fendues et grattées, ainsi que le jus des citrons.",
+            "Laisse macérer au frais au moins 1 heure avant de servir avec des glaçons."
         ],
         image: "https://img.cuisineactuelle.fr/1200x675/2018/09/25/i10872-punch-vanille.jpg"
     },
     {
         id: 49,
-        titre: "Endives façon apéro",
+        titre: "Endives façon apéro chic",
         description: "Barquettes d'endives au bleu et noix.",
         temps: 20,
+        personnes: 6,
         difficulte: "Facile",
         emoji: "🥗",
         ingredients: [
-            { nom: "Endives", obligatoire: true },
-            { nom: "Bleu d'Auvergne", obligatoire: true },
-            { nom: "Pommes", obligatoire: true },
-            { nom: "Noix", obligatoire: true }
+            { nom: "endives", quantite: "6", obligatoire: true },
+            { nom: "bleu d'Auvergne", quantite: "150g", obligatoire: true },
+            { nom: "pomme Granny Smith", quantite: "1", obligatoire: true },
+            { nom: "cerneaux de noix", quantite: "80g", obligatoire: true }
         ],
-        ustensiles: ["Plat de service"],
+        ustensiles: ["plat de service", "couteau"],
         tags: ["Apéritif", "Fromage", "Salade"],
         instructions: [
-            "Laver les feuilles d'endives.",
-            "Garnir de pomme, fromage et noix.",
-            "Arroser d'un filet de vinaigrette."
+            "Séparer les feuilles d'endives et les laver.",
+            "Garnir chaque 'barquette' de dés de pomme, de morceaux de fromage et d'une noix entière.",
+            "Arroser éventuellement d'un filet d'huile de noix avant de servir."
         ],
         image: "https://img.cuisineactuelle.fr/1200x675/2018/09/25/i56747-endives-apero.jpg"
     },
     {
         id: 50,
-        titre: "Soupe julienne",
+        titre: "Soupe julienne de légumes",
         description: "Une soupe de légumes légère et réconfortante.",
         temps: 40,
+        personnes: 4,
         difficulte: "Facile",
         emoji: "🥣",
         ingredients: [
-            { nom: "Carottes", obligatoire: true },
-            { nom: "Pommes de terre", obligatoire: true },
-            { nom: "Poireau", obligatoire: true },
-            { nom: "Beurre", obligatoire: true }
+            { nom: "carottes", quantite: "2", obligatoire: true },
+            { nom: "poireaux", quantite: "2", obligatoire: true },
+            { nom: "céleri branche", quantite: "1", obligatoire: true },
+            { nom: "pommes de terre", quantite: "2", obligatoire: true },
+            { nom: "bouillon de légumes", quantite: "1L", obligatoire: true }
         ],
-        ustensiles: ["Marmite", "Couteau"],
-        tags: ["Soupe", "Légumes", "Sain"],
+        ustensiles: ["casserole", "couteau", "économe"],
+        tags: ["sain", "légumes", "hiver"],
         instructions: [
-            "Éplucher et émincer les légumes.",
-            "Faire suer dans le beurre.",
-            "Couvrir d'eau et cuire 20 min."
+            "Éplucher et couper les légumes en fins bâtonnets réguliers (la julienne).",
+            "Faire revenir les légumes dans un peu de beurre moussant.",
+            "Couvrir avec le bouillon, saler et poivrer.",
+            "Laisser mijoter 30 minutes à feu doux jusqu'à ce que les légumes soient fondants."
         ],
-        image: "https://img.cuisineactuelle.fr/1200x675/2018/09/25/i51306-soupe-julienne.jpg"
+        image: "https://www.themealdb.com/images/media/meals/wqqvyq1511179730.jpg"
+    },
+    {
+        id: 51,
+        titre: "Seafood Fideuà",
+        description: "Une spécialité espagnole similaire à la paella, mais préparée avec des vermicelles de pâtes grillées.",
+        temps: 45,
+        personnes: 4,
+        difficulte: "Moyen",
+        emoji: "🥘",
+        ingredients: [
+            { nom: "moules", quantite: "400g", obligatoire: true },
+            { nom: "crevettes", quantite: "8 grosses", obligatoire: true },
+            { nom: "safran", quantite: "2 pincées", obligatoire: true },
+            { nom: "pâtes vermicelles", quantite: "350g", obligatoire: true },
+            { nom: "baudroie (lotte)", quantite: "1 queue", obligatoire: true },
+            { nom: "calmars", quantite: "4 petits", obligatoire: true },
+            { nom: "bouillon de poisson", quantite: "650ml", obligatoire: true }
+        ],
+        ustensiles: ["poêle à paella", "passoire"],
+        tags: ["espagnol", "fruits de mer", "pâtes"],
+        instructions: [
+            "Nettoyer les moules et décortiquer les crevettes.",
+            "Faire infuser le safran dans 50ml d'eau chaude.",
+            "Faire revenir les oignons et l'ail, puis ajouter les vermicelles et les faire dorer 5 min.",
+            "Ajouter la lotte, les calmars, le safran et le bouillon. Laisser mijoter 6 min à couvert.",
+            "Ajouter les moules et les crevettes sur le dessus, couvrir et cuire encore 6 min jusqu'à ce que les moules s'ouvrent."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/wqqvyq1511179730.jpg"
+    },
+    {
+        id: 52,
+        titre: "Escovitch Fish",
+        description: "Un plat de poisson frit traditionnel jamaïcain, servi avec une sauce vinaigrée aux poivrons.",
+        temps: 40,
+        personnes: 2,
+        difficulte: "Moyen",
+        emoji: "🐟",
+        ingredients: [
+            { nom: "vivaneau rouge (ou daurade)", quantite: "1kg", obligatoire: true },
+            { nom: "huile végétale", quantite: "120ml", obligatoire: true },
+            { nom: "poivrons (rouge et jaune)", quantite: "1 de chaque", obligatoire: true },
+            { nom: "oignon", quantite: "1 gros", obligatoire: true },
+            { nom: "vinaigre de malt", quantite: "180ml", obligatoire: true },
+            { nom: "piment Scotch Bonnet", quantite: "1", obligatoire: true }
+        ],
+        ustensiles: ["grande poêle", "four"],
+        tags: ["jamaïcain", "poisson", "épicé", "frire"],
+        instructions: [
+            "Nettoyer le poisson et le frotter avec du citron, du sel et du poivre.",
+            "Frire le poisson dans l'huile chaude 5-7 min par face jusqu'à ce qu'il soit croustillant.",
+            "Dans la même huile, faire revenir l'ail, le gingembre, les oignons et les poivrons.",
+            "Ajouter le vinaigre, le sucre et le piment, laisser mijoter 2 minutes.",
+            "Napper le poisson frit de cette sauce vinaigrée aux légumes avant de servir."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/1520084413.jpg"
+    },
+    {
+        id: 53,
+        titre: "Saumon Teriyaki au miel",
+        description: "Pavés de saumon laqués d'une sauce teriyaki maison onctueuse au miel et au soja.",
+        temps: 25,
+        personnes: 2,
+        difficulte: "Facile",
+        emoji: "🍣",
+        ingredients: [
+            { nom: "pavés de saumon", quantite: "500g", obligatoire: true },
+            { nom: "sauce soja", quantite: "2 c.à.s", obligatoire: true },
+            { nom: "sake (ou vin blanc)", quantite: "2 c.à.s", obligatoire: false },
+            { nom: "graines de sésame", quantite: "4 c.à.s", obligatoire: true },
+            { nom: "miel", quantite: "1 c.à.s", obligatoire: true }
+        ],
+        ustensiles: ["poêle"],
+        tags: ["japonais", "poisson", "sucré-salé", "rapide"],
+        instructions: [
+            "Mélanger la sauce soja, le sake et le miel pour préparer le glaçage.",
+            "Faire dorer le saumon à la poêle à feu moyen-doux.",
+            "Verser la sauce dans la poêle et laisser réduire jusqu'à ce qu'elle nappe le poisson.",
+            "Parsemer de graines de sésame et servir immédiatement."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/xxyupu1468262613.jpg"
+    },
+    {
+        id: 54,
+        titre: "Bisque de crevettes au fenouil",
+        description: "Une soupe de crustacés onctueuse et veloutée, parfumée à l'anis du fenouil et au brandy.",
+        temps: 50,
+        personnes: 4,
+        difficulte: "Moyen",
+        emoji: "🥣",
+        ingredients: [
+            { nom: "crevettes tigrées", quantite: "450g", obligatoire: true },
+            { nom: "fenouil", quantite: "1 gros", obligatoire: true },
+            { nom: "vin blanc sec", quantite: "150ml", obligatoire: true },
+            { nom: "brandy (ou cognac)", quantite: "1 c.à.s", obligatoire: false },
+            { nom: "crème liquide", quantite: "150ml", obligatoire: true },
+            { nom: "bouillon de poisson", quantite: "1L", obligatoire: true }
+        ],
+        ustensiles: ["mixeur plongeant", "tamis fin", "grande casserole"],
+        tags: ["français", "soupe", "fruits de mer", "raffiné"],
+        instructions: [
+            "Faire revenir les têtes et carapaces des crevettes dans l'huile pendant 5 min.",
+            "Ajouter les légumes et cuire 10 min, puis déglacer au vin et brandy.",
+            "Ajouter le bouillon, mijoter 30 min, puis mixer très finement.",
+            "Passer au tamis pour une texture soyeuse, puis ajouter la chair des crevettes et la crème."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/rtwwvv1511799504.jpg"
+    },
+    {
+        id: 55,
+        titre: "Salade Bang Bang aux crevettes",
+        description: "Une salade vietnamienne croquante avec des nouilles de riz et une sauce crémeuse à la cacahuète.",
+        temps: 20,
+        personnes: 2,
+        difficulte: "Facile",
+        emoji: "🥗",
+        ingredients: [
+            { nom: "nouilles de riz", quantite: "140g", obligatoire: true },
+            { nom: "beurre de cacahuète", quantite: "3 c.à.s", obligatoire: true },
+            { nom: "lait de coco", quantite: "4 c.à.s", obligatoire: true },
+            { nom: "crevettes", quantite: "200g", obligatoire: true },
+            { nom: "germes de soja", quantite: "300g", obligatoire: true },
+            { nom: "concombre", quantite: "1", obligatoire: true }
+        ],
+        ustensiles: ["saladier", "petite casserole"],
+        tags: ["vietnamien", "salade", "cacahuète", "rapide"],
+        instructions: [
+            "Cuire les nouilles de riz selon les instructions, puis rincer à l'eau froide.",
+            "Faire fondre le beurre de cacahuète with the lait de coco and the sauce pimentée.",
+            "Mélanger les nouilles, le concombre tranché et les germes de soja.",
+            "Ajouter les crevettes et napper généreusement de sauce avant de servir."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/4xcfai1763765676.jpg"
+    },
+    {
+        id: 56,
+        titre: "Kedgeree",
+        description: "Un grand classique anglo-indien mariant riz épicé, aiglefin fumé et œufs durs.",
+        temps: 40,
+        personnes: 4,
+        difficulte: "Moyen",
+        emoji: "🍛",
+        ingredients: [
+            { nom: "aiglefin fumé (haddock)", quantite: "300g", obligatoire: true },
+            { nom: "riz basmati", quantite: "300g", obligatoire: true },
+            { nom: "œufs", quantite: "4", obligatoire: true },
+            { nom: "poudre de curry", quantite: "2 c.à.c", obligatoire: true },
+            { nom: "lait", quantite: "300ml", obligatoire: true },
+            { nom: "persil plat", quantite: "1 poignée", obligatoire: true }
+        ],
+        ustensiles: ["casserole à couvercle", "poêle"],
+        tags: ["britannique", "poisson", "riz", "épices"],
+        instructions: [
+            "Faire revenir l'oignon et les épices, ajouter le riz et l'eau, puis cuire 10 min à couvert.",
+            "Pocher le haddock dans le lait pendant 10 min jusqu'à ce qu'il s'effiloche.",
+            "Cuire les œufs durs (4-5 min pour un jaune encore tendre).",
+            "Mélanger délicatement le riz, le poisson effiloché et les œufs coupés en quartiers avec le persil."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/utxqpt1511639216.jpg"
+    },
+    {
+        id: 57,
+        titre: "Linguines aux crevettes et piment",
+        description: "Des pâtes relevées et fraîches avec des crevettes royales, du piment et des tomates cerises.",
+        temps: 25,
+        personnes: 2,
+        difficulte: "Facile",
+        emoji: "🍝",
+        ingredients: [
+            { nom: "linguines", quantite: "280g", obligatoire: true },
+            { nom: "crevettes royales", quantite: "24", obligatoire: true },
+            { nom: "piment rouge", quantite: "1 gros", obligatoire: true },
+            { nom: "tomates cerises", quantite: "12", obligatoire: true },
+            { nom: "basilic frais", quantite: "1 poignée", obligatoire: true },
+            { nom: "ail", quantite: "2 gousses", obligatoire: true }
+        ],
+        ustensiles: ["grande poêle", "casserole"],
+        tags: ["italien", "pâtes", "fruits de mer", "rapide"],
+        instructions: [
+            "Cuire les pâtes al dente.",
+            "Faire sauter l'ail et le piment, puis ajouter les crevettes jusqu'à ce qu'elles deviennent roses.",
+            "Ajouter les tomates cerises coupées en deux et laisser chauffer 3 minutes.",
+            "Mélanger les pâtes égouttées à la sauce avec le basilic déchiré."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/usywpp1511189717.jpg"
+    },
+    {
+        id: 58,
+        titre: "Curry de crevettes thaï",
+        description: "Un curry rouge onctueux au lait de coco avec des crevettes généreuses et de la coriandre.",
+        temps: 30,
+        personnes: 4,
+        difficulte: "Facile",
+        emoji: "🥘",
+        ingredients: [
+            { nom: "crevettes crues", quantite: "400g", obligatoire: true },
+            { nom: "pâte de curry rouge thaï", quantite: "2 c.à.c", obligatoire: true },
+            { nom: "lait de coco (crème)", quantite: "50g", obligatoire: true },
+            { nom: "tomates concassées", quantite: "400g", obligatoire: true },
+            { nom: "coriandre", quantite: "1 bouquet", obligatoire: true }
+        ],
+        ustensiles: ["casserole"],
+        tags: ["thaï", "curry", "épicé", "coco"],
+        instructions: [
+            "Faire revenir l'oignon et le gingembre, puis ajouter la pâte de curry.",
+            "Verser les tomates et la crème de coco, laisser mijoter 5 min.",
+            "Ajouter les crevettes et cuire 5-10 min selon leur taille.",
+            "Servir avec du riz nature et parsemer de coriandre fraîche."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/qqlwv91763501559.jpg"
+    },
+    {
+        id: 59,
+        titre: "One-Pot Riz aux crevettes",
+        description: "Un plat complet cuit dans une seule poêle avec du riz, des poivrons et du chorizo.",
+        temps: 25,
+        personnes: 4,
+        difficulte: "Facile",
+        emoji: "🥘",
+        ingredients: [
+            { nom: "riz basmati", quantite: "250g", obligatoire: true },
+            { nom: "crevettes", quantite: "200g", obligatoire: true },
+            { nom: "chorizo", quantite: "50g", obligatoire: true },
+            { nom: "poivrons (rouge et vert)", quantite: "1 de chaque", obligatoire: true },
+            { nom: "tomates concassées", quantite: "400g", obligatoire: true }
+        ],
+        ustensiles: ["grande poêle profonde avec couvercle"],
+        tags: ["espagnol", "riz", "one-pot", "rapide"],
+        instructions: [
+            "Faire revenir oignons, poivrons, chorizo et ail dans l'huile pendant 3 min.",
+            "Ajouter le riz, les tomates et 500ml d'eau bouillante. Couvrir et cuire 12 min à feu vif.",
+            "Ajouter les crevettes et un peu d'eau si nécessaire.",
+            "Cuire encore 1 min jusqu'à ce que les crevettes soient roses et le riz tendre."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/sl6vqv1763335988.jpg"
+    },
+    {
+        id: 60,
+        titre: "Rouleaux de printemps vietnamiens",
+        description: "Fraîcheur absolue avec ces rouleaux de papier de riz garnis de crevettes et de légumes croquants.",
+        temps: 30,
+        personnes: 3,
+        difficulte: "Moyen",
+        emoji: "🌯",
+        ingredients: [
+            { nom: "galettes de riz", quantite: "6 feuilles", obligatoire: true },
+            { nom: "crevettes royales", quantite: "12", obligatoire: true },
+            { nom: "carottes et courgettes", quantite: "1 de chaque", obligatoire: true },
+            { nom: "menthe et coriandre", quantite: "1 petit bouquet", obligatoire: true },
+            { nom: "sauce poisson (nuoc-mâm)", quantite: "3 c.à.s", obligatoire: true }
+        ],
+        ustensiles: ["saladier d'eau tiède", "torchon propre"],
+        tags: ["vietnamien", "frais", "sans-cuisson", "sain"],
+        instructions: [
+            "Ramollir chaque feuille de riz dans l'eau tiède pendant quelques secondes.",
+            "Placer la feuille sur un torchon humide.",
+            "Disposer les herbes, les crevettes et les légumes râpés au centre.",
+            "Rabattre les côtés et rouler fermement pour emprisonner la farce."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/9r2xrg1763771238.jpg"
+    },
+    {
+        id: 61,
+        titre: "Alfajores au dulce de leche",
+        description: "Biscuits sablés fondants à la fleur de maïs, garnis de confiture de lait et de noix de coco.",
+        temps: 40,
+        personnes: 6,
+        difficulte: "Moyen",
+        emoji: "🍪",
+        ingredients: [
+            { nom: "amidon de maïs", quantite: "120g", obligatoire: true },
+            { nom: "farine", quantite: "95g", obligatoire: true },
+            { nom: "beurre mou", quantite: "140g", obligatoire: true },
+            { nom: "sucre glace", quantite: "65g", obligatoire: true },
+            { nom: "jaunes d'œufs", quantite: "3", obligatoire: true },
+            { nom: "dulce de leche", quantite: "200g", obligatoire: true },
+            { nom: "noix de coco râpée", quantite: "50g", obligatoire: true }
+        ],
+        ustensiles: ["saladier", "rouleau à pâtisserie", "emporte-pièce", "plaque de cuisson"],
+        tags: ["argentin", "biscuit", "sucré", "fêtes"],
+        instructions: [
+            "Mélanger le beurre et le sucre jusqu'à obtention d'une crème.",
+            "Ajouter les jaunes d'œufs un par un et la vanille.",
+            "Incorporer délicatement l'amidon de maïs et la farine.",
+            "Étaler la pâte (5mm) et découper des disques.",
+            "Cuire 8-10 min à 135°C sans laisser dorer.",
+            "Assembler deux biscuits avec le dulce de leche et rouler les bords dans la coco."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/29pxzh1545112272.jpg"
+    },
+    {
+        id: 62,
+        titre: "Biscuits Anzac",
+        description: "Biscuits croustillants à l'avoine et à la noix de coco, emblématiques d'Australie et de Nouvelle-Zélande.",
+        temps: 25,
+        personnes: 4,
+        difficulte: "Facile",
+        emoji: "🍪",
+        ingredients: [
+            { nom: "flocons d'avoine", quantite: "85g", obligatoire: true },
+            { nom: "noix de coco râpée", quantite: "85g", obligatoire: true },
+            { nom: "farine", quantite: "100g", obligatoire: true },
+            { nom: "sucre roux", quantite: "100g", obligatoire: true },
+            { nom: "beurre", quantite: "100g", obligatoire: true },
+            { nom: "sirop doré (golden syrup)", quantite: "1 c. à soupe", obligatoire: true },
+            { nom: "bicarbonate de soude", quantite: "1 c. à café", obligatoire: true }
+        ],
+        ustensiles: ["casserole", "plaque de cuisson", "papier sulfurisé"],
+        tags: ["australien", "biscuit", "avoine", "tradition"],
+        instructions: [
+            "Mélanger l'avoine, la coco, la farine et le sucre dans un saladier.",
+            "Faire fondre le beurre avec le sirop doré dans une casserole.",
+            "Mélanger le bicarbonate avec 2 c. à soupe d'eau bouillante et l'ajouter au beurre.",
+            "Verser sur le mélange sec et bien remuer.",
+            "Former des boulettes, les aplatir sur la plaque et cuire 8-10 min à 180°C."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/6p7wmo1541570777.jpg"
+    },
+    {
+        id: 63,
+        titre: "Apam Balik",
+        description: "Crêpe épaisse et moelleuse pliée, garnie de cacahuètes grillées et de maïs doux.",
+        temps: 30,
+        personnes: 2,
+        difficulte: "Moyen",
+        emoji: "🥞",
+        ingredients: [
+            { nom: "lait", quantite: "200ml", obligatoire: true },
+            { nom: "farine", quantite: "160g", obligatoire: true },
+            { nom: "œufs", quantite: "2", obligatoire: true },
+            { nom: "sucre", quantite: "45g", obligatoire: true },
+            { nom: "beurre", quantite: "25g", obligatoire: true },
+            { nom: "cacahuètes grillées", quantite: "50g", obligatoire: true },
+            { nom: "maïs doux (grains)", quantite: "50g", obligatoire: true },
+            { nom: "levure chimique", quantite: "3 c. à café", obligatoire: true }
+        ],
+        ustensiles: ["poêle antiadhésive", "bol", "fouet"],
+        tags: ["malaisien", "crêpe", "street-food", "original"],
+        instructions: [
+            "Mélanger le lait, l'huile (ou beurre fondu) et les œufs.",
+            "Tamiser la farine et la levure, puis les incorporer au mélange liquide.",
+            "Verser la pâte dans une poêle chaude et attendre l'apparition de bulles.",
+            "Ajouter le beurre, le maïs, les cacahuètes concassées et le sucre.",
+            "Plier la crêpe en deux lorsque le fond est bien doré et croustillant."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/adxcvx1619787919.jpg"
+    },
+    {
+        id: 64,
+        titre: "Crumble pommes et mûres",
+        description: "Le dessert réconfortant par excellence : des fruits fondants sous un sablage croustillant.",
+        temps: 50,
+        personnes: 4,
+        difficulte: "Facile",
+        emoji: "🥧",
+        ingredients: [
+            { nom: "pommes (Granny Smith)", quantite: "575g", obligatoire: true },
+            { nom: "mûres fraîches", quantite: "150g", obligatoire: true },
+            { nom: "farine", quantite: "175g", obligatoire: true },
+            { nom: "beurre froid", quantite: "110g", obligatoire: true },
+            { nom: "sucre roux", quantite: "135g", obligatoire: true }
+        ],
+        ustensiles: ["plat à gratin", "saladier", "économe"],
+        tags: ["britannique", "dessert", "fruits", "réconfort"],
+        instructions: [
+            "Préchauffer le four à 190°C.",
+            "Peler et trancher les pommes, les mélanger avec 2 c. à soupe de sucre et les mûres dans le plat.",
+            "Préparer le crumble en frottant le beurre avec la farine et le reste du sucre.",
+            "Répartir le sablage sur les fruits sans tasser.",
+            "Cuire 35-45 minutes jusqu'à ce que le dessus soit bien doré."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg"
+    },
+    {
+        id: 65,
+        titre: "Gâteau hollandais aux pommes",
+        description: "Un gâteau simple et rustique, généreusement garni de tranches de pommes acidulées.",
+        temps: 60,
+        personnes: 8,
+        difficulte: "Facile",
+        emoji: "🍰",
+        ingredients: [
+            { nom: "pommes", quantite: "2 moyennes", obligatoire: true },
+            { nom: "beurre mou", quantite: "115g", obligatoire: true },
+            { nom: "sucre", quantite: "230g", obligatoire: true },
+            { nom: "farine", quantite: "190g", obligatoire: true },
+            { nom: "œufs", quantite: "2", obligatoire: true },
+            { nom: "lait", quantite: "120ml", obligatoire: true },
+            { nom: "levure chimique", quantite: "2 c. à café", obligatoire: true },
+            { nom: "cannelle", quantite: "1 c. à café", obligatoire: true }
+        ],
+        ustensiles: ["moule à manquer (22cm)", "batteur électrique", "saladier"],
+        tags: ["hollandais", "gâteau", "pommes", "brunch"],
+        instructions: [
+            "Crémer le beurre et 200g de sucre jusqu'à ce que le mélange blanchisse.",
+            "Ajouter les œufs un par un, puis la vanille.",
+            "Incorporer alternativement la farine (avec levure) et le lait.",
+            "Verser dans le moule, disposer les tranches de pommes en rosace.",
+            "Saupoudrer avec le mélange sucre restant et cannelle.",
+            "Cuire 35-40 min à 180°C."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/qtpsuv1468132101.jpg"
+    },
+    {
+        id: 66,
+        titre: "Tarte frangipane aux pommes",
+        description: "L'élégance d'une tarte fine alliée au fondant d'une crème d'amandes.",
+        temps: 75,
+        personnes: 6,
+        difficulte: "Moyen",
+        emoji: "🥧",
+        ingredients: [
+            { nom: "pâte sablée", quantite: "1 rouleau", obligatoire: true },
+            { nom: "poudre d'amandes", quantite: "125g", obligatoire: true },
+            { nom: "beurre", quantite: "125g", obligatoire: true },
+            { nom: "sucre", quantite: "125g", obligatoire: true },
+            { nom: "œufs", quantite: "1 gros", obligatoire: true },
+            { nom: "pommes", quantite: "3 belles", obligatoire: true },
+            { nom: "extrait d'amande", quantite: "1/2 c. à café", obligatoire: false }
+        ],
+        ustensiles: ["moule à tarte", "saladier", "fouet"],
+        tags: ["français", "tarte", "amande", "élégant"],
+        instructions: [
+            "Foncer le moule avec la pâte et piquer le fond à la fourchette.",
+            "Travailler le beurre mou avec le sucre, ajouter l'œuf puis la poudre d'amandes.",
+            "Étaler cette crème frangipane sur le fond de tarte.",
+            "Peler les pommes, les couper en fines lamelles et les disposer sur la crème.",
+            "Cuire 35 minutes au four à 180°C jusqu'à ce que la tarte soit dorée."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/wxywrq1468235067.jpg"
+    },
+    {
+        id: 67,
+        titre: "Apricot & Turkish Delight Mess",
+        description: "Une variante exotique de l'Eton Mess avec des abricots rôtis et des morceaux de loukoum.",
+        temps: 20,
+        personnes: 2,
+        difficulte: "Facile",
+        emoji: "🍨",
+        ingredients: [
+            { nom: "mascarpone", quantite: "100g", obligatoire: true },
+            { nom: "yaourt grec", quantite: "50g", obligatoire: true },
+            { nom: "sucre glace", quantite: "25g", obligatoire: true },
+            { nom: "abricots", quantite: "3", obligatoire: true },
+            { nom: "meringue", quantite: "2 nids brisés", obligatoire: true },
+            { nom: "loukoums à la rose", quantite: "2 cubes", obligatoire: true },
+            { nom: "almonds (amandes)", quantite: "25g", obligatoire: false },
+            { nom: "eau de fleur d'oranger", quantite: "1 c. à soupe", obligatoire: false }
+        ],
+        ustensiles: ["saladier", "verres de présentation", "fouet"],
+        tags: ["britannique", "dessert", "exotique", "frais"],
+        instructions: [
+            "Fouetter le mascarpone, le yaourt, le sucre et la fleur d'oranger.",
+            "Couper les abricots et les loukoums en petits dés.",
+            "Briser grossièrement les meringues.",
+            "Dans un saladier, mélanger délicatement tous les ingrédients.",
+            "Dresser dans des verres et parsemer d'amandes concassées avant de servir."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/utxqww1511635712.jpg"
+    },
+    {
+        id: 68,
+        titre: "Kransekake Norvégien",
+        description: "L'impressionnante pyramide d'anneaux croquants à l'amande, traditionnelle des fêtes nordiques.",
+        temps: 120,
+        personnes: 12,
+        difficulte: "Difficile",
+        emoji: "🗼",
+        ingredients: [
+            { nom: "poudre d'amandes", quantite: "500g", obligatoire: true },
+            { nom: "sucre glace", quantite: "500g", obligatoire: true },
+            { nom: "blancs d'œufs", quantite: "4", obligatoire: true },
+            { nom: "extrait d'amande", quantite: "1 c. à café", obligatoire: false }
+        ],
+        ustensiles: ["moules à kransekake", "poche à douille", "pinceau"],
+        tags: ["norvégien", "fête", "spectaculaire", "sans-gluten"],
+        instructions: [
+            "Mélanger les amandes et le sucre glace. Ajouter 3 blancs d'œufs et pétrir.",
+            "Filmer et laisser reposer au frais (idéalement toute une nuit).",
+            "Beurrer les moules anneaux. Rouler la pâte en boudins de l'épaisseur d'un doigt.",
+            "Placer les boudins dans les moules et cuire 12 min à 210°C.",
+            "Une fois froids, assembler les anneaux du plus grand au plus petit avec un glaçage royal."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/yk78uc1763075719.jpg"
+    },
+    {
+        id: 69,
+        titre: "Bakewell Tart",
+        description: "Une icône anglaise : une tartelette à la confiture de framboise recouverte de frangipane et d'amandes effilées.",
+        temps: 60,
+        personnes: 8,
+        difficulte: "Moyen",
+        emoji: "🥧",
+        ingredients: [
+            { nom: "farine", quantite: "175g", obligatoire: true },
+            { nom: "beurre froid", quantite: "75g", obligatoire: true },
+            { nom: "confiture de framboise", quantite: "2 c. à soupe", obligatoire: true },
+            { nom: "beurre fondu", quantite: "125g", obligatoire: true },
+            { nom: "sucre", quantite: "125g", obligatoire: true },
+            { nom: "poudre d'amandes", quantite: "125g", obligatoire: true },
+            { nom: "œuf battu", quantite: "1", obligatoire: true },
+            { nom: "amandes effilées", quantite: "50g", obligatoire: true }
+        ],
+        ustensiles: ["moule à tarte (20cm)", "saladier"],
+        tags: ["britannique", "tarte", "goûter", "classique"],
+        instructions: [
+            "Préparer la pâte brisée, foncer le moule et cuire à blanc 15 min à 200°C.",
+            "Étaler la confiture sur le fond de tarte refroidi.",
+            "Mélanger beurre fondu, sucre, amandes et œuf, puis verser sur la confiture.",
+            "Parsemer d'amandes effilées et cuire 35 min à 180°C."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/wyrqqq1468233628.jpg"
+    },
+    {
+        id: 70,
+        titre: "Pancakes à la banane",
+        description: "Des pancakes ultra-moelleux et naturellement sucrés, parfaits pour le brunch.",
+        temps: 20,
+        personnes: 2,
+        difficulte: "Facile",
+        emoji: "🥞",
+        ingredients: [
+            { nom: "banane mûre", quantite: "1 grosse", obligatoire: true },
+            { nom: "œufs", quantite: "2 moyens", obligatoire: true },
+            { nom: "levure chimique", quantite: "1 pincée", obligatoire: true },
+            { nom: "huile neutre", quantite: "1 c. à café", obligatoire: true },
+            { nom: "noix de pécan", quantite: "25g", obligatoire: false },
+            { nom: "framboises", quantite: "125g", obligatoire: false }
+        ],
+        ustensiles: ["poêle antiadhésive", "fourchette"],
+        tags: ["américain", "petit-déjeuner", "fruits", "sain"],
+        instructions: [
+            "Écraser la banane à la fourchette en purée épaisse.",
+            "Incorporer les œufs et la levure chimique.",
+            "Faire chauffer la poêle huilée et verser des petits tas de pâte.",
+            "Cuire 1-2 min par face jusqu'à ce qu'ils soient fermes.",
+            "Servir avec les noix de pécan et les framboises fraîches."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/sywswr1511383814.jpg"
+    },
+    {
+        id: 71,
+        titre: "Ayam Percik",
+        description: "Poulet grillé malaisien mariné dans une sauce onctueuse au lait de coco et aux épices.",
+        temps: 60,
+        personnes: 4,
+        difficulte: "Moyen",
+        emoji: "🍗",
+        ingredients: [
+            { nom: "hauts de cuisse de poulet", quantite: "6", obligatoire: true },
+            { nom: "lait de coco", quantite: "400ml", obligatoire: true },
+            { nom: "pâte de tamarin", quantite: "2 c. à soupe", obligatoire: true },
+            { nom: "curcuma", quantite: "2 c. à soupe", obligatoire: true },
+            { nom: "gingembre", quantite: "1.5 c. à soupe", obligatoire: true },
+            { nom: "échalotes", quantite: "16", obligatoire: true },
+            { nom: "ail", quantite: "6 gousses", obligatoire: true }
+        ],
+        ustensiles: ["mixer", "gril ou four", "poêle"],
+        tags: ["malaisien", "poulet", "épicé", "exotique"],
+        instructions: [
+            "Mixer les échalotes, l'ail, le gingembre et le curcuma pour former une pâte.",
+            "Faire revenir cette pâte dans une poêle pendant 10 minutes jusqu'à ce qu'elle soit parfumée.",
+            "Ajouter le lait de coco, le tamarin et le sucre. Laisser mijoter 10 minutes.",
+            "Mariner le poulet dans cette sauce (idéalement toute une nuit).",
+            "Griller le poulet au four à 220°C pendant 35-45 minutes en badigeonnant de marinade."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/020z181619788503.jpg"
+    },
+    {
+        id: 72,
+        titre: "Brown Stew Chicken",
+        description: "Le ragoût de poulet traditionnel jamaïcain, riche, sombre et intensément parfumé.",
+        temps: 55,
+        personnes: 4,
+        difficulte: "Moyen",
+        emoji: "🍲",
+        ingredients: [
+            { nom: "poulet entier", quantite: "1", obligatoire: true },
+            { nom: "tomates", quantite: "1", obligatoire: true },
+            { nom: "oignons", quantite: "2", obligatoire: true },
+            { nom: "ail", quantite: "2 gousses", obligatoire: true },
+            { nom: "carottes", quantite: "1", obligatoire: true },
+            { nom: "lait de coco", quantite: "500ml", obligatoire: true },
+            { nom: "sauce soja", quantite: "2 c. à soupe", obligatoire: true },
+            { nom: "thym frais", quantite: "2 c. à café", obligatoire: true }
+        ],
+        ustensiles: ["cocotte en fonte", "grand bol"],
+        tags: ["jamaïcain", "poulet", "ragoût", "réconfortant"],
+        instructions: [
+            "Frotter le poulet avec du jus de lime. Mariner avec tomates, oignons, ail et soja pendant 1h.",
+            "Saisir les morceaux de poulet dans l'huile chaude jusqu'à ce qu'ils soient bien bruns.",
+            "Remettre le poulet dans la cocotte, verser la marinade et ajouter les carottes.",
+            "Mélanger le lait de coco avec un peu de fécule et l'ajouter au ragoût.",
+            "Laisser mijoter à feu doux pendant 30 minutes jusqu'à ce que la sauce épaississe."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/sypxpx1515365095.jpg"
+    },
+    {
+        id: 73,
+        titre: "Poulet frit façon Chick-Fil-A",
+        description: "Le secret du sandwich au poulet le plus célèbre : une marinade au jus de cornichon.",
+        temps: 45,
+        personnes: 2,
+        difficulte: "Moyen",
+        emoji: "🍔",
+        ingredients: [
+            { nom: "blancs de poulet", quantite: "2", obligatoire: true },
+            { nom: "jus de cornichons", quantite: "250ml", obligatoire: true },
+            { nom: "babeurre (ou lait)", quantite: "120ml", obligatoire: true },
+            { nom: "œuf", quantite: "1", obligatoire: true },
+            { nom: "farine", quantite: "125g", obligatoire: true },
+            { nom: "sucre glace", quantite: "1 c. à soupe", obligatoire: true },
+            { nom: "huile d'arachide", quantite: "500ml", obligatoire: true }
+        ],
+        ustensiles: ["friteuse ou poêle profonde", "bol"],
+        tags: ["américain", "sandwich", "poulet-frit", "original"],
+        instructions: [
+            "Mariner le poulet dans le jus de cornichon pendant au moins 30 minutes au frais.",
+            "Battre l'œuf avec le lait dans un bol.",
+            "Mélanger la farine, le sucre glace, le paprika, le sel et le poivre dans un autre bol.",
+            "Tremper le poulet dans le liquide puis dans la farine.",
+            "Frire dans l'huile très chaude (180°C) jusqu'à ce que le poulet soit doré et cuit à cœur."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/sbx7n71587673021.jpg"
+    },
+    {
+        id: 74,
+        titre: "Marmite de riz poulet et chorizo",
+        description: "Un plat complet et convivial inspiré de la paella, cuit dans une seule cocotte.",
+        temps: 50,
+        personnes: 4,
+        difficulte: "Facile",
+        emoji: "🥘",
+        ingredients: [
+            { nom: "cuisses de poulet", quantite: "4-6", obligatoire: true },
+            { nom: "chorizo", quantite: "200g", obligatoire: true },
+            { nom: "riz long", quantite: "300g", obligatoire: true },
+            { nom: "poivron rouge", quantite: "1", obligatoire: true },
+            { nom: "bouillon de poulet", quantite: "750ml", obligatoire: true },
+            { nom: "vin blanc sec", quantite: "150ml", obligatoire: false },
+            { nom: "paprika fumé", quantite: "1 c. à café", obligatoire: true }
+        ],
+        ustensiles: ["cocotte en fonte", "couteau"],
+        tags: ["espagnol", "riz", "poulet", "one-pot"],
+        instructions: [
+            "Dorer les morceaux de poulet et les tranches de chorizo dans la cocotte.",
+            "Ajouter l'oignon et le poivron émincés, faire revenir 5 minutes.",
+            "Verser le riz et remuer pour l'enrober de gras.",
+            "Ajouter le vin blanc, puis le bouillon et le paprika.",
+            "Couvrir et laisser mijoter à feu doux 20-25 minutes jusqu'à ce que le riz soit cuit."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/fk80jp1763280767.jpg"
+    },
+    {
+        id: 75,
+        titre: "Hotpot poulet et champignons",
+        description: "Un plat familial britannique sous une croûte de pommes de terre croustillantes.",
+        temps: 65,
+        personnes: 4,
+        difficulte: "Moyen",
+        emoji: "🍲",
+        ingredients: [
+            { nom: "filets de poulet", quantite: "500g", obligatoire: true },
+            { nom: "champignons de Paris", quantite: "250g", obligatoire: true },
+            { nom: "pommes de terre", quantite: "600g", obligatoire: true },
+            { nom: "bouillon de poulet", quantite: "500ml", obligatoire: true },
+            { nom: "lait", quantite: "100ml", obligatoire: false },
+            { nom: "beurre", quantite: "50g", obligatoire: true },
+            { nom: "farine", quantite: "2 c. à soupe", obligatoire: true }
+        ],
+        ustensiles: ["plat à four profond", "poêle", "casserole"],
+        tags: ["britannique", "poulet", "pommes-de-terre", "four"],
+        instructions: [
+            "Faire revenir le poulet et les champignons dans une poêle.",
+            "Préparer un roux avec le beurre et la farine, puis ajouter le bouillon et le lait.",
+            "Mélanger la sauce avec le poulet et verser dans un plat à grain.",
+            "Recouvrir de rondelles de pommes de terre fines en les faisant se chevaucher.",
+            "Badigeonner de beurre fondu et cuire au four à 200°C pendant 45 minutes."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/uuuspp1511297945.jpg"
+    },
+    {
+        id: 76,
+        titre: "Pâtes Alfredo au poulet et légumes",
+        description: "Une version gourmande des pâtes Alfredo avec des morceaux de poulet et des brocolis frais.",
+        temps: 35,
+        personnes: 4,
+        difficulte: "Facile",
+        emoji: "🍝",
+        ingredients: [
+            { nom: "fettuccine", quantite: "500g", obligatoire: true },
+            { nom: "blancs de poulet", quantite: "500g", obligatoire: true },
+            { nom: "brocolis", quantite: "3 tasses", obligatoire: true },
+            { nom: "heavy cream (crème liquide)", quantite: "500ml", obligatoire: true },
+            { nom: "parmesan râpé", quantite: "150g", obligatoire: true },
+            { nom: "beurre", quantite: "100g", obligatoire: true },
+            { nom: "ail", quantite: "3 gousses", obligatoire: true }
+        ],
+        ustensiles: ["grande poêle", "casserole", "passoire"],
+        tags: ["italien", "pâtes", "poulet", "crémeux"],
+        instructions: [
+            "Cuire les pâtes et ajouter les brocolis dans l'eau 3 minutes avant la fin.",
+            "Saisir le poulet en dés dans du beurre jusqu'à ce qu'il soit cuit.",
+            "Dans la même poêle, faire chauffer la crème avec le reste du beurre et l'ail.",
+            "Incorporer le parmesan et remuer jusqu'à ce que la sauce épaississe.",
+            "Mélanger les pâtes, les brocolis et le poulet avec la sauce Alfredo."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/syqypv1486981727.jpg"
+    },
+    {
+        id: 77,
+        titre: "Poulet Basquaise",
+        description: "Le grand classique du Sud-Ouest : poulet mijoté avec poivrons, tomates et piment d'Espelette.",
+        temps: 60,
+        personnes: 4,
+        difficulte: "Moyen",
+        emoji: "🥘",
+        ingredients: [
+            { nom: "poulet entier découpé", quantite: "1", obligatoire: true },
+            { nom: "poivrons (rouges et verts)", quantite: "4", obligatoire: true },
+            { nom: "tomates mûres", quantite: "800g", obligatoire: true },
+            { nom: "échalotes", quantite: "3", obligatoire: true },
+            { nom: "ail", quantite: "4 gousses", obligatoire: true },
+            { nom: "vin blanc", quantite: "150ml", obligatoire: false },
+            { nom: "piment d'Espelette", quantite: "1 pincée", obligatoire: true }
+        ],
+        ustensiles: ["cocotte", "couteau", "planche"],
+        tags: ["français", "poulet", "légumes", "tradition"],
+        instructions: [
+            "Dorer les morceaux de poulet dans l'huile d'olive dans une cocotte.",
+            "Retirer le poulet et faire revenir les échalotes, l'ail et les poivrons en lanières.",
+            "Ajouter les tomates concassées, le piment et le vin blanc.",
+            "Remettre le poulet, couvrir et laisser mijoter 45 minutes à feu doux.",
+            "Servir chaud, traditionnellement avec du riz."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/wruvqv1511880994.jpg"
+    },
+    {
+        id: 78,
+        titre: "Linguine aux crevettes et piment",
+        description: "Un plat de pâtes simple et élégant, relevé d'une pointe de piment et de zestes de citron.",
+        temps: 25,
+        personnes: 2,
+        difficulte: "Facile",
+        emoji: "🍝",
+        ingredients: [
+            { nom: "linguine", quantite: "250g", obligatoire: true },
+            { nom: "crevettes décortiquées", quantite: "300g", obligatoire: true },
+            { nom: "ail", quantite: "4 gousses", obligatoire: true },
+            { nom: "piment rouge", quantite: "1", obligatoire: true },
+            { nom: "vin blanc", quantite: "150ml", obligatoire: true },
+            { nom: "jus de citron", quantite: "1", obligatoire: true },
+            { nom: "épinards frais", quantite: "2 poignées", obligatoire: false }
+        ],
+        ustensiles: ["grande poêle", "casserole", "presse-ail"],
+        tags: ["italien", "pâtes", "fruits-de-mer", "rapide"],
+        instructions: [
+            "Cuire les linguines dans l'eau bouillante salée.",
+            "Faire sauter l'ail émincé et le piment dans l'huile d'olive.",
+            "Ajouter les crevettes et cuire jusqu'à ce qu'elles changent de couleur.",
+            "Déglacer avec le vin blanc et ajouter le citron et les épinards.",
+            "Mélanger les pâtes avec la sauce et un peu d'eau de cuisson."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/usywpp1511189717.jpg"
+    },
+    {
+        id: 79,
+        titre: "Fettuccine Alfredo Classique",
+        description: "La simplicité italienne : du beurre, de la crème et beaucoup de parmesan.",
+        temps: 20,
+        personnes: 2,
+        difficulte: "Facile",
+        emoji: "🍝",
+        ingredients: [
+            { nom: "fettuccine", quantite: "250g", obligatoire: true },
+            { nom: "crème épaisse", quantite: "125ml", obligatoire: true },
+            { nom: "beurre", quantite: "100g", obligatoire: true },
+            { nom: "parmesan râpé", quantite: "100g", obligatoire: true },
+            { nom: "persil frais", quantite: "2 c. à soupe", obligatoire: false }
+        ],
+        ustensiles: ["casserole", "poêle", "fouet"],
+        tags: ["italien", "pâtes", "crémeux", "végétarien"],
+        instructions: [
+            "Cuire les fettuccines al dente dans de l'eau salée.",
+            "Faire fondre le beurre avec la crème dans une poêle à feu doux.",
+            "Ajouter le parmesan et fouetter jusqu'à obtenir une sauce lisse.",
+            "Incorporer les pâtes égouttées dans la sauce.",
+            "Parsemer de persil haché et servir aussitôt."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg"
+    },
+    {
+        id: 80,
+        titre: "Fettuccine Alfredo à la crème épaisse",
+        description: "Une variante encore plus gourmande et onctueuse avec de la clotted cream.",
+        temps: 20,
+        personnes: 2,
+        difficulte: "Facile",
+        emoji: "🍝",
+        ingredients: [
+            { nom: "fettuccine fraîches", quantite: "250g", obligatoire: true },
+            { nom: "clotted cream (crème caillée)", quantite: "225g", obligatoire: true },
+            { nom: "beurre", quantite: "25g", obligatoire: true },
+            { nom: "parmesan", quantite: "100g", obligatoire: true },
+            { nom: "noix de muscade", quantite: "1 pincée", obligatoire: true }
+        ],
+        ustensiles: ["grande casserole", "râpe"],
+        tags: ["italien", "pâtes", "gourmand", "clotted-cream"],
+        instructions: [
+            "Cuire les pâtes fraîches seulement 2-3 minutes.",
+            "Dans une grande casserole, chauffer la clotted cream et le beurre à feu très doux.",
+            "Ajouter le parmesan et la muscade, remuer jusqu'à ce que ce soit fondu.",
+            "Ajouter les pâtes et un peu d'eau de cuisson pour détendre la sauce.",
+            "Poivrer généreusement et servir immédiatement."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/uquqtu1511178042.jpg"
+    },
+    {
+        id: 81,
+        titre: "Sandwich au Mac and Cheese grillé",
+        description: "L'ultime péché mignon : un sandwich croustillant fourré au mac and cheese onctueux.",
+        temps: 30,
+        personnes: 2,
+        difficulte: "Moyen",
+        emoji: "🥪",
+        ingredients: [
+            { nom: "macaroni", quantite: "230g", obligatoire: true },
+            { nom: "fromage (Cheddar ou Monterey Jack)", quantite: "400g", obligatoire: true },
+            { nom: "pain de mie épais", quantite: "4 tranches", obligatoire: true },
+            { nom: "lait", quantite: "350ml", obligatoire: true },
+            { nom: "crème liquide", quantite: "240ml", obligatoire: true },
+            { nom: "beurre", quantite: "140g", obligatoire: true },
+            { nom: "farine", quantite: "45g", obligatoire: true }
+        ],
+        ustensiles: ["poêle", "casserole", "plat rectangulaire"],
+        tags: ["américain", "sandwich", "fromage", "gourmand"],
+        instructions: [
+            "Préparer un mac and cheese onctueux et le verser dans un plat rectangulaire.",
+            "Réfrigérer 1 heure jusqu'à ce qu'il soit ferme, puis couper en carrés.",
+            "Garnir le pain avec un carré de mac and cheese et du fromage râpé supplémentaire.",
+            "Faire dorer le sandwich à la poêle avec du beurre jusqu'à ce que le pain soit croustillant et le cœur fondant."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/xutquv1505330523.jpg"
+    },
+    {
+        id: 82,
+        titre: "Sandwich façon Lasagne",
+        description: "Tout le goût de la lasagne dans un format sandwich pratique et original.",
+        temps: 25,
+        personnes: 4,
+        difficulte: "Facile",
+        emoji: "🥪",
+        ingredients: [
+            { nom: "pain de mie", quantite: "8 tranches", obligatoire: true },
+            { nom: "crème de fromage (ou ricotta)", quantite: "60g", obligatoire: true },
+            { nom: "bacon", quantite: "8 tranches", obligatoire: true },
+            { nom: "tomates", quantite: "8 tranches", obligatoire: true },
+            { nom: "mozzarella", quantite: "4 tranches", obligatoire: true },
+            { nom: "beurre", quantite: "40g", obligatoire: true }
+        ],
+        ustensiles: ["poêle ou presse à sandwich", "petit bol"],
+        tags: ["américain", "italien", "sandwich", "original"],
+        instructions: [
+            "Mélanger la crème de fromage avec de l'origan et une pincée de sel.",
+            "Tartiner le mélange sur les tranches de pain.",
+            "Assembler avec le bacon grillé, les tomates et la mozzarella.",
+            "Poêler les sandwichs avec du beurre jusqu'à ce qu'ils soient bien dorés sur les deux faces."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/xr0n4r1576788363.jpg"
+    },
+    {
+        id: 83,
+        titre: "Lasagne Classique",
+        description: "La véritable lasagne à la bolognaise maison, généreuse et gratinée.",
+        temps: 90,
+        personnes: 6,
+        difficulte: "Moyen",
+        emoji: "🥘",
+        ingredients: [
+            { nom: "feuilles de lasagne", quantite: "12", obligatoire: true },
+            { nom: "viande de bœuf hachée", quantite: "500g", obligatoire: true },
+            { nom: "sauce tomate (marinara)", quantite: "800g", obligatoire: true },
+            { nom: "ricotta", quantite: "500g", obligatoire: true },
+            { nom: "œuf", quantite: "1", obligatoire: true },
+            { nom: "mozzarella râpée", quantite: "400g", obligatoire: true },
+            { nom: "parmesan", quantite: "50g", obligatoire: true }
+        ],
+        ustensiles: ["plat à gratin", "four", "grand saladier"],
+        tags: ["italien", "plat-complet", "familial", "gratin"],
+        instructions: [
+            "Faire revenir le bœuf, ajouter la sauce tomate et laisser mijoter 20 minutes.",
+            "Mélanger la ricotta avec l'œuf et le parmesan dans un saladier.",
+            "Dans le plat, alterner : sauce viande, pâtes, puis mélange ricotta.",
+            "Terminer par une généreuse couche de mozzarella.",
+            "Cuire au four à 180°C pendant 40-45 minutes."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/wtsvxx1511296896.jpg"
+    },
+    {
+        id: 84,
+        titre: "Pâtes à la puttanesca aux sardines",
+        description: "Une recette de caractère avec des sardines, des olives noires et des câpres.",
+        temps: 30,
+        personnes: 2,
+        difficulte: "Facile",
+        emoji: "🍝",
+        ingredients: [
+            { nom: "spaghetti", quantite: "250g", obligatoire: true },
+            { nom: "sardines à l'huile", quantite: "120g", obligatoire: true },
+            { nom: "tomates concassées", quantite: "400g", obligatoire: true },
+            { nom: "olives noires dénoyautées", quantite: "50g", obligatoire: true },
+            { nom: "câpres", quantite: "2 c. à soupe", obligatoire: true },
+            { nom: "ail", quantite: "3 gousses", obligatoire: true },
+            { nom: "flocons de piment", quantite: "1/2 c. à café", obligatoire: false }
+        ],
+        ustensiles: ["grande poêle", "casserole"],
+        tags: ["italien", "pâtes", "poisson", "relevé"],
+        instructions: [
+            "Cuire les spaghettis al dente dans de l'eau bouillante salée.",
+            "Faire revenir l'ail et le piment dans l'huile des sardines (ou huile d'olive).",
+            "Ajouter les tomates, les olives et les câpres. Laisser mijoter 10 minutes.",
+            "Ajouter les sardines coupées en morceaux. Mélanger avec les pâtes et servir."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/vvtvtr1511180578.jpg"
+    },
+    {
+        id: 85,
+        titre: "Vraie Carbonara italienne",
+        description: "Pas de crème ici ! Juste des œufs, du pecorino et du guanciale (ou pancetta).",
+        temps: 25,
+        personnes: 2,
+        difficulte: "Moyen",
+        emoji: "🍝",
+        ingredients: [
+            { nom: "spaghetti", quantite: "250g", obligatoire: true },
+            { nom: "guanciale (ou pancetta)", quantite: "100g", obligatoire: true },
+            { nom: "jaunes d'œufs", quantite: "4", obligatoire: true },
+            { nom: "pecorino romano", quantite: "50g", obligatoire: true },
+            { nom: "poivre noir moulu", quantite: "généreusement", obligatoire: true }
+        ],
+        ustensiles: ["poêle", "grand bol", "casserole"],
+        tags: ["italien", "pâtes", "tradition", "rapide"],
+        instructions: [
+            "Cuire les pâtes al dente. Faire dorer le guanciale dans une poêle sans gras ajouté.",
+            "Battre les jaunes d'œufs avec le fromage et le poivre dans un grand bol.",
+            "Transférer les pâtes brûlantes dans la poêle avec le gras du guanciale (hors du feu).",
+            "Verser le mélange œufs/fromage, ajouter 2-3 cuillères d'eau de cuisson.",
+            "Remuer vivement pour obtenir une crème onctueuse sans cuire les œufs en omelette."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg"
+    },
+    {
+        id: 86,
+        titre: "Arepa Pelua",
+        description: "Galette de maïs vénézuélienne garnie de bœuf effiloché et de cheddar fondant (la 'chevelue').",
+        temps: 50,
+        personnes: 6,
+        difficulte: "Moyen",
+        emoji: "🫓",
+        ingredients: [
+            { nom: "farine de maïs précuite (Harina P.A.N.)", quantite: "400g", obligatoire: true },
+            { nom: "bœuf (flanchet ou hampe)", quantite: "500g", obligatoire: true },
+            { nom: "cheddar ou edam râpé", quantite: "200g", obligatoire: true },
+            { nom: "oignon", quantite: "1", obligatoire: true },
+            { nom: "poivron rouge", quantite: "1", obligatoire: true },
+            { nom: "bouillon de bœuf", quantite: "1L", obligatoire: true },
+            { nom: "cumin", quantite: "1 c. à café", obligatoire: true }
+        ],
+        ustensiles: ["poêle grill", "cocotte", "saladier"],
+        tags: ["vénézuélien", "bœuf", "sans-gluten", "original"],
+        instructions: [
+            "Bouillir le bœuf dans le bouillon pendant 2h jusqu'à ce qu'il s'effiloche à la fourchette.",
+            "Faire revenir oignon et poivrons, ajouter le bœuf effiloché et le cumin.",
+            "Mélanger la farine de maïs avec l'eau et du sel pour former des galettes.",
+            "Griller les arepas 5 min par face, les ouvrir et garnir généreusement de bœuf et de fromage."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/jgl9qq1764437635.jpg"
+    },
+    {
+        id: 87,
+        titre: "Asado Argentin",
+        description: "L'art de la grillade argentine : un assortiment de pièces de bœuf cuites à la perfection.",
+        temps: 120,
+        personnes: 6,
+        difficulte: "Moyen",
+        emoji: "🥩",
+        ingredients: [
+            { nom: "assortiment de bœuf (côtes, entrecôte)", quantite: "2kg", obligatoire: true },
+            { nom: "chorizo de bœuf", quantite: "4", obligatoire: true },
+            { nom: "morcilla (boudin noir)", quantite: "2", obligatoire: true },
+            { nom: "gros sel", quantite: "généreusement", obligatoire: true },
+            { nom: "sauce chimichurri", quantite: "1 bol", obligatoire: true }
+        ],
+        ustensiles: ["gril ou barbecue au bois", "pinceau"],
+        tags: ["argentin", "viande", "grillade", "convivial"],
+        instructions: [
+            "Saler généreusement la viande au gros sel 30 minutes avant la cuisson.",
+            "Préparer un feu de braises ardentes. Placer la viande sur la grille (côté os en premier).",
+            "Cuire lentement pendant 1h30 à 2h en retournant occasionnellement.",
+            "Laisser reposer la viande 10 minutes sous de l'alu avant de trancher et servir avec le chimichurri."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/kgfh3q1763075438.jpg"
+    },
+    {
+        id: 88,
+        titre: "Aussie Burgers",
+        description: "Le burger australien typique avec une tranche de betterave et un œuf au plat.",
+        temps: 30,
+        personnes: 2,
+        difficulte: "Facile",
+        emoji: "🍔",
+        ingredients: [
+            { nom: "steak haché de bœuf", quantite: "500g", obligatoire: true },
+            { nom: "betterave cuite", quantite: "100g", obligatoire: true },
+            { nom: "pains à burger (ou naan)", quantite: "2", obligatoire: true },
+            { nom: "œuf", quantite: "2", obligatoire: true },
+            { nom: "roquette", quantite: "50g", obligatoire: true },
+            { nom: "crème de ciboulette", quantite: "4 c. à soupe", obligatoire: false }
+        ],
+        ustensiles: ["poêle", "grille-pain"],
+        tags: ["australien", "burger", "original", "complet"],
+        instructions: [
+            "Façonner et assaisonner les steaks, les griller 3-4 minutes par face.",
+            "Faire cuire les œufs au plat séparément.",
+            "Toaster les pains et étaler la crème de ciboulette.",
+            "Assembler : roquette, steak, tranches de betterave et l'œuf sur le dessus."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/44bzep1761848278.jpg"
+    },
+    {
+        id: 89,
+        titre: "Sauté de bœuf au brocoli",
+        description: "Un classique express de la cuisine chinoise, sain et plein de saveurs.",
+        temps: 20,
+        personnes: 2,
+        difficulte: "Facile",
+        emoji: "🥢",
+        ingredients: [
+            { nom: "faux-filet de bœuf", quantite: "500g", obligatoire: true },
+            { nom: "brocoli", quantite: "500g", obligatoire: true },
+            { nom: "sauce soja", quantite: "2 c. à soupe", obligatoire: true },
+            { nom: "sauce d'huître", quantite: "2 c. à soupe", obligatoire: true },
+            { nom: "ail", quantite: "2 gousses", obligatoire: true },
+            { nom: "fécule de maïs", quantite: "1 c. à café", obligatoire: true },
+            { nom: "bouillon de poulet", quantite: "60ml", obligatoire: true }
+        ],
+        ustensiles: ["wok ou grande poêle", "bol"],
+        tags: ["chinois", "bœuf", "légumes", "rapide"],
+        instructions: [
+            "Blanchir le brocoli 2 minutes à l'eau bouillante et égoutter.",
+            "Saisir le bœuf émincé à feu très vif dans le wok.",
+            "Ajouter l'ail émincé et la sauce (soja, huître, bouillon, fécule).",
+            "Incorporer le brocoli et cuire 1 minute pour que la sauce épaississe et enrobe le tout."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/m0p0j81765568742.jpg"
+    },
+    {
+        id: 90,
+        titre: "Tourte au bœuf et à la moutarde",
+        description: "Une tourte généreuse et rustique, avec une sauce crémeuse à la moutarde ancienne.",
+        temps: 80,
+        personnes: 4,
+        difficulte: "Moyen",
+        emoji: "🥧",
+        ingredients: [
+            { nom: "bœuf en dés", quantite: "1kg", obligatoire: true },
+            { nom: "pâte feuilletée", quantite: "400g", obligatoire: true },
+            { nom: "moutarde à l'ancienne", quantite: "2 c. à soupe", obligatoire: true },
+            { nom: "carottes", quantite: "2", obligatoire: true },
+            { nom: "oignon", quantite: "1", obligatoire: true },
+            { nom: "vin rouge", quantite: "200ml", obligatoire: true },
+            { nom: "bouillon de bœuf", quantite: "400ml", obligatoire: true }
+        ],
+        ustensiles: ["plat à tourte", "casserole", "pinceau"],
+        tags: ["britannique", "viande", "en-croûte", "hiver"],
+        instructions: [
+            "Faire dorer le bœuf, ajouter oignon, carottes, vin rouge et bouillon.",
+            "Mijoter 2h à feu doux (ou au four à 150°C). Incorporer la moutarde en fin de cuisson.",
+            "Verser dans le moule, recouvrir de pâte feuilletée et dorer au jaune d'œuf.",
+            "Cuire 30 min à 200°C jusqu'à ce que la croûte soit bien gonflée."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg"
+    },
+    {
+        id: 91,
+        titre: "Tourte au bœuf et aux huîtres",
+        description: "Un mélange terre et mer surprenant et raffiné, classique de la cuisine victorienne.",
+        temps: 120,
+        personnes: 4,
+        difficulte: "Difficile",
+        emoji: "🥧",
+        ingredients: [
+            { nom: "bœuf en dés", quantite: "900g", obligatoire: true },
+            { nom: "huîtres fraîches", quantite: "8", obligatoire: true },
+            { nom: "pâte feuilletée", quantite: "400g", obligatoire: true },
+            { nom: "bière brune (stout)", quantite: "330ml", obligatoire: true },
+            { nom: "bouillon de bœuf", quantite: "400ml", obligatoire: true },
+            { nom: "échalotes", quantite: "3", obligatoire: true },
+            { nom: "bacon haché", quantite: "125g", obligatoire: true }
+        ],
+        ustensiles: ["plat à tourte", "cocotte", "bol"],
+        tags: ["britannique", "viande", "fruits-de-mer", "tradition"],
+        instructions: [
+            "Faire dorer le bœuf, les échalotes et le bacon dans une cocotte.",
+            "Verser la bière et le bouillon, puis laisser mijoter 1h30 jusqu'à tendreté.",
+            "Laisser refroidir le mélange, puis incorporer les huîtres crues.",
+            "Recouvrir le plat de pâte feuilletée, dorer à l'œuf et cuire 30 min à 200°C."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/wrssvt1511556563.jpg"
+    },
+    {
+        id: 92,
+        titre: "Patatas Bravas à l'Air Fryer",
+        description: "Les célèbres tapas espagnoles en version croustillante et légère.",
+        temps: 30,
+        personnes: 4,
+        difficulte: "Facile",
+        emoji: "🥔",
+        ingredients: [
+            { nom: "pommes de terre", quantite: "900g", obligatoire: true },
+            { nom: "tomates concassées", quantite: "225g", obligatoire: true },
+            { nom: "paprika fumé", quantite: "1 c. à soupe", obligatoire: true },
+            { nom: "oignon", quantite: "1", obligatoire: true },
+            { nom: "ail", quantite: "1 gousse", obligatoire: true },
+            { nom: "huile d'olive", quantite: "3 c. à soupe", obligatoire: true }
+        ],
+        ustensiles: ["Air Fryer", "poêle", "saladier"],
+        tags: ["espagnol", "tapas", "végétarien", "rapide"],
+        instructions: [
+            "Couper les pommes de terre en dés et les cuire à l'Air Fryer à 200°C (20-30 min) avec 1 c. à soupe d'huile.",
+            "Faire revenir l'oignon et l'ail à la poêle dans le reste d'huile.",
+            "Ajouter les tomates et le paprika, laisser mijoter 10 min jusqu'à épaississement.",
+            "Napper les patatas bien chaudes de sauce bravas avant de servir."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/3m8yae1763257951.jpg"
+    },
+    {
+        id: 93,
+        titre: "Flafla : Salade de poivrons algérienne",
+        description: "Une salade de poivrons grillés fondants, parfumée à l'ail et à l'huile d'olive.",
+        temps: 40,
+        personnes: 4,
+        difficulte: "Moyen",
+        emoji: "🫑",
+        ingredients: [
+            { nom: "poivrons (rouges et verts)", quantite: "3", obligatoire: true },
+            { nom: "tomates mûres", quantite: "1 large", obligatoire: true },
+            { nom: "ail", quantite: "1 gousse", obligatoire: true },
+            { nom: "oignon rouge haché", quantite: "1 c. à soupe", obligatoire: true },
+            { nom: "huile d'olive", quantite: "1 c. à soupe", obligatoire: true }
+        ],
+        ustensiles: ["four ou gril", "poêle", "plat de service"],
+        tags: ["algérien", "salade", "végétarien", "soleil"],
+        instructions: [
+            "Faire griller les poivrons entiers au four (230°C) jusqu'à ce que la peau noircisse (30-45 min).",
+            "Peler, épépiner et couper les poivrons en lanières.",
+            "Faire revenir l'oignon et l'ail dans l'huile, ajouter les poivrons et la tomate concassée.",
+            "Mijoter 5 minutes pour lier les saveurs et servir tiède ou froid."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/tbj1bs1764118062.jpg"
+    },
+    {
+        id: 94,
+        titre: "Aubergines grillées au houmous",
+        description: "De larges tranches d'aubergines fondantes recouvertes d'une croûte de houmous et de noisettes.",
+        temps: 35,
+        personnes: 2,
+        difficulte: "Facile",
+        emoji: "🍆",
+        ingredients: [
+            { nom: "aubergines", quantite: "2 grandes", obligatoire: true },
+            { nom: "houmous", quantite: "250g", obligatoire: true },
+            { nom: "huile d'olive", quantite: "4 c. à soupe", obligatoire: true },
+            { nom: "ail pour la marinade", quantite: "1 gousse", obligatoire: true },
+            { nom: "paprika fumé", quantite: "1 c. à café", obligatoire: true }
+        ],
+        ustensiles: ["plaque de cuisson", "gril", "bol"],
+        tags: ["libanais", "végétarien", "aubergine", "original"],
+        instructions: [
+            "Trancher les aubergines, les badigeonner d'huile aillée et les rôtir au four jusqu'à tendreté.",
+            "Tartiner généreusement chaque tranche d'une couche épaisse de houmous.",
+            "Saupoudrer de paprika et repasser 3 minutes sous le gril pour une légère croûte.",
+            "Servir aussitôt avec quelques herbes fraîches."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/zub3s91764110535.jpg"
+    },
+    {
+        id: 95,
+        titre: "Salade de couscous aux aubergines",
+        description: "Une salade complète et parfumée avec de la menthe et du fromage de chèvre.",
+        temps: 25,
+        personnes: 2,
+        difficulte: "Facile",
+        emoji: "🥗",
+        ingredients: [
+            { nom: "couscous (grain moyen)", quantite: "150g", obligatoire: true },
+            { nom: "aubergine", quantite: "1", obligatoire: true },
+            { nom: "bouillon de légumes chaud", quantite: "200ml", obligatoire: true },
+            { nom: "tomates cerises", quantite: "200g", obligatoire: true },
+            { nom: "citron (jus)", quantite: "1", obligatoire: true },
+            { nom: "menthe fraîche", quantite: "10 feuilles", obligatoire: true }
+        ],
+        ustensiles: ["saladier", "poêle"],
+        tags: ["méditerranéen", "salade", "végétarien", "été"],
+        instructions: [
+            "Verser le bouillon chaud sur le couscous, couvrir et laisser gonfler 5 minutes.",
+            "Faire griller les dés d'aubergine à la poêle avec de l'huile d'olive jusqu'à ce qu'ils soient dorés.",
+            "Mélanger le couscous égrainé avec l'aubergine, les tomates, le citron et la menthe ciselée.",
+            "Servir frais ou à température ambiante."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/02s6gc1763799560.jpg"
+    },
+    {
+        id: 96,
+        titre: "Trempette d'avocat et pommes de terre grenailles",
+        description: "Une entrée conviviale où les pommes de terre rôties servent de trempettes pour une crème d'avocat citronnée.",
+        temps: 45,
+        personnes: 4,
+        difficulte: "Facile",
+        emoji: "🥑",
+        ingredients: [
+            { nom: "pommes de terre grenailles", quantite: "1kg", obligatoire: true },
+            { nom: "avocats bien mûrs", quantite: "2", obligatoire: true },
+            { nom: "yaourt grec", quantite: "100g", obligatoire: true },
+            { nom: "citron vert (jus)", quantite: "1", obligatoire: true },
+            { nom: "cumin en poudre", quantite: "1 c. à café", obligatoire: true }
+        ],
+        ustensiles: ["four", "mixer", "plaque de cuisson"],
+        tags: ["australien", "apéritif", "végétarien", "convivial"],
+        instructions: [
+            "Rôtir les grenailles entières au four avec huile et cumin (30-40 min à 200°C).",
+            "Pendant ce temps, mixer la chair d'avocat avec le yaourt, le citron vert et du sel.",
+            "Disposer les pommes de terre croquantes sur un plat avec le bol de trempette au centre.",
+            "Déguster en trempant les pommes de terre encore chaudes dans la crème d'avocat."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/flrajf1762341295.jpg"
+    },
+    {
+        id: 97,
+        titre: "Purée d'aubergines fumées (Baingan Bharta)",
+        description: "Une spécialité indienne où l'aubergine est grillée à la flamme pour un goût fumé unique.",
+        temps: 40,
+        personnes: 4,
+        difficulte: "Moyen",
+        emoji: "🍆",
+        ingredients: [
+            { nom: "grande aubergine", quantite: "1", obligatoire: true },
+            { nom: "oignon haché", quantite: "1/2 tasse", obligatoire: true },
+            { nom: "tomates concassées", quantite: "1 tasse", obligatoire: true },
+            { nom: "ail", quantite: "6 gousses", obligatoire: true },
+            { nom: "piment vert", quantite: "1", obligatoire: true },
+            { nom: "coriandre fraîche", quantite: "1 c. à soupe", obligatoire: true }
+        ],
+        ustensiles: ["gaz (pour brûler l'aubergine) ou four", "poêle", "mortier"],
+        tags: ["indien", "végétarien", "aubergine", "épicé"],
+        instructions: [
+            "Brûler la peau de l'aubergine entière directement sur la flamme du gaz.",
+            "Une fois tendre, peler l'aubergine et écraser la chair à la fourchette.",
+            "Sauter les oignons, l'ail et le piment, puis ajouter les tomates et les épices.",
+            "Ajouter la chair d'aubergine fumée, cuire 5 minutes et parsemer de coriandre fraîche."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/urtpqw1487341253.jpg"
+    },
+    {
+        id: 98,
+        titre: "Choucroute de betterave et chou rouge",
+        description: "Une fermentation maison colorée et pleine de probiotiques.",
+        temps: 30,
+        personnes: 1,
+        difficulte: "Facile",
+        emoji: "🥣",
+        ingredients: [
+            { nom: "chou rouge", quantite: "500g", obligatoire: true },
+            { nom: "betterave crue", quantite: "250g", obligatoire: true },
+            { nom: "sel marin (sans iode)", quantite: "15g", obligatoire: true },
+            { nom: "graines de carvi", quantite: "1 c. à café", obligatoire: true }
+        ],
+        ustensiles: ["bocal en verre", "saladier", "râpe"],
+        tags: ["polonais", "fermentation", "sain", "légumes"],
+        instructions: [
+            "Râper finement le chou et la betterave dans un saladier.",
+            "Ajouter le sel et masser fermement à la main pendant 10 min pour extraire le jus.",
+            "Tasser le tout dans un bocal propre jusqu'à ce que le jus recouvre les légumes.",
+            "Fermer et laisser fermenter 10 à 15 jours à température ambiante."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/ra2k8a1764365055.jpg"
+    },
+    {
+        id: 99,
+        titre: "Latkes de betterave",
+        description: "Petites galettes croustillantes de betterave râpée, servies avec une sauce au yaourt.",
+        temps: 35,
+        personnes: 4,
+        difficulte: "Facile",
+        emoji: "🧆",
+        ingredients: [
+            { nom: "betterave crue", quantite: "500g", obligatoire: true },
+            { nom: "œufs", quantite: "2", obligatoire: true },
+            { nom: "farine", quantite: "3 c. à soupe", obligatoire: true },
+            { nom: "huile neutre", quantite: "pour friture", obligatoire: true },
+            { nom: "sel et poivre", quantite: "selon goût", obligatoire: true }
+        ],
+        ustensiles: ["poêle", "râpe", "essuie-tout"],
+        tags: ["ukrainien", "végétarien", "betterave", "friture"],
+        instructions: [
+            "Râper la betterave et la presser dans un linge pour éliminer tout le jus.",
+            "Mélanger avec les œufs et la farine pour obtenir une pâte collante.",
+            "Former des petites galettes et les frire 3 minutes par face jusqu'à ce qu'elles soient bien croquantes.",
+            "Éponger sur du papier absorbant et servir chaud."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/qwicc91764368097.jpg"
+    },
+    {
+        id: 100,
+        titre: "Chtitha Batata : Ragoût algérien",
+        description: "Un ragoût de pommes de terre épicé à la dersa (pâte d'ail et piment), simple et délicieux.",
+        temps: 45,
+        personnes: 4,
+        difficulte: "Facile",
+        emoji: "🍲",
+        ingredients: [
+            { nom: "pommes de terre", quantite: "1kg", obligatoire: true },
+            { nom: "ail", quantite: "4 gousses", obligatoire: true },
+            { nom: "piment rouge frais", quantite: "1", obligatoire: true },
+            { nom: "cumin", quantite: "1 c. à café", obligatoire: true },
+            { nom: "paprika", quantite: "1 c. à café", obligatoire: true },
+            { nom: "purée de tomates", quantite: "1 c. à soupe", obligatoire: true }
+        ],
+        ustensiles: ["casserole", "mortier"],
+        tags: ["algérien", "végétarien", "pommes-de-terre", "pimenté"],
+        instructions: [
+            "Écraser l'ail avec le piment et les épices au mortier pour créer la 'dersa'.",
+            "Faire revenir la dersa dans l'huile, ajouter les pommes de terre et la tomate.",
+            "Couvrir d'eau et laisser mijoter 40 minutes jusqu'à ce que les pommes de terre soient fondantes.",
+            "Servir bien chaud avec du pain maison."
+        ],
+        image: "https://www.themealdb.com/images/media/meals/q8pu1k1764114334.jpg"
     }
 ];
 

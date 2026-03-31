@@ -184,6 +184,14 @@ body {
     color: var(--text-light);
     font-size: 14px;
     font-weight: 600;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.ingredient-qty {
+    font-weight: 800;
+    color: var(--primary);
+    margin-right: 4px;
 }
 
 .match-badge {

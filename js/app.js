@@ -99,9 +99,10 @@ document.addEventListener('DOMContentLoaded', () => {
             else if (recipe.score >= 50) matchClass = 'match-medium';
 
             card.innerHTML = `
-                <div class="recipe-image">
-                    /* CACHE BUST v2 */
-                    ${(recipe.image && recipe.image.trim() !== "") ? `<img src="${recipe.image}" alt="${recipe.titre}">` : `<span>${recipe.emoji}</span>`}
+                <div class="recipe-image" id="img-container-${recipe.id}">
+                    ${(recipe.image && recipe.image.trim() !== "") 
+                        ? `<img src="${recipe.image}" alt="${recipe.titre}" onerror="this.parentElement.innerHTML='<span>${recipe.emoji}</span>'">` 
+                        : `<span>${recipe.emoji}</span>`}
                 </div>
                 <div class="recipe-card-content">
                     <div style="display: flex; justify-content: space-between; align-items: flex-start;">
@@ -110,6 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="recipe-meta">
                         <span>⏱ ${recipe.temps} min</span>
+                        <span>👥 ${recipe.personnes || 4} pers.</span>
                         <span class="match-badge ${matchClass}">${recipe.score}% match</span>
                     </div>
                     ${!state.isStrict && recipe.missingIngredients.length > 0 ? `
@@ -139,22 +141,26 @@ document.addEventListener('DOMContentLoaded', () => {
             <div style="display: flex; gap: 40px; flex-wrap: wrap;">
                 <div style="flex: 1; min-width: 300px;">
                     <div class="recipe-image" style="height: 300px; font-size: 80px; margin-bottom: 24px; border-radius: 16px;">
-                        /* CACHE BUST v2 */
-                        ${(recipe.image && recipe.image.trim() !== "") ? `<img src="${recipe.image}" alt="${recipe.titre}">` : `<span>${recipe.emoji}</span>`}
+                        ${(recipe.image && recipe.image.trim() !== "") 
+                            ? `<img src="${recipe.image}" alt="${recipe.titre}" onerror="this.parentElement.innerHTML='<span>${recipe.emoji}</span>'">` 
+                            : `<span>${recipe.emoji}</span>`}
                     </div>
                     <h2>Ingrédients</h2>
                     <ul style="margin-top: 16px; list-style: none;">
                         ${recipe.ingredients.map(ing => {
                             const hasIt = state.ingredients.some(ui => ui.toLowerCase().includes(ing.nom.toLowerCase()) || ing.nom.toLowerCase().includes(ui));
                             return `<li style="margin-bottom: 8px; font-size: 18px;">
-                                ${hasIt ? '✅' : '❌'} ${ing.nom} ${ing.obligatoire ? '<b>*</b>' : ''}
+                                ${hasIt ? '✅' : '❌'} 
+                                <span class="ingredient-qty">${ing.quantite || ''}</span> 
+                                ${ing.nom} ${ing.obligatoire ? '<b>*</b>' : ''}
                             </li>`;
                         }).join('')}
                     </ul>
                 </div>
                 <div>
-                    <div style="display: flex; gap: 20px; margin-bottom: 32px;">
+                    <div style="display: flex; gap: 20px; margin-bottom: 32px; flex-wrap: wrap;">
                         <span class="chip">⏱ ${recipe.temps} min</span>
+                        <span class="chip">👥 Pour ${recipe.personnes || 4} personnes</span>
                         <span class="chip">📊 ${recipe.difficulte}</span>
                     </div>
 
